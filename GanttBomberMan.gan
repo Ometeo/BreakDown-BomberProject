@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2013-10-14" view-index="0" gantt-divider-location="363" resource-divider-location="325" version="2.0" locale="fr">
+<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2013-10-07" view-index="0" gantt-divider-location="601" resource-divider-location="325" version="2.0" locale="fr">
     <description/>
-    <view zooming-state="default:5" id="gantt-chart">
-        <field id="tpd3" name="Nom" width="54" order="0"/>
-        <field id="tpd4" name="Date de début" width="22" order="1"/>
-        <field id="tpd5" name="Date de fin" width="22" order="2"/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="58" order="0"/>
+        <field id="tpd4" name="Date de début" width="21" order="1"/>
+        <field id="tpd5" name="Date de fin" width="20" order="2"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Nom" width="50" order="0"/>
@@ -37,7 +37,7 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="0" name="Game Concept" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true">
-            <task id="5" name="Rédaction Game Doc" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true">
+            <task id="5" name="Rédaction Game Doc" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="false">
                 <task id="6" name="Univers" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                 <task id="15" name="Nom Du Jeu" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                 <task id="7" name="Cible" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
@@ -46,28 +46,138 @@
                 <task id="20" name="Game Mechanics" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
             </task>
             <task id="9" name="Modélisation" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true">
+                <task id="21" name="Mise en Place du Git" color="#8cb6ce" meeting="false" start="2013-10-15" duration="1" complete="0" expand="true"/>
                 <task id="11" name="Diagramme de Gantt" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                 <task id="12" name="Liste de prefabs" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
-                <task id="21" name="Mise en Place du Git" color="#8cb6ce" meeting="false" start="2013-10-15" duration="1" complete="0" expand="true"/>
-                <task id="13" name="Graphe d'états" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true">
-                    <task id="14" name="tâche_14" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                <task id="13" name="Graphe d'états" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="false">
+                    <task id="14" name="Déplacements Joueur" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="70" name="Pose Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="72" name="Récupération Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="74" name="Destruction Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="76" name="Pousser une Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="78" name="Lancer une Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="80" name="Explosion Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="143" name="Tuer Joueur" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="145" name="Detruire base Ennemie" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="147" name="Capturer Drapeau" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                </task>
+                <task id="86" name="Use Case" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="false">
+                    <task id="88" name="Menu Principal" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="90" name="Menu Solo" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="92" name="Menu Multi" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="94" name="Menu Options" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="96" name="Menu Boutique" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="98" name="UC Joueur InGame" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="100" name="UC Joueur Lobby - Connection Partie" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="141" name="Chat" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                 </task>
             </task>
         </task>
-        <task id="1" name="Alpha" color="#8cb6ce" meeting="false" start="2013-10-16" duration="3" complete="0" expand="true"/>
-        <task id="3" name="Version Finale" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
-        <task id="4" name="Preparation Présentation" color="#8cb6ce" meeting="false" start="2013-12-02" duration="8" complete="0" expand="true"/>
+        <task id="1" name="Alpha" color="#8cb6ce" meeting="false" start="2013-10-16" duration="3" complete="0" expand="true">
+            <task id="22" name="Création Arène Classique" color="#8cb6ce" meeting="false" start="2013-10-16" duration="2" complete="0" expand="true"/>
+            <task id="35" name="Implementation Bombe" color="#8cb6ce" meeting="false" start="2013-10-16" duration="2" complete="0" expand="false">
+                <task id="48" name="Instanciation Bombe" color="#8cb6ce" meeting="false" start="2013-10-16" duration="2" complete="0" expand="true"/>
+                <task id="50" name="Explosion Bombe" color="#8cb6ce" meeting="false" start="2013-10-16" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="44" name="Implementation Bloc Destructible" color="#8cb6ce" meeting="false" start="2013-10-16" duration="2" complete="0" expand="false">
+                <task id="45" name="Destruction du Bloc" color="#8cb6ce" meeting="false" start="2013-10-16" duration="2" complete="0" expand="true"/>
+                <task id="47" name="Instanciation du Bloc" color="#8cb6ce" meeting="false" start="2013-10-16" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="23" name="Implementation 1er Champion ( Destroyer / Tanker)" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="false">
+                <task id="25" name="Implementation Compétence Passive" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="true"/>
+                <task id="30" name="Implementation Compétence 1" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="true"/>
+                <task id="32" name="Implementation Compétence 2" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="true"/>
+                <task id="34" name="Implementation Compétence Ultime" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="37" name="Implementation Player" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="false">
+                <task id="38" name="Implementation Déplacement" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="true"/>
+                <task id="54" name="Implementation Selection" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="true"/>
+                <task id="57" name="Scoring" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="39" name="Implementation Network" color="#8cb6ce" meeting="false" start="2013-10-16" duration="3" complete="0" expand="false">
+                <task id="40" name="Implementation Client" color="#8cb6ce" meeting="false" start="2013-10-16" duration="3" complete="0" expand="true"/>
+                <task id="41" name="Implementation Serveur" color="#8cb6ce" meeting="false" start="2013-10-16" duration="3" complete="0" expand="true"/>
+                <task id="42" name="Implementation Connection Joueur" color="#8cb6ce" meeting="false" start="2013-10-16" duration="3" complete="0" expand="true"/>
+                <task id="68" name="Lancement Partie" color="#8cb6ce" meeting="false" start="2013-10-16" duration="3" complete="0" expand="true"/>
+            </task>
+            <task id="58" name="Implementation Mode De Jeu DeathMatch" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="false">
+                <task id="62" name="Timer" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="true"/>
+                <task id="64" name="Scoring" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="true"/>
+                <task id="66" name="Team" color="#8cb6ce" meeting="false" start="2013-10-17" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="159" name="Rapport TODO List" color="#8cb6ce" meeting="false" start="2013-10-16" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="3" name="Version Finale" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true">
+            <task id="110" name="Implementation Mode Solo" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true">
+                <task id="114" name="IA Champion" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+            </task>
+            <task id="102" name="Implementation Mode De Jeu" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="false">
+                <task id="116" name="Capture The Flag" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+                <task id="118" name="Destroy The Base" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+                <task id="120" name="All versus One" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+                <task id="122" name="??" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+            </task>
+            <task id="104" name="Implementation Arène" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="false">
+                <task id="124" name="??" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+                <task id="126" name="??" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+                <task id="128" name="??" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+                <task id="130" name="??" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+            </task>
+            <task id="106" name="Implementation Champions" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+            <task id="132" name="Implementation Boutique" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+            <task id="134" name="Implementation Chat" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+            <task id="136" name="Implementation Menu" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+            <task id="138" name="Implementation Options" color="#8cb6ce" meeting="false" start="2013-10-21" duration="31" complete="0" expand="true"/>
+        </task>
+        <task id="4" name="Preparation Présentation" color="#8cb6ce" meeting="false" start="2013-12-02" duration="8" complete="0" expand="true">
+            <task id="151" name="Entrainement Testeur" color="#8cb6ce" meeting="false" start="2013-12-02" duration="8" complete="0" expand="true"/>
+            <task id="153" name="Redaction PowerPoint" color="#8cb6ce" meeting="false" start="2013-12-02" duration="8" complete="0" expand="true"/>
+            <task id="155" name="Entrainement Oral" color="#8cb6ce" meeting="false" start="2013-12-02" duration="8" complete="0" expand="true"/>
+            <task id="157" name="(Bonus) Trailer" color="#8cb6ce" meeting="false" start="2013-12-02" duration="8" complete="0" expand="true"/>
+            <task id="161" name="(Bonus) Vidéo des différents mode de jeu" color="#8cb6ce" meeting="false" start="2013-12-02" duration="8" complete="0" expand="true"/>
+        </task>
     </tasks>
     <resources>
         <resource id="0" name="Jonathan" function="Default:1" contacts="" phone=""/>
         <resource id="1" name="Thierry" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="2" name="Testeur 1" function="SoftwareDevelopment:4" contacts="" phone=""/>
+        <resource id="3" name="Testeur 2" function="SoftwareDevelopment:4" contacts="" phone=""/>
+        <resource id="4" name="Testeur 3" function="SoftwareDevelopment:4" contacts="" phone=""/>
+        <resource id="5" name="Testeur 4" function="SoftwareDevelopment:4" contacts="" phone=""/>
+        <resource id="6" name="Testeur 5" function="SoftwareDevelopment:4" contacts="" phone=""/>
+        <resource id="7" name="Testeur 6" function="SoftwareDevelopment:4" contacts="" phone=""/>
+        <resource id="8" name="Testeur 7" function="SoftwareDevelopment:4" contacts="" phone=""/>
+        <resource id="9" name="Testeur 8" function="SoftwareDevelopment:4" contacts="" phone=""/>
+        <resource id="10" name="Testeur 9" function="SoftwareDevelopment:4" contacts="" phone=""/>
+        <resource id="11" name="Testeur 10" function="SoftwareDevelopment:4" contacts="" phone=""/>
     </resources>
     <allocations>
         <allocation task-id="6" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="21" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="13" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="151" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="153" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="155" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="12" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="0" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="155" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="2" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="3" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="4" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="7" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="8" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="9" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="10" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
+        <allocation task-id="151" resource-id="11" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
     </allocations>
     <vacations/>
     <taskdisplaycolumns>
@@ -80,9 +190,9 @@
         <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
         <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
-        <displaycolumn property-id="tpd3" order="0" width="196" visible="true"/>
-        <displaycolumn property-id="tpd4" order="1" width="82" visible="true"/>
-        <displaycolumn property-id="tpd5" order="2" width="81" visible="true"/>
+        <displaycolumn property-id="tpd3" order="0" width="348" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="127" visible="true"/>
+        <displaycolumn property-id="tpd5" order="2" width="122" visible="true"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>
