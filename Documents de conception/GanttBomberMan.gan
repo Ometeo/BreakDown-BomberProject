@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2013-10-14" view-index="0" gantt-divider-location="601" resource-divider-location="325" version="2.0" locale="fr_FR">
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2013-10-14" view-index="0" gantt-divider-location="601" resource-divider-location="325" version="2.0" locale="fr">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
         <field id="tpd3" name="Nom" width="58" order="0"/>
@@ -50,17 +51,11 @@
                 <task id="12" name="Liste de prefabs" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                 <task id="13" name="Graphe d'états" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true">
                     <task id="173" name="Utilisation Compétence" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="178" name="Utilisation Compétence Ultime" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                     <task id="14" name="Déplacements Champion" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                     <task id="70" name="Pose Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                     <task id="72" name="Récupération Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
-                    <task id="74" name="Destruction Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
-                    <task id="76" name="Pousser une Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
-                    <task id="78" name="Lancer une Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
-                    <task id="80" name="Explosion Bombe" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                     <task id="143" name="Tuer Joueur" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
-                    <task id="145" name="Detruire base Ennemie" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
-                    <task id="147" name="Capturer Drapeau" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
-                    <task id="168" name="Chat" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                     <task id="171" name="Mort d'un joueur" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                 </task>
                 <task id="86" name="Use Case" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true">
@@ -69,7 +64,7 @@
                     <task id="92" name="Menu Multi" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                     <task id="94" name="Menu Options" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                     <task id="96" name="Menu Boutique" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
-                    <task id="98" name="UC Joueur InGame" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
+                    <task id="98" name="PlayerInGame" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                     <task id="141" name="Chat" color="#8cb6ce" meeting="false" start="2013-10-15" duration="2" complete="0" expand="true"/>
                 </task>
             </task>
@@ -168,6 +163,11 @@
         <allocation task-id="90" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="173" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="14" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="86" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="178" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="92" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="94" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="96" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
         <allocation task-id="12" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
         <allocation task-id="0" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="13" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
@@ -177,6 +177,8 @@
         <allocation task-id="151" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="155" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="98" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="141" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="86" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
         <allocation task-id="151" resource-id="2" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
         <allocation task-id="151" resource-id="3" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
         <allocation task-id="151" resource-id="4" function="SoftwareDevelopment:4" responsible="false" load="100.0"/>
