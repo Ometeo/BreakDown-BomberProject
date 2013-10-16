@@ -22,8 +22,8 @@ using System.Collections;
 /// </remarks>
 public class Test : MonoBehaviour
 {
-    public Transform _foo;
-    public float _bar;
+    public Transform Foo;
+    private float _bar;
 
     /// <summary>
     /// Start is called just before any of the Update methods is called
@@ -32,8 +32,8 @@ public class Test : MonoBehaviour
     void Start()
     {
         //we do nothing.
-        _foo = this.transform;
-        bar = _foo.x;
+        Foo = this.transform;
+        bar = Foo.x;
 
     }
 
