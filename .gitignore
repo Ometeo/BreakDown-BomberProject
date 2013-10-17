@@ -186,3 +186,7 @@ $RECYCLE.BIN/
 ## Unity Specifics
 #############
 Bomber Project Unity/Library/
+Bomber Project Unity/Temp/
+Bomber Project Unity/obj/
+Bomber Project Unity/*.csproj
+Bomber Project Unity/*.sln
