@@ -1,7 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class ChampionsSkillsScript : MonoBehaviour {
+
+    [SerializeField]
+    private Transform _defaultBombPrefab;
+    public Transform DefaultBombPrefab
+    {
+        get { return _defaultBombPrefab; }
+        set { _defaultBombPrefab = value; }
+    }
 
     [SerializeField]
     private SkillScript _skill1;
@@ -25,5 +34,13 @@ public class ChampionsSkillsScript : MonoBehaviour {
     {
         get { return _ultimate; }
         set { _ultimate = value; }
+    }
+
+    public void UseBomb(Transform playerTransform)
+    {
+        string tempPlayerString = playerTransform.GetComponent<PlayerInputManagerScript>().TheOwner.ToString();
+        int playerNumber = Convert.ToInt32(tempPlayerString);
+
+        Network.Instantiate(DefaultBombPrefab, playerTransform.position, playerTransform.rotation, playerNumber);
     }
 }

@@ -11,7 +11,7 @@ Platform assembly: C:\Users\Thierry\Documents\GitHub\BreakDown-BomberProject\Bom
 Loading C:\Users\Thierry\Documents\GitHub\BreakDown-BomberProject\Bomber Project Unity\Builds\BMP_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Thierry\Documents\GitHub\BreakDown-BomberProject\Bomber Project Unity\Builds\BMP_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Thierry\Documents\GitHub\BreakDown-BomberProject\Bomber Project Unity\Builds\BMP_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.250 seconds
+- Completed reload, in  0.240 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.

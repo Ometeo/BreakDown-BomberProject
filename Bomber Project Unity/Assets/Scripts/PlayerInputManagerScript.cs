@@ -81,6 +81,15 @@ public class PlayerInputManagerScript : MonoBehaviour {
         }
     }
 
+    [RPC]
+    void SendUseBomb()
+    {
+        if (Network.isServer)
+        {
+            ChampSkillScript.UseBomb(transform);
+        }
+    }
+
     /* Save if we decide to use NetworkStream on movement
     void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info)
     {
