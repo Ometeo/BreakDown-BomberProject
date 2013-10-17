@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ChampionMovementAuthorativeScript.cs" />
+     <Compile Include="Assets\Scripts\Champions\ChampionsStatsScript.cs" />
      <Compile Include="Assets\Scripts\DestructibleBlocScript.cs" />
      <Compile Include="Assets\Scripts\GroundScript.cs" />
      <Compile Include="Assets\Scripts\NetworkManagerScript.cs" />

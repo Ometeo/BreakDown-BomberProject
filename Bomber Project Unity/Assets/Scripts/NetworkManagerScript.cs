@@ -37,7 +37,7 @@ public class NetworkManagerScript : MonoBehaviour
             if (GUI.Button(new Rect(10, 50, 120, 20), "Initialize Server"))
             {
                 Network.InitializeSecurity();
-                Network.InitializeServer(32, ConnectionPort, false);
+                Network.InitializeServer(10, ConnectionPort, false);
             }
         }
         else if (Network.peerType == NetworkPeerType.Client)

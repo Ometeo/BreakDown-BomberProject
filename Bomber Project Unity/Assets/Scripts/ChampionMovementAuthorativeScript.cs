@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(Rigidbody)), RequireComponent(typeof(NetworkView))]
+[RequireComponent(typeof(NetworkView))]
 public class ChampionMovementAuthorativeScript : MonoBehaviour {
+
+    private Rigidbody _rigidBody;
 
     private NetworkPlayer _theOwner;
     public NetworkPlayer TheOwner
@@ -22,13 +24,25 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
     private Vector3 _lastClientDirection = Vector3.zero;
     private Vector3 _serverCurrentDirection = Vector3.zero;
 
+    private Vector3 _lastPosition;
+
+    [SerializeField]
+    private float _minimumMovementToUpdatePos; // Default 0.05f
+    public float MinimumMovementToUpdatePos
+    {
+        get { return _minimumMovementToUpdatePos; }
+        set { _minimumMovementToUpdatePos = value; }
+    }
+
     // Disable this script if it's not on the server
     void Awake()
     {
+        _rigidBody = rigidbody;
         if (Network.isClient)
         {
             enabled = false;
-            Destroy(rigidbody);
+            if (_rigidBody != null)
+                Destroy(_rigidBody);
         }
     }
 
@@ -56,6 +70,8 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
             if (Input.GetKey(KeyCode.RightArrow))
                 xAxis += 1;
             Vector3 newDirection = new Vector3(xAxis, 0, zAxis).normalized;
+
+            // If the direction change, send the information to the server
             if (newDirection != _lastClientDirection)
             {
                 _lastClientDirection = newDirection;
@@ -71,9 +87,20 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
-            Vector3 temp = (WalkSpeed * _serverCurrentDirection * Time.deltaTime);
-            rigidbody.velocity = temp;
+            if (_rigidBody != null)
+                rigidbody.velocity = (WalkSpeed * _serverCurrentDirection * Time.deltaTime);
+            if (Vector3.Distance(transform.position, _lastPosition) > MinimumMovementToUpdatePos)
+            {
+                _lastPosition = transform.position;
+                networkView.RPC("SetPosition", RPCMode.Others, transform.position);
+            }
         }
+    }
+
+    [RPC]
+    void SetPosition(Vector3 newPosition)
+    {
+        transform.position = newPosition;
     }
 
     [RPC]
@@ -82,6 +109,8 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
         _serverCurrentDirection = direction;
     }
 
+
+    /* Save if we decide to use NetworkStream on movement
     void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info)
     {
         if (stream.isWriting)
@@ -96,4 +125,5 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
             transform.position = posReceive;
         }
     }
+    //*/
 }
