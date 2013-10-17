@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-// to test for animation http://itween.pixelplacement.com/index.php
-
 public class DestructibleBlocScript : MonoBehaviour
 {
 
@@ -45,5 +43,10 @@ public class DestructibleBlocScript : MonoBehaviour
     {
         if(this.gameObject.transform.localScale == Vector3.zero)
             Destroy(this.gameObject);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        NbHP--;
     }
 }
