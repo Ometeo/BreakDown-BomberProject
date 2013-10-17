@@ -44,8 +44,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ChampionMovementAuthorativeScript.cs" />
      <Compile Include="Assets\Scripts\DestructibleBlocScript.cs" />
      <Compile Include="Assets\Scripts\GroundScript.cs" />
+     <Compile Include="Assets\Scripts\NetworkManagerScript.cs" />
+     <Compile Include="Assets\Scripts\ServerInitializePlayersManagerScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

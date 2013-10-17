@@ -1,35 +1,4 @@
 #################
-## Eclipse
-#################
-
-*.pydevproject
-.project
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.classpath
-.settings/
-.loadpath
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# PDT-specific
-.buildpath
-
-
-#################
 ## Visual Studio
 #################
 
@@ -41,42 +10,6 @@ local.properties
 *.user
 *.sln.docstates
 
-# Build results
-
-[Dd]ebug/
-[Rr]elease/
-x64/
-build/
-[Bb]in/
-[Oo]bj/
-
-# MSTest test Results
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-
-*_i.c
-*_p.c
-*.ilk
-*.meta
-*.obj
-*.pch
-*.pdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tli
-*.tlh
-*.tmp
-*.tmp_proj
-*.log
-*.vspscc
-*.vssscc
-.builds
-*.pidb
-*.log
-*.scc
 
 # Visual C++ cache files
 ipch/
@@ -186,9 +119,11 @@ $RECYCLE.BIN/
 ## Unity Specifics
 #############
 Bomber Project Unity/Library/
-#Bomber Project Unity/Temp/
-#Bomber Project Unity/obj/
-#Bomber Project Unity/*.csproj
-#Bomber Project Unity/*.sln
-#Bomber Project Unity/*.suo
-#Bomber Project Unity/*.pidb
+Bomber Project Unity/Temp/
+Bomber Project Unity/obj/
+Bomber Project Unity/*.csproj
+Bomber Project Unity/*.sln
+Bomber Project Unity/*.suo
+Bomber Project Unity/*.pidb
+Bomber Project Unity/*.userprefs
+Bomber Project Unity/*.unityproj
