@@ -55,5 +55,13 @@ public class ChampionsStatsScript : MonoBehaviour {
         get { return _bombExplositionDirections; }
         set { _bombExplositionDirections = value; }
     }
+
+    [SerializeField]
+    private Color _skinColor;
+    public Color SkinColor
+    {
+        get { return _skinColor; }
+        set { _skinColor = value; }
+    }
  
 }

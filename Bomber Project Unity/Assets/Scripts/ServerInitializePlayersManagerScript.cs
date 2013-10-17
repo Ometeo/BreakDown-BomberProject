@@ -12,9 +12,15 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
         set { _playerPrefab = value; }
     }
 
-    private ArrayList _playerScripts = new ArrayList();
+    [SerializeField]
+    private Transform[] _availableChampions;
+    public Transform[] AvailableChampions
+    {
+        get { return _availableChampions; }
+        set { _availableChampions = value; }
+    }
 
-    // Action to do when the server has initialized
+     // Action to do when the server has initialized
     void OnServerInitialized()
     {
         
@@ -30,8 +36,15 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
         string tempPlayerString = player.ToString();
         int playerNumber = Convert.ToInt32(tempPlayerString);
 
+        // Instantiate the player
         Transform newPlayerTransform = (Transform)Network.Instantiate(PlayerPrefab, transform.position, transform.rotation, playerNumber);
-        _playerScripts.Add(newPlayerTransform.GetComponent("cubeMoveAuthorativeScript"));
+
+        // Set the player's champion
+        Transform champion = (Transform)Instantiate(AvailableChampions[UnityEngine.Random.Range(0, AvailableChampions.Length)], transform.position, transform.rotation);
+        champion.parent = newPlayerTransform;
+
+        InitializePlayersChampionScript initPlayChampScript = newPlayerTransform.GetComponent<InitializePlayersChampionScript>();
+        initPlayChampScript.OrderInitializeChampion(champion.GetComponent<ChampionsStatsScript>().SkinColor);
 
         NetworkView theNetworkView = newPlayerTransform.networkView;
         theNetworkView.RPC("SetPlayer", RPCMode.AllBuffered, player);
