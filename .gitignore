@@ -190,3 +190,5 @@ Bomber Project Unity/Temp/
 Bomber Project Unity/obj/
 Bomber Project Unity/*.csproj
 Bomber Project Unity/*.sln
+Bomber Project Unity/*.suo
+Bomber Project Unity/*.pidb
