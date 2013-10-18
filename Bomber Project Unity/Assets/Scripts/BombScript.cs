@@ -1,13 +1,29 @@
-﻿using UnityEngine;
+﻿/*
+ *   File : BombScript.cs
+ *   Description : This script handles the bomb, their time to live and the instantiation of explosions.
+ *   Version : 1.0.0
+ *   Created by : Jonathan Bihet
+ *   Created Date : 17/10/2013
+ *   Modification Date : 18/10/2013
+ *   Modified by : Jonathan Bihet 
+ */
+
+using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// This class contains code to handle bomb destuction, and explosion instantiate.
+/// </summary>
 public class BombScript : MonoBehaviour
 {
-    public GameObject Bomb;
+    /// <summary>
+    /// Prefab for the explosion.
+    /// </summary>
     public GameObject Explosion;
 
-    private Animation _destroyBombAnimation;
-
+    /// <summary>
+    /// Time before bomb destruction and explosion instantiate.
+    /// </summary>
     [SerializeField]
     private float _timeToLive;
     public float TimeToLive
@@ -22,6 +38,9 @@ public class BombScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Distance of explosion in each directions.
+    /// </summary>
     [SerializeField]
     private int _distance;
     public int Distance
@@ -36,6 +55,9 @@ public class BombScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Boolean to allow horiontal direction.
+    /// </summary>
     [SerializeField]
     private bool _horizontalDirection;
     public bool HorizontalDirection
@@ -44,6 +66,9 @@ public class BombScript : MonoBehaviour
         set { _horizontalDirection = value; }
     }
 
+    /// <summary>
+    /// Boolean to allow vertical direction.
+    /// </summary>
     [SerializeField]
     private bool _verticalDirection;
     public bool VerticalDirection
@@ -52,6 +77,9 @@ public class BombScript : MonoBehaviour
         set { _verticalDirection = value; }
     }
 
+    /// <summary>
+    /// Boolean to allow left diagonal direction.
+    /// </summary>
     [SerializeField]
     private bool _leftDiagonalDirection;
     public bool LeftDiagonalDirection
@@ -60,6 +88,9 @@ public class BombScript : MonoBehaviour
         set { _leftDiagonalDirection = value; }
     }
 
+    /// <summary>
+    /// Boolean to right diagonal direction.
+    /// </summary>
     [SerializeField]
     private bool _rightDiagonalDirection;
     public bool RightDiagonalDirection
@@ -68,6 +99,7 @@ public class BombScript : MonoBehaviour
         set { _rightDiagonalDirection = value; }
     }
 
+    private Animation _destroyBombAnimation;
     private bool _rightOk = true;
     private bool _leftOk = true;
     private bool _forwardOk = true;
@@ -78,36 +110,59 @@ public class BombScript : MonoBehaviour
     private bool _diagRightBackOk = true;
 
 
-    // Use this for initialization
+    /// <summary>
+    /// When the bomb is instantiate, get the animation, and start the countdown.
+    /// </summary>
     void Start()
     {
-        _destroyBombAnimation = Bomb.GetComponent<Animation>();
+        _destroyBombAnimation = this.gameObject.GetComponent<Animation>();
         StartCoroutine(BombCountDown());
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Nothing for the moment.
+    /// </summary>
     void Update()
     {
-
     }
 
+    /// <summary>
+    /// Destroy the object.
+    /// </summary>
     void DestroyBomb()
     {
         Destroy(this.gameObject);
     }
 
-    IEnumerator BombCountDown()
+    /// <summary>
+    /// This method launch the animation of bomb reduction, and launch de explosion Method.
+    /// </summary>
+    void Destruction()
     {
-        yield return new WaitForSeconds(TimeToLive);
         _destroyBombAnimation.Play();
         StartCoroutine(BombExplosion());
     }
 
+    /// <summary>
+    /// Handle the BombCountDown, when the end is reached, launch the destruction method.
+    /// </summary>
+    /// <returns>IEnumerator</returns>
+    IEnumerator BombCountDown()
+    {
+        yield return new WaitForSeconds(TimeToLive);
+        Destruction();
+    }
+
+    
+
+    /// <summary>
+    /// Instantiate the explosion, and handles collisions.
+    /// </summary>
+    /// <returns>IEnumerator</returns>
     IEnumerator BombExplosion()
     {
-        RaycastHit hit;
-        Vector3 localTransformPosition = Bomb.transform.position;
-        Instantiate(Explosion, Bomb.transform.position, Bomb.transform.localRotation);
+        Vector3 localTransformPosition = this.transform.position;
+        Instantiate(Explosion, this.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(0.10f);
         for (int i = 1; i <= Distance; i++)
         {
@@ -115,39 +170,11 @@ public class BombScript : MonoBehaviour
             {
                 if (_rightOk)
                 {
-                    Instantiate(Explosion, new Vector3(localTransformPosition.x + i, localTransformPosition.y, localTransformPosition.z), Bomb.transform.localRotation);
-                    Collider[] hitColliders = Physics.OverlapSphere(new Vector3(localTransformPosition.x + i, localTransformPosition.y, localTransformPosition.z), 0.45f);
-                    if (hitColliders.Length > 0)
-                    {
-                        _rightOk = false;
-                        if (hitColliders[0].transform.CompareTag("Destructible"))
-                        {
-                            hitColliders[0].gameObject.GetComponent<DestructibleBlocScript>().NbHP--;
-                        }
-
-
-                    }
+                    InstantiateBombExplosions(new Vector3(localTransformPosition.x + i, localTransformPosition.y, localTransformPosition.z),ref _rightOk);
                 }
-                //int j = 0;
-                //while (j < hitColliders.Length)
-                //{
-                //    print(hitColliders[j].transform);
-                //    print(hitColliders[j].transform.position);
-                //    j++;
-                //}
-
                 if (_leftOk)
                 {
-                    Instantiate(Explosion, new Vector3(localTransformPosition.x - i, localTransformPosition.y, localTransformPosition.z), Bomb.transform.localRotation);
-                    Collider[] hitColliders = Physics.OverlapSphere(new Vector3(localTransformPosition.x - i, localTransformPosition.y, localTransformPosition.z), 0.45f);
-                    if (hitColliders.Length > 0)
-                    {
-                        _leftOk = false;
-                        if (hitColliders[0].transform.CompareTag("Destructible"))
-                        {
-                            hitColliders[0].gameObject.GetComponent<DestructibleBlocScript>().NbHP--;
-                        }
-                    }
+                    InstantiateBombExplosions(new Vector3(localTransformPosition.x - i, localTransformPosition.y, localTransformPosition.z),ref _leftOk);
                 }
             }
 
@@ -155,29 +182,11 @@ public class BombScript : MonoBehaviour
             {
                 if (_forwardOk)
                 {
-                    Instantiate(Explosion, new Vector3(localTransformPosition.x, localTransformPosition.y, localTransformPosition.z + i), Bomb.transform.localRotation);
-                    Collider[] hitColliders = Physics.OverlapSphere(new Vector3(localTransformPosition.x, localTransformPosition.y, localTransformPosition.z + i), 0.45f);
-                    if (hitColliders.Length > 0)
-                    {
-                        _forwardOk = false;
-                        if (hitColliders[0].transform.CompareTag("Destructible"))
-                        {
-                            hitColliders[0].gameObject.GetComponent<DestructibleBlocScript>().NbHP--;
-                        }
-                    }
+                    InstantiateBombExplosions(new Vector3(localTransformPosition.x, localTransformPosition.y, localTransformPosition.z + i), ref _forwardOk);
                 }
                 if (_backOk)
                 {
-                    Instantiate(Explosion, new Vector3(localTransformPosition.x, localTransformPosition.y, localTransformPosition.z - i), Bomb.transform.localRotation);
-                    Collider[] hitColliders = Physics.OverlapSphere(new Vector3(localTransformPosition.x, localTransformPosition.y, localTransformPosition.z - i), 0.45f);
-                    if (hitColliders.Length > 0)
-                    {
-                        _backOk = false;
-                        if (hitColliders[0].transform.CompareTag("Destructible"))
-                        {
-                            hitColliders[0].gameObject.GetComponent<DestructibleBlocScript>().NbHP--;
-                        }
-                    }
+                    InstantiateBombExplosions(new Vector3(localTransformPosition.x, localTransformPosition.y, localTransformPosition.z - i), ref _backOk);
                 }
             }
 
@@ -185,29 +194,11 @@ public class BombScript : MonoBehaviour
             {
                 if (_diagRightFwdOk)
                 {
-                    Instantiate(Explosion, new Vector3(localTransformPosition.x + i, localTransformPosition.y, localTransformPosition.z + i), Bomb.transform.localRotation);
-                    Collider[] hitColliders = Physics.OverlapSphere(new Vector3(localTransformPosition.x + i, localTransformPosition.y, localTransformPosition.z + i), 0.45f);
-                    if (hitColliders.Length > 0)
-                    {
-                        _diagRightFwdOk = false;
-                        if (hitColliders[0].transform.CompareTag("Destructible"))
-                        {
-                            hitColliders[0].gameObject.GetComponent<DestructibleBlocScript>().NbHP--;
-                        }
-                    }
+                    InstantiateBombExplosions(new Vector3(localTransformPosition.x + i, localTransformPosition.y, localTransformPosition.z + i), ref _diagRightFwdOk);   
                 }
                 if (_diagLeftBackOk)
                 {
-                    Instantiate(Explosion, new Vector3(localTransformPosition.x - i, localTransformPosition.y, localTransformPosition.z - i), Bomb.transform.localRotation);
-                    Collider[] hitColliders = Physics.OverlapSphere(new Vector3(localTransformPosition.x - i, localTransformPosition.y, localTransformPosition.z - i), 0.45f);
-                    if (hitColliders.Length > 0)
-                    {
-                        _diagLeftBackOk = false;
-                        if (hitColliders[0].transform.CompareTag("Destructible"))
-                        {
-                            hitColliders[0].gameObject.GetComponent<DestructibleBlocScript>().NbHP--;
-                        }
-                    }
+                    InstantiateBombExplosions(new Vector3(localTransformPosition.x - i, localTransformPosition.y, localTransformPosition.z - i), ref _diagLeftBackOk);
                 }
             }
 
@@ -215,35 +206,43 @@ public class BombScript : MonoBehaviour
             {
                 if (_diagLeftFwdOk)
                 {
-                    Instantiate(Explosion, new Vector3(localTransformPosition.x - i, localTransformPosition.y, localTransformPosition.z + i), Bomb.transform.localRotation);
-                    Collider[] hitColliders = Physics.OverlapSphere(new Vector3(localTransformPosition.x - i, localTransformPosition.y, localTransformPosition.z + i), 0.45f);
-                    if (hitColliders.Length > 0)
-                    {
-                        _diagLeftFwdOk = false;
-                        if (hitColliders[0].transform.CompareTag("Destructible"))
-                        {
-                            hitColliders[0].gameObject.GetComponent<DestructibleBlocScript>().NbHP--;
-                        }
-                    }
+                    InstantiateBombExplosions(new Vector3(localTransformPosition.x - i, localTransformPosition.y, localTransformPosition.z + i), ref _diagLeftFwdOk);
                 }
                 if (_diagRightBackOk)
                 {
-                    Instantiate(Explosion, new Vector3(localTransformPosition.x + i, localTransformPosition.y, localTransformPosition.z - i), Bomb.transform.localRotation);
-                    Collider[] hitColliders = Physics.OverlapSphere(new Vector3(localTransformPosition.x + i, localTransformPosition.y, localTransformPosition.z - i), 0.45f);
-                    if (hitColliders.Length > 0)
-                    {
-                        _diagRightBackOk = false;
-                        if (hitColliders[0].transform.CompareTag("Destructible"))
-                        {
-                            hitColliders[0].gameObject.GetComponent<DestructibleBlocScript>().NbHP--;
-                        }
-                    }
+                    InstantiateBombExplosions(new Vector3(localTransformPosition.x + i, localTransformPosition.y, localTransformPosition.z - i), ref _diagRightBackOk);
                 }
             }
 
             yield return new WaitForSeconds(0.10f);
         }
         DestroyBomb();
+    }
+
+    /// <summary>
+    /// Instantiate an explosion.
+    /// </summary>
+    /// <param name="origin">Position of the explosion.</param>
+    /// <param name="direction">the direction where the explosion is located.</param>
+    void InstantiateBombExplosions(Vector3 origin, ref bool direction)
+    {
+        Quaternion uselessRotation = Quaternion.identity;
+        Instantiate(Explosion, origin, uselessRotation);
+        Collider[] hitColliders = Physics.OverlapSphere(origin, 0.40f);
+        if (hitColliders.Length > 0)
+        {
+            direction = false;
+            if (hitColliders[0].transform.CompareTag("Destructible"))
+            {
+                hitColliders[0].gameObject.GetComponent<DestructibleBlocScript>().NbHP--;
+            }
+            else if (hitColliders[0].transform.CompareTag("Bomb"))
+            {
+                print(hitColliders[0].gameObject);
+                hitColliders[0].gameObject.GetComponent<BombScript>().StopCoroutine("BombCountDown");
+                hitColliders[0].gameObject.GetComponent<BombScript>().Destruction();
+            }
+        }
     }
 
 }

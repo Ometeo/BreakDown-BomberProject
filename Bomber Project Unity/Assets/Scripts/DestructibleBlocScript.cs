@@ -1,12 +1,26 @@
-﻿using UnityEngine;
+﻿/*
+ *   File : DestructibleBlocScript.cs
+ *   Description : This script handles the behaviour of destructible bloc.
+ *   Version : 1.0.0
+ *   Created by : Jonathan Bihet
+ *   Created Date : 17/10/2013
+ *   Modification Date : 18/10/2013
+ *   Modified by : Jonathan Bihet 
+ */
+
+using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// This class handles the DestructibleBloc.
+/// </summary>
 public class DestructibleBlocScript : MonoBehaviour
 {
-
+    /// <summary>
+    /// The Health point of the bloc.
+    /// </summary>
     [SerializeField]
     private int _nbHP;
-
     public int NbHP
     {
         get
@@ -19,16 +33,23 @@ public class DestructibleBlocScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// The destroy animation.
+    /// </summary>
     private Animation _destroyAnimation;
 
 
-    // Use this for initialization
+    /// <summary>
+    /// At the start, get the animation.
+    /// </summary>
     void Start()
     {
         _destroyAnimation = this.gameObject.GetComponent<Animation>();
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Check if the NbHP of the bloc is greater than 0.
+    /// </summary>
     void Update()
     {
         if (NbHP <= 0)
@@ -39,14 +60,12 @@ public class DestructibleBlocScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Check if the scale if equal to zero (state at the end of the animation), then destroy the bloc.
+    /// </summary>
     void DestroyBloc()
     {
         if(this.gameObject.transform.localScale == Vector3.zero)
             Destroy(this.gameObject);
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        NbHP--;
     }
 }
