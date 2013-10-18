@@ -29,7 +29,7 @@ public class NetworkManagerScript : MonoBehaviour
     {
         if (Network.peerType == NetworkPeerType.Disconnected)
         {
-            GUI.Label(new Rect(10, 10, 200, 20), "Status: Disconnected");
+            ServerIp = GUI.TextField(new Rect(10, 10, 200, 20), ServerIp);
             if (GUI.Button(new Rect(10, 30, 120, 20), "Client Connect"))
             {
                 Network.Connect(ServerIp, ConnectionPort);
