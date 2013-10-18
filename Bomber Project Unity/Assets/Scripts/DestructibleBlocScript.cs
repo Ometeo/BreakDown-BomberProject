@@ -17,6 +17,11 @@ using System.Collections;
 public class DestructibleBlocScript : MonoBehaviour
 {
     /// <summary>
+    /// Avoid multiple send of the destroy order
+    /// </summary>
+    private bool _isDestroyOrderSent = false;
+
+    /// <summary>
     /// The Health point of the bloc.
     /// </summary>
     [SerializeField]
@@ -39,6 +44,12 @@ public class DestructibleBlocScript : MonoBehaviour
     private Animation _destroyAnimation;
 
 
+    void Awake()
+    {
+        if (Network.isClient)
+            enabled = false;
+    }
+
     /// <summary>
     /// At the start, get the animation.
     /// </summary>
@@ -55,8 +66,14 @@ public class DestructibleBlocScript : MonoBehaviour
         if (NbHP <= 0)
         {
             _destroyAnimation.Play();
-            
             DestroyBloc();
+
+            // Send the destroy order to clients
+            if (Network.isServer && !_isDestroyOrderSent)
+            {
+                networkView.RPC("DestroyMe", RPCMode.Others);
+                _isDestroyOrderSent = true;
+            }
         }
     }
 
@@ -66,6 +83,16 @@ public class DestructibleBlocScript : MonoBehaviour
     void DestroyBloc()
     {
         if(this.gameObject.transform.localScale == Vector3.zero)
+        {
             Destroy(this.gameObject);
+        }
+            
+    }
+
+    [RPC]
+    void DestroyMe()
+    {
+        NbHP = 0;
+        enabled = true;
     }
 }

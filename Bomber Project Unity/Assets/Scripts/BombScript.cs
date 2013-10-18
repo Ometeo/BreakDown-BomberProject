@@ -242,6 +242,10 @@ public class BombScript : MonoBehaviour
                 hitColliders[0].gameObject.GetComponent<BombScript>().StopCoroutine("BombCountDown");
                 hitColliders[0].gameObject.GetComponent<BombScript>().Destruction();
             }
+            else if (hitColliders[0].transform.CompareTag("Player"))
+            {
+                print(hitColliders[0].gameObject);
+            }
         }
     }
 
