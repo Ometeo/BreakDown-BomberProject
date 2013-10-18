@@ -121,6 +121,7 @@ $RECYCLE.BIN/
 Bomber Project Unity/Library/
 Bomber Project Unity/Temp/
 Bomber Project Unity/obj/
+Bomber Project Unity/Builds/
 Bomber Project Unity/*.csproj
 Bomber Project Unity/*.sln
 Bomber Project Unity/*.suo
