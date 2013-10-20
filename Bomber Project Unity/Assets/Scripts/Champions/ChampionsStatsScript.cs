@@ -73,11 +73,10 @@ public class ChampionsStatsScript : MonoBehaviour {
         set { _defaultBombPrefab = value; }
     }
 
-    public void UseBomb(Transform playerTransform)
+    public bool UseBomb(Transform playerTransform)
     {
-        string tempPlayerString = playerTransform.GetComponent<PlayerInputManagerScript>().TheOwner.ToString();
-        int playerNumber = Convert.ToInt32(tempPlayerString);
-
-        Network.Instantiate(DefaultBombPrefab, playerTransform.position, playerTransform.rotation, playerNumber);
+        // TODO: Check if bomb can be used
+        Instantiate(DefaultBombPrefab, playerTransform.position, playerTransform.rotation);
+        return true;
     }
 }

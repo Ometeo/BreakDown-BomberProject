@@ -19,7 +19,6 @@ public abstract class SkillScript : MonoBehaviour {
         set { _cooldown = value; }
     }
 
-
     /// <summary>
     /// Skill type 1, 2 or ultimate
     /// </summary>
@@ -36,23 +35,24 @@ public abstract class SkillScript : MonoBehaviour {
         set { _skillType = value; }
     }
 
-    private float _lastUseTime = 0f;
+    private float _lastUseTime = -10f;
     public float LastUseTime
     {
         get { return _lastUseTime; }
         set { _lastUseTime = value; }
     }
 
-    public bool IsSkillReady()
+    public float TimeBeforeUse()
     {
-        if (Time.time - (LastUseTime + Cooldown) > 0)
-            return true;
-        return false;
+        float timeBeforeUse = (LastUseTime + Cooldown) - Time.time;
+        if (timeBeforeUse < 0)
+            return 0;
+        return timeBeforeUse;
     }
 
     public bool IsSkillActivated()
     {
-        if (IsSkillReady())
+        if (TimeBeforeUse()  == 0)
         {
             LastUseTime = Time.time;
             return true;
@@ -60,5 +60,5 @@ public abstract class SkillScript : MonoBehaviour {
         return false;
     }
 
-    abstract public void useSkill(Transform playerTransform);
+    abstract public bool useSkill(Transform playerTransform);
 }

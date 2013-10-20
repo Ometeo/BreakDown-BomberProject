@@ -10,7 +10,6 @@ public class InitializePlayersChampionScript : MonoBehaviour {
         get { return _bodyMeshRenderer; }
         set { _bodyMeshRenderer = value; }
     }
-    
 
     [SerializeField]
     private MeshRenderer _headMeshRenderer;
@@ -20,17 +19,59 @@ public class InitializePlayersChampionScript : MonoBehaviour {
         set { _headMeshRenderer = value; }
     }
 
-    public void OrderInitializeChampion(Color skinColor)
+    [SerializeField]
+    private ChampListScript _champsListScript;
+    public ChampListScript ChampsListScript
     {
-        if (Network.isServer)
-            networkView.RPC("InitializeChampion", RPCMode.AllBuffered, skinColor.r, skinColor.g, skinColor.b);
+        get { return _champsListScript; }
+        set { _champsListScript = value; }
     }
 
-    [RPC]
-    void InitializeChampion(float red, float green, float blue)
+    // The ID of the future Champion
+    private int _champID;
+    public int ChampID
     {
-        Color skinColor = new Color(red, green, blue);
+        get { return _champID; }
+        set { _champID = value; }
+    }
+
+    /// <summary>
+    /// Cache Transform
+    /// </summary>
+    private Transform _transform;
+
+    void Awake()
+    {
+        _transform = transform;
+    }
+
+    void Start()
+    {
+        SetChampion();
+    }
+
+    public void SetChampion()
+    {
+        Transform champion = (Transform)Instantiate(ChampsListScript.AvailableChampions[ChampID], _transform.position, _transform.rotation);
+        champion.parent = transform;
+        _transform.GetComponent<PlayerInputManagerScript>().Champion = champion;
+
+        InitializeChampion(champion.GetComponent<ChampionsStatsScript>().SkinColor);
+    }
+
+    public void InitializeChampion(Color skinColor)
+    {
         BodyMeshRenderer.material.color = skinColor;
         HeadMeshRenderer.material.color = skinColor;
+    }
+
+    /// <summary>
+    /// This function is called by the server to set the champion
+    /// </summary>
+    /// <param name="champID"></param>
+    [RPC]
+    void SetChamp(int champID)
+    {
+        ChampID = champID;
     }
 }

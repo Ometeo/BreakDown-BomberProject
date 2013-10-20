@@ -7,7 +7,15 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
     private ChampionsStatsScript _championStats;
     public ChampionsStatsScript ChampionStats
     {
-        get { return _championStats; }
+        get {
+            if (_championStats != null)
+                return _championStats;
+            else
+            {
+                _championStats = GetComponentInChildren<ChampionsStatsScript>();
+                return _championStats;
+            }
+        }
         set { _championStats = value; }
     }
 
@@ -37,7 +45,7 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
 
     void Start()
     {
-        ChampionStats = GetComponentInChildren<ChampionsStatsScript>();
+
     }
 
     void FixedUpdate()

@@ -95,15 +95,65 @@ public class PlayerInputManagerScript : MonoBehaviour {
         }
     }
 
+
+    /// <summary>
+    /// This function is call by clients to share their intent
+    /// If the server allow the action, the skill is used and this information is shared with clients
+    /// </summary>
     [RPC]
     void SendUseSkill1()
     {
         if (Network.isServer)
         {
             foreach (var skill in _skills1)
-                ((SkillScript)skill).useSkill(transform);
+            {
+                if (((SkillScript)skill).useSkill(transform))
+                {
+                    networkView.RPC("responseUseSkill1", RPCMode.Others);
+                }
+            }   
         }
     }
+
+    /// <summary>
+    /// The authorisation for clients to start their skill
+    /// </summary>
+    [RPC]
+    void responseUseSkill1()
+    {
+        foreach (var skill in _skills1)
+            ((SkillScript)skill).useSkill(transform);
+    }
+
+
+    /// <summary>
+    /// Same for skill 2
+    /// </summary>
+    [RPC]
+    void SendUseSkill2()
+    {
+        if (Network.isServer)
+        {
+            foreach (var skill in _skills2)
+            {
+                if (((SkillScript)skill).useSkill(transform))
+                {
+                    networkView.RPC("responseUseSkill2", RPCMode.Others);
+                }
+            }
+        }
+    }
+
+    [RPC]
+    void responseUseSkill2()
+    {
+        foreach (var skill in _skills2)
+            ((SkillScript)skill).useSkill(transform);
+    }
+
+    /// <summary>
+    /// Same for skill Ultimate
+    /// </summary>
 
     [RPC]
     void SendUseSkillUltimate()
@@ -111,17 +161,39 @@ public class PlayerInputManagerScript : MonoBehaviour {
         if (Network.isServer)
         {
             foreach (var skill in _skillsUltimate)
-                ((SkillScript)skill).useSkill(transform);
+            {
+                if (((SkillScript)skill).useSkill(transform))
+                {
+                    networkView.RPC("responseUseSkillUltimate", RPCMode.Others);
+                }
+            }
         }
     }
 
+    [RPC]
+    void responseUseSkillUltimate()
+    {
+        foreach (var skill in _skillsUltimate)
+            ((SkillScript)skill).useSkill(transform);
+    }
+
+    /// <summary>
+    /// Same for the bomb
+    /// </summary>
     [RPC]
     void SendUseBomb()
     {
         if (Network.isServer)
         {
-            _champStatsScript.UseBomb(transform);
+            if (_champStatsScript.UseBomb(transform))
+                networkView.RPC("responseUseBomb", RPCMode.Others);
         }
+    }
+
+    [RPC]
+    void responseUseBomb()
+    {
+        _champStatsScript.UseBomb(transform);
     }
 
     /* Save if we decide to use NetworkStream on movement

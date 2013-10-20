@@ -13,11 +13,11 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
     }
 
     [SerializeField]
-    private Transform[] _availableChampions;
-    public Transform[] AvailableChampions
+    private ChampListScript _champsListScript;
+    public ChampListScript ChampsListScript
     {
-        get { return _availableChampions; }
-        set { _availableChampions = value; }
+        get { return _champsListScript; }
+        set { _champsListScript = value; }
     }
 
      // Action to do when the server has initialized
@@ -38,16 +38,13 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
 
         // Instantiate the player
         Transform newPlayerTransform = (Transform)Network.Instantiate(PlayerPrefab, transform.position, transform.rotation, playerNumber);
-
+        
         // Set the player's champion
-        Transform champion = (Transform)Instantiate(AvailableChampions[UnityEngine.Random.Range(0, AvailableChampions.Length)], transform.position, transform.rotation);
-        champion.parent = newPlayerTransform;
-        newPlayerTransform.GetComponent<PlayerInputManagerScript>().Champion = champion;
-
-        InitializePlayersChampionScript initPlayChampScript = newPlayerTransform.GetComponent<InitializePlayersChampionScript>();
-        initPlayChampScript.OrderInitializeChampion(champion.GetComponent<ChampionsStatsScript>().SkinColor);
+        var randChamp = UnityEngine.Random.Range(0, ChampsListScript.AvailableChampions.Length);
+        newPlayerTransform.GetComponent<InitializePlayersChampionScript>().ChampID = randChamp;
 
         NetworkView theNetworkView = newPlayerTransform.networkView;
         theNetworkView.RPC("SetPlayer", RPCMode.AllBuffered, player);
+        theNetworkView.RPC("SetChamp", RPCMode.Others, randChamp);
     }
 }

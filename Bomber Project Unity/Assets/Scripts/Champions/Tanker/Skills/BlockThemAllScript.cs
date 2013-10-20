@@ -12,14 +12,12 @@ public class BlockThemAllScript : SkillScript {
         set { _blocDestructiblePrefab = value; }
     }
 
-    public override void useSkill(Transform playerTransform)
+    public override bool useSkill(Transform playerTransform)
     {
-        if (!IsSkillActivated())
-            return;
-
-        string tempPlayerString = playerTransform.GetComponent<PlayerInputManagerScript>().TheOwner.ToString();
-        int playerNumber = Convert.ToInt32(tempPlayerString);
-
-        Network.Instantiate(BlocDestructiblePrefab, playerTransform.position, playerTransform.rotation, playerNumber);
+        if (IsSkillActivated())
+        {
+            Instantiate(BlocDestructiblePrefab, playerTransform.position, playerTransform.rotation);
+        }
+        return false;       
     }
 }

@@ -2,11 +2,12 @@
 using System.Collections;
 
 public class NotTodayScript : SkillScript {
-    public override void useSkill(Transform playerTransform)
+    public override bool useSkill(Transform playerTransform)
     {
-        if (!IsSkillActivated())
-            return;
-
-        playerTransform.GetComponentInChildren<ChampionsStatsScript>().LifePoint += 1;
+        if (IsSkillActivated())
+        {
+            playerTransform.GetComponentInChildren<ChampionsStatsScript>().LifePoint += 1;
+        }
+        return false;
     }
 }
