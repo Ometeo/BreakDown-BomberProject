@@ -19,6 +19,23 @@ public abstract class SkillScript : MonoBehaviour {
         set { _cooldown = value; }
     }
 
+
+    /// <summary>
+    /// Skill type 1, 2 or ultimate
+    /// </summary>
+    public enum E_SkillType
+    {
+        Skill1, Skill2, Ultimate
+    }
+
+    [SerializeField]
+    private E_SkillType _skillType;
+    public E_SkillType SkillType
+    {
+        get { return _skillType; }
+        set { _skillType = value; }
+    }
+
     private float _lastUseTime = 0f;
     public float LastUseTime
     {

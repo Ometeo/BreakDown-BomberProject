@@ -42,6 +42,7 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
         // Set the player's champion
         Transform champion = (Transform)Instantiate(AvailableChampions[UnityEngine.Random.Range(0, AvailableChampions.Length)], transform.position, transform.rotation);
         champion.parent = newPlayerTransform;
+        newPlayerTransform.GetComponent<PlayerInputManagerScript>().Champion = champion;
 
         InitializePlayersChampionScript initPlayChampScript = newPlayerTransform.GetComponent<InitializePlayersChampionScript>();
         initPlayChampScript.OrderInitializeChampion(champion.GetComponent<ChampionsStatsScript>().SkinColor);

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class ChampionsStatsScript : MonoBehaviour {
 
@@ -63,5 +64,20 @@ public class ChampionsStatsScript : MonoBehaviour {
         get { return _skinColor; }
         set { _skinColor = value; }
     }
- 
+
+    [SerializeField]
+    private Transform _defaultBombPrefab;
+    public Transform DefaultBombPrefab
+    {
+        get { return _defaultBombPrefab; }
+        set { _defaultBombPrefab = value; }
+    }
+
+    public void UseBomb(Transform playerTransform)
+    {
+        string tempPlayerString = playerTransform.GetComponent<PlayerInputManagerScript>().TheOwner.ToString();
+        int playerNumber = Convert.ToInt32(tempPlayerString);
+
+        Network.Instantiate(DefaultBombPrefab, playerTransform.position, playerTransform.rotation, playerNumber);
+    }
 }

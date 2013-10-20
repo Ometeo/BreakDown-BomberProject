@@ -10,14 +10,24 @@ public class PlayerInputManagerScript : MonoBehaviour {
         set { _theOwner = value; }
     }
 
-    private ChampionsSkillsScript _champSkillScript;
-    public ChampionsSkillsScript ChampSkillScript
-    {
-        get { return _champSkillScript; }
-        set { _champSkillScript = value; }
-    }
-
     private Vector3 _lastClientDirection = Vector3.zero;
+
+    private Transform _champion;
+    public Transform Champion
+    {
+        get { return _champion; }
+        set
+        {
+            _champion = value;
+            cacheChampionData();
+        }
+    }
+    private ChampionsStatsScript _champStatsScript;
+
+    private ArrayList _skills1;
+    private ArrayList _skills2;
+    private ArrayList _skillsUltimate;
+
 
     // This method enable the possibility to move the champion only by the player who ordered the creation
     [RPC]
@@ -28,12 +38,11 @@ public class PlayerInputManagerScript : MonoBehaviour {
             enabled = true;
     }
 
-    void Start()
+    void Awake()
     {
-        if (Network.isServer)
-        {
-            ChampSkillScript = this.GetComponentInChildren<ChampionsSkillsScript>();
-        }
+        _skills1 = new ArrayList();
+        _skills2 = new ArrayList();
+        _skillsUltimate = new ArrayList();
     }
 
     void Update()
@@ -72,12 +81,37 @@ public class PlayerInputManagerScript : MonoBehaviour {
         }
     }
 
+    private void cacheChampionData()
+    {
+        _champStatsScript = Champion.GetComponent<ChampionsStatsScript>();
+        foreach (var skill in Champion.GetComponents<SkillScript>())
+        {
+            if (skill.SkillType == SkillScript.E_SkillType.Skill1)
+                _skills1.Add(skill);
+            if (skill.SkillType == SkillScript.E_SkillType.Skill2)
+                _skills2.Add(skill);
+            if (skill.SkillType == SkillScript.E_SkillType.Ultimate)
+                _skillsUltimate.Add(skill);
+        }
+    }
+
     [RPC]
     void SendUseSkill1()
     {
         if (Network.isServer)
         {
-            ChampSkillScript.Skill1.useSkill(transform);
+            foreach (var skill in _skills1)
+                ((SkillScript)skill).useSkill(transform);
+        }
+    }
+
+    [RPC]
+    void SendUseSkillUltimate()
+    {
+        if (Network.isServer)
+        {
+            foreach (var skill in _skillsUltimate)
+                ((SkillScript)skill).useSkill(transform);
         }
     }
 
@@ -86,7 +120,7 @@ public class PlayerInputManagerScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
-            ChampSkillScript.UseBomb(transform);
+            _champStatsScript.UseBomb(transform);
         }
     }
 
