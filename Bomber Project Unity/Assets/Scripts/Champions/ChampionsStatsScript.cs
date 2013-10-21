@@ -9,7 +9,11 @@ public class ChampionsStatsScript : MonoBehaviour {
     public int LifePoint
     {
         get { return _lifePoint; }
-        set { _lifePoint = value; }
+        set
+        {
+            _lifePoint = value;
+            CheckDeath();
+        }
     }
 
     [SerializeField]
@@ -76,7 +80,22 @@ public class ChampionsStatsScript : MonoBehaviour {
     public bool UseBomb(Transform playerTransform)
     {
         // TODO: Check if bomb can be used
-        Instantiate(DefaultBombPrefab, playerTransform.position, playerTransform.rotation);
+        var onGridPos = new Vector3(Mathf.Round(playerTransform.position.x), playerTransform.position.y, Mathf.Round(playerTransform.position.z));
+        Instantiate(DefaultBombPrefab, onGridPos, playerTransform.rotation);
         return true;
+    }
+
+    public void CheckDeath()
+    {
+        if (LifePoint <= 0 && Network.isServer)
+        {
+            networkView.RPC("Die", RPCMode.All);
+        }
+    }
+
+    [RPC]
+    private void Die()
+    {
+        this.transform.parent.gameObject.SetActive(false);
     }
 }

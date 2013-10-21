@@ -109,12 +109,20 @@ public class BombScript : MonoBehaviour
     private bool _diagLeftBackOk = true;
     private bool _diagRightBackOk = true;
 
+    private int nbTriggerEnter = 0;
+
+    /// <summary>
+    /// Cache Collider
+    /// </summary>
+    private Collider _collider;
+
 
     /// <summary>
     /// When the bomb is instantiate, get the animation, and start the countdown.
     /// </summary>
     void Start()
     {
+        _collider = this.collider;
         _destroyBombAnimation = this.gameObject.GetComponent<Animation>();
         StartCoroutine(BombCountDown());
     }
@@ -124,6 +132,25 @@ public class BombScript : MonoBehaviour
     /// </summary>
     void Update()
     {
+    }
+
+    void OnTriggerEnter()
+    {
+        nbTriggerEnter++;
+    }
+
+    /// <summary>
+    /// When the bomb is drop, it's allow passage until the player leave
+    /// </summary>
+    void OnTriggerExit()
+    {
+        nbTriggerEnter--;
+        if (nbTriggerEnter <= 0)
+        {
+            nbTriggerEnter = 0;
+            _collider.isTrigger = false;
+        }
+
     }
 
     /// <summary>
@@ -162,7 +189,7 @@ public class BombScript : MonoBehaviour
     IEnumerator BombExplosion()
     {
         Vector3 localTransformPosition = this.transform.position;
-        Instantiate(Explosion, this.transform.position, Quaternion.identity);
+        InstantiateBombExplosion(localTransformPosition);
         yield return new WaitForSeconds(0.10f);
         for (int i = 1; i <= Distance; i++)
         {
@@ -226,8 +253,7 @@ public class BombScript : MonoBehaviour
     /// <param name="direction">the direction where the explosion is located.</param>
     void InstantiateBombExplosions(Vector3 origin, ref bool direction)
     {
-        Quaternion uselessRotation = Quaternion.identity;
-        Instantiate(Explosion, origin, uselessRotation);
+        Instantiate(Explosion, origin, Quaternion.identity);
         Collider[] hitColliders = Physics.OverlapSphere(origin, 0.40f);
         if (hitColliders.Length > 0)
         {
@@ -238,15 +264,38 @@ public class BombScript : MonoBehaviour
             }
             else if (hitColliders[0].transform.CompareTag("Bomb"))
             {
-                print(hitColliders[0].gameObject);
+                print("Hit Bomb : [" + hitColliders[0].gameObject + "]");
                 hitColliders[0].gameObject.GetComponent<BombScript>().StopCoroutine("BombCountDown");
                 hitColliders[0].gameObject.GetComponent<BombScript>().Destruction();
             }
             else if (hitColliders[0].transform.CompareTag("Player"))
             {
-                print(hitColliders[0].gameObject);
+                print("Hit Player : [" + hitColliders[0].gameObject + "]");
+                HitPlayer(hitColliders[0].transform.parent);
             }
         }
     }
 
+    /// <summary>
+    /// Instantiate the explosion under the bomb
+    /// </summary>
+    /// <param name="origin"></param>
+    void InstantiateBombExplosion(Vector3 origin)
+    {
+        Instantiate(Explosion, origin, Quaternion.identity);
+        Collider[] hitColliders = Physics.OverlapSphere(origin, 0.40f);
+        if (hitColliders.Length > 0)
+        {
+            if (hitColliders[0].transform.CompareTag("Player"))
+            {
+                print("Hit Player : [" + hitColliders[0].gameObject + "]");
+                HitPlayer(hitColliders[0].transform.parent);
+            }
+        }
+    }
+
+    void HitPlayer(Transform player)
+    {
+        player.GetComponentInChildren<ChampionsStatsScript>().LifePoint--;
+    }
 }
