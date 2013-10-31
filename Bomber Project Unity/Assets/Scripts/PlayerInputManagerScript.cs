@@ -22,7 +22,7 @@ public class PlayerInputManagerScript : MonoBehaviour {
             cacheChampionData();
         }
     }
-    private ChampionsStatsScript _champStatsScript;
+    private ClassicBombScript _classicBombScript;
 
     private ArrayList _skills1;
     private ArrayList _skills2;
@@ -83,7 +83,7 @@ public class PlayerInputManagerScript : MonoBehaviour {
 
     private void cacheChampionData()
     {
-        _champStatsScript = Champion.GetComponent<ChampionsStatsScript>();
+        _classicBombScript = Champion.GetComponent<ClassicBombScript>();
         foreach (var skill in Champion.GetComponents<SkillScript>())
         {
             if (skill.SkillType == SkillScript.E_SkillType.Skill1)
@@ -185,7 +185,7 @@ public class PlayerInputManagerScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
-            if (_champStatsScript.UseBomb(transform))
+            if (_classicBombScript.UseBomb(transform))
                 networkView.RPC("responseUseBomb", RPCMode.Others);
         }
     }
@@ -193,7 +193,7 @@ public class PlayerInputManagerScript : MonoBehaviour {
     [RPC]
     void responseUseBomb()
     {
-        _champStatsScript.UseBomb(transform);
+        _classicBombScript.UseBomb(transform);
     }
 
     /* Save if we decide to use NetworkStream on movement

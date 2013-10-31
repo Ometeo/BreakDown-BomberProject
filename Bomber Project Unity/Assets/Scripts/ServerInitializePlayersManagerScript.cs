@@ -12,15 +12,19 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
         set { _playerPrefab = value; }
     }
 
-    [SerializeField]
-    private ChampListScript _champsListScript;
-    public ChampListScript ChampsListScript
+    void Awake()
     {
-        get { return _champsListScript; }
-        set { _champsListScript = value; }
+        ChampDbScript = GetComponent<ChampionsDatabaseScript>();
     }
 
-     // Action to do when the server has initialized
+    private static ChampionsDatabaseScript _champDbScript;
+    public static ChampionsDatabaseScript ChampDbScript
+    {
+        get { return _champDbScript; }
+        set { _champDbScript = value; }
+    }
+
+    // Action to do when the server has initialized
     void OnServerInitialized()
     {
         
@@ -39,8 +43,10 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
         // Instantiate the player
         Transform newPlayerTransform = (Transform)Network.Instantiate(PlayerPrefab, transform.position, transform.rotation, playerNumber);
         
+        
+        
         // Set the player's champion
-        var randChamp = UnityEngine.Random.Range(0, ChampsListScript.AvailableChampions.Length);
+        var randChamp = UnityEngine.Random.Range(0, ChampDbScript.ChampionList.Length);
         newPlayerTransform.GetComponent<InitializePlayersChampionScript>().ChampID = randChamp;
 
         NetworkView theNetworkView = newPlayerTransform.networkView;

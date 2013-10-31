@@ -19,14 +19,6 @@ public class InitializePlayersChampionScript : MonoBehaviour {
         set { _headMeshRenderer = value; }
     }
 
-    [SerializeField]
-    private ChampListScript _champsListScript;
-    public ChampListScript ChampsListScript
-    {
-        get { return _champsListScript; }
-        set { _champsListScript = value; }
-    }
-
     // The ID of the future Champion
     private int _champID;
     public int ChampID
@@ -52,7 +44,7 @@ public class InitializePlayersChampionScript : MonoBehaviour {
 
     public void SetChampion()
     {
-        Transform champion = (Transform)Instantiate(ChampsListScript.AvailableChampions[ChampID], _transform.position, _transform.rotation);
+        Transform champion = (Transform)Instantiate(ServerInitializePlayersManagerScript.ChampDbScript.ChampionList[ChampID], _transform.position, _transform.rotation);
         champion.parent = transform;
         _transform.GetComponent<PlayerInputManagerScript>().Champion = champion;
 

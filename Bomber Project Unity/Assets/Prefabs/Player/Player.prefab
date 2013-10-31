@@ -62,7 +62,6 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
-  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -248,7 +247,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bodyMeshRenderer: {fileID: 2300000}
   _headMeshRenderer: {fileID: 2300002}
-  _champsListScript: {fileID: 11400006}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -260,20 +258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e4b230b69de92846a6c8a42cd34f229, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _availableChampions:
-  - {fileID: 400000, guid: 64e890e9c32ec344aa4cd176af5df4cc, type: 2}
-  - {fileID: 400000, guid: 836daa6262945d64eb651cdf03e53678, type: 2}
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1

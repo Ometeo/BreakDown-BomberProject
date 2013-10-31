@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 148: {fileID: 14800000}
+  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: Destroyer
   m_TagString: Untagged
@@ -45,9 +46,7 @@ MonoBehaviour:
   _nbMaxBomb: 4
   _bombDelay: 3
   _respawnFactor: 1
-  _bombExplositionDirections: 0000000001000000
   _skinColor: {r: .933823526, g: .0892625749, b: .0892625749, a: 0}
-  _defaultBombPrefab: {fileID: 400000, guid: f1e881f2e4e74c84db517325f4a2a5bf, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -64,6 +63,19 @@ MonoBehaviour:
   _skillType: 0
   _blocDestructiblePrefab: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
     type: 2}
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e465c5866badc3248a69707b0c342582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bombExplositionDirections: 0000000001000000
+  _defaultBombPrefab: {fileID: 400000, guid: f1e881f2e4e74c84db517325f4a2a5bf, type: 2}
 --- !u!148 &14800000
 NetworkView:
   m_ObjectHideFlags: 1

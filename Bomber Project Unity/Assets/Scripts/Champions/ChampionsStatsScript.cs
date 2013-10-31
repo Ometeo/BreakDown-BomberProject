@@ -3,7 +3,7 @@ using System.Collections;
 using System;
 
 public class ChampionsStatsScript : MonoBehaviour {
-
+   
     [SerializeField]
     private int _lifePoint; // Default 1 LP
     public int LifePoint
@@ -48,19 +48,6 @@ public class ChampionsStatsScript : MonoBehaviour {
         set { _respawnFactor = value; }
     }
 
-    public enum ExplosionDirections
-    {
-        Vertical, Horizontal, DiagonaleGauche, DiagonaleDroite
-    }
-
-    [SerializeField]
-    private ExplosionDirections[] _bombExplositionDirections; // Default Horizontal / Vertical
-    public ExplosionDirections[] BombExplositionDirections
-    {
-        get { return _bombExplositionDirections; }
-        set { _bombExplositionDirections = value; }
-    }
-
     [SerializeField]
     private Color _skinColor;
     public Color SkinColor
@@ -70,19 +57,51 @@ public class ChampionsStatsScript : MonoBehaviour {
     }
 
     [SerializeField]
-    private Transform _defaultBombPrefab;
-    public Transform DefaultBombPrefab
+    private Texture _iconSkill1;
+    public Texture IconSkill1
     {
-        get { return _defaultBombPrefab; }
-        set { _defaultBombPrefab = value; }
+        get { return _iconSkill1; }
+        set { _iconSkill1 = value; }
     }
 
-    public bool UseBomb(Transform playerTransform)
+    [SerializeField]
+    private float _skill1Cooldown;
+    public float Skill1Cooldown
     {
-        // TODO: Check if bomb can be used
-        var onGridPos = new Vector3(Mathf.Round(playerTransform.position.x), playerTransform.position.y, Mathf.Round(playerTransform.position.z));
-        Instantiate(DefaultBombPrefab, onGridPos, playerTransform.rotation);
-        return true;
+        get { return _skill1Cooldown; }
+        set { _skill1Cooldown = value; }
+    }
+
+    [SerializeField]
+    private Texture _iconSkill2;
+    public Texture IconSkill2
+    {
+        get { return _iconSkill2; }
+        set { _iconSkill2 = value; }
+    }
+
+    [SerializeField]
+    private float _skill2Cooldown;
+    public float Skill2Cooldown
+    {
+        get { return _skill2Cooldown; }
+        set { _skill2Cooldown = value; }
+    }
+
+    [SerializeField]
+    private Texture _iconSkillUltimate;
+    public Texture IconSkillUltimate
+    {
+        get { return _iconSkillUltimate; }
+        set { _iconSkillUltimate = value; }
+    }
+
+    [SerializeField]
+    private float _skillUltimateCooldown;
+    public float SkillUltimateCooldown
+    {
+        get { return _skillUltimateCooldown; }
+        set { _skillUltimateCooldown = value; }
     }
 
     public void CheckDeath()
@@ -97,5 +116,44 @@ public class ChampionsStatsScript : MonoBehaviour {
     private void Die()
     {
         this.transform.parent.gameObject.SetActive(false);
+    }
+
+    void Start()
+    {
+        GameObject interfacePlayer = GameObject.FindGameObjectWithTag("Interface");
+        InterfaceScript interfScript = interfacePlayer.GetComponent<InterfaceScript>();
+        bool skill1InitDone = false;
+        bool skill2InitDone = false;
+        bool skillUltimateInitDone = false;
+
+        foreach (var skScript in this.GetComponents<SkillScript>())
+        {
+            if (skScript.SkillType == SkillScript.E_SkillType.Skill1)
+            {
+                skScript.Cooldown = Skill1Cooldown;
+                if (!skill1InitDone)
+                {
+                    interfScript.Skill1.InitializeSkill(IconSkill1, skScript);
+                }
+                skill1InitDone = true;
+            } else if (skScript.SkillType == SkillScript.E_SkillType.Skill2)
+            {
+                skScript.Cooldown = Skill2Cooldown;
+                if (!skill2InitDone)
+                {
+                    interfScript.Skill2.InitializeSkill(IconSkill2, skScript);
+                }
+                skill2InitDone = true;
+            }
+            else
+            {
+                skScript.Cooldown = SkillUltimateCooldown;
+                if (!skillUltimateInitDone)
+                {
+                    interfScript.SkillUltimate.InitializeSkill(IconSkillUltimate, skScript);
+                }
+                skillUltimateInitDone = true;
+            }
+        }
     }
 }

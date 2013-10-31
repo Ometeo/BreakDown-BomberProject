@@ -4,14 +4,6 @@ using System.Collections;
 public abstract class SkillScript : MonoBehaviour {
 
     [SerializeField]
-    private Texture _icon;
-    public Texture Icon
-    {
-        get { return _icon; }
-        set { _icon = value; }
-    }
-
-    [SerializeField]
     private float _cooldown;
     public float Cooldown
     {
@@ -35,7 +27,7 @@ public abstract class SkillScript : MonoBehaviour {
         set { _skillType = value; }
     }
 
-    private float _lastUseTime = -10f;
+    private float _lastUseTime = -999999f;
     public float LastUseTime
     {
         get { return _lastUseTime; }

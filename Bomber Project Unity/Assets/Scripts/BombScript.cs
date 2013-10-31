@@ -294,6 +294,16 @@ public class BombScript : MonoBehaviour
         }
     }
 
+    public static bool IsTileEmpty(Vector3 origin, LayerMask mask)
+    {
+        Collider[] hitColliders = Physics.OverlapSphere(origin, 0.40f, mask);
+        if (hitColliders.Length > 0)
+        {
+            return false;
+        }
+        return true;
+    }
+
     void HitPlayer(Transform player)
     {
         player.GetComponentInChildren<ChampionsStatsScript>().LifePoint--;
