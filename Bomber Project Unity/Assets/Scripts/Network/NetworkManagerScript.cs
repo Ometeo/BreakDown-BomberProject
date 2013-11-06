@@ -19,6 +19,16 @@ public class NetworkManagerScript : MonoBehaviour
         set { _connectionPort = value; }
     }
 
+    [SerializeField]
+    private string _playerName;
+    public string PlayerName
+    {
+        get { return _playerName; }
+        set { _playerName = value; }
+    }
+
+    
+
     // Use this for initialization
     void Start()
     {
@@ -29,12 +39,13 @@ public class NetworkManagerScript : MonoBehaviour
     {
         if (Network.peerType == NetworkPeerType.Disconnected)
         {
-            ServerIp = GUI.TextField(new Rect(10, 10, 200, 20), ServerIp);
-            if (GUI.Button(new Rect(10, 30, 120, 20), "Client Connect"))
+            PlayerName = GUI.TextField(new Rect(10, 10, 200, 20), PlayerName);
+            ServerIp = GUI.TextField(new Rect(10, 30, 200, 20), ServerIp);
+            if (GUI.Button(new Rect(10, 50, 120, 20), "Client Connect"))
             {
                 Network.Connect(ServerIp, ConnectionPort);
             }
-            if (GUI.Button(new Rect(10, 50, 120, 20), "Initialize Server"))
+            if (GUI.Button(new Rect(10, 70, 120, 20), "Initialize Server"))
             {
                 Network.InitializeSecurity();
                 Network.InitializeServer(10, ConnectionPort, false);
@@ -42,7 +53,7 @@ public class NetworkManagerScript : MonoBehaviour
         }
         else if (Network.peerType == NetworkPeerType.Client)
         {
-            GUI.Label(new Rect(10, 10, 300, 20), "Status: Connected as Client");
+            GUI.Label(new Rect(10, 10, 300, 20), "Status: " + PlayerName + " as Client");
             if (GUI.Button(new Rect(10, 30, 120, 20), "Disconnect"))
             {
                 Network.Disconnect(200);

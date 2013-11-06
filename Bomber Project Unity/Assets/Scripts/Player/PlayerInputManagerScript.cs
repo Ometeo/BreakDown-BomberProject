@@ -47,7 +47,7 @@ public class PlayerInputManagerScript : MonoBehaviour {
 
     void Update()
     {
-        if (TheOwner != null && Network.player == TheOwner)
+        if (Network.player == TheOwner)
         {
             float xAxis = 0;
             float zAxis = 0;

@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   - 148: {fileID: 14800000}
   m_Layer: 0
   m_Name: _ServerInitializePlayersManager
@@ -40,7 +41,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerPrefab: {fileID: 400006, guid: 4477f611ec58a5e42a3e447d20a61aff, type: 2}
-  _champsListScript: {fileID: 0}
+  _networkMngrScript: {fileID: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc257b8117db26478408d2dc288ed84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _championList:
+  - {fileID: 400000, guid: 64e890e9c32ec344aa4cd176af5df4cc, type: 2}
+  - {fileID: 400000, guid: 836daa6262945d64eb651cdf03e53678, type: 2}
 --- !u!148 &14800000
 NetworkView:
   m_ObjectHideFlags: 1
