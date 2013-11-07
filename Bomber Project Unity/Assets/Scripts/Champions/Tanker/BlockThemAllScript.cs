@@ -14,10 +14,13 @@ public class BlockThemAllScript : SkillScript {
 
     public override bool useSkill(Transform playerTransform)
     {
-        if (IsSkillActivated())
-        {
-            Instantiate(BlocDestructiblePrefab, playerTransform.position, playerTransform.rotation);
-        }
-        return false;       
+        Vector3 futurBlocPosition = new Vector3(Mathf.Round(playerTransform.position.x), playerTransform.position.y, Mathf.Round(playerTransform.position.z)) + playerTransform.forward;
+        Debug.Log(futurBlocPosition);
+
+        if (!IsSkillActivated())
+            return false;
+        
+        Instantiate(BlocDestructiblePrefab, futurBlocPosition, playerTransform.rotation);
+        return true;
     }
 }

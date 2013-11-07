@@ -8,14 +8,12 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
     {
         public string PlayerName { get; set; }
         public NetworkPlayer NetworkInfo { get; set; }
-        public string PlayerGuid { get; set; }
         public int PlayerNumber { get; set; }
 
         public PlayerInformation(string playerName, NetworkPlayer networkPlayer)
         {
             PlayerName = playerName;
             NetworkInfo = networkPlayer;
-            PlayerGuid = networkPlayer.guid;
 
             var tempPlayerString = networkPlayer.ToString();
             PlayerNumber = Convert.ToInt32(tempPlayerString);
@@ -23,15 +21,13 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
 
         public bool Equals(PlayerInformation otherPlayer)
         {
-            Debug.Log("[PlayerInformation] comparing : [" + PlayerName + "] x [" + otherPlayer.PlayerName + "] / {" + NetworkInfo.guid + "} x {" + otherPlayer.PlayerGuid + "}");
-            if (PlayerName == otherPlayer.PlayerName && NetworkInfo.guid == otherPlayer.PlayerGuid)
+            if (PlayerName == otherPlayer.PlayerName && NetworkInfo.externalIP == otherPlayer.NetworkInfo.externalIP)
                 return true;
             return false;
         }
 
         public override bool Equals(object obj)
         {
-            Debug.Log("In here!");
             if (obj == null)
                 return false;
 
@@ -42,7 +38,7 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
 
         public override int GetHashCode()
         {
-            return (PlayerName + NetworkInfo.guid).GetHashCode();
+            return (PlayerName + NetworkInfo.externalIP).GetHashCode();
         }
     }
 
@@ -105,20 +101,38 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
     void OnPlayerConnected(NetworkPlayer player)
     {
         networkView.RPC("AskPlayerName", player);
-        Debug.Log("---> AskPlayerName");
     }
 
-    
 
     [RPC]
     void ResponsePlayerInformation(string playerName, NetworkPlayer player)
     {
         var connectionPlayerInformation = new PlayerInformation(playerName, player);
-        Debug.Log("<--- ResponsePlayerInformation");
 
         if (Players.Contains(connectionPlayerInformation)) // Reconnection
         {
-            ((Transform)Players[connectionPlayerInformation]).networkView.RPC("SetPlayer", RPCMode.All, connectionPlayerInformation.NetworkInfo);
+            // Give player the power to control his champion
+            Transform playerTransf = ((Transform)Players[connectionPlayerInformation]);
+            NetworkView playerNetworkView = playerTransf.networkView;
+            playerNetworkView.RPC("SetPlayer", RPCMode.All, connectionPlayerInformation.NetworkInfo);
+
+            // Resync interface
+            foreach (var nw in playerTransf.GetComponentsInChildren<NetworkView>())
+            {
+                if (nw != playerNetworkView)
+                {
+                    nw.RPC("InitializeInterface", player);
+                    break;
+                }
+            }
+
+            // Resync position
+            foreach (var playerInfo in Players.Keys)
+            {
+                Transform playerTransform = ((Transform)Players[playerInfo]);
+                playerTransform.networkView.RPC("SetPosition", player, playerTransform.position);
+            }
+
             Debug.Log("Reconnect");
         }
         else // First Connection
@@ -132,9 +146,7 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
     [RPC]
     void AskPlayerName()
     {
-        Debug.Log("<--- AskPlayerName");
         networkView.RPC("ResponsePlayerInformation", RPCMode.Server, NetworkMngrScript.PlayerName, Network.player);
-        Debug.Log("---> ResponsePlayerInformation");
     }
 
     void SpawnPlayer(PlayerInformation player)

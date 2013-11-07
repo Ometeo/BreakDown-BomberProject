@@ -9,10 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400004}
-  - 114: {fileID: 11400002}
   - 148: {fileID: 14800000}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: Tanker
   m_TagString: Untagged
@@ -54,34 +54,6 @@ MonoBehaviour:
   _skill2Cooldown: 20
   _iconSkillUltimate: {fileID: 2800000, guid: c3040110b1a6a0849ace1f36b51adb4b, type: 3}
   _skillUltimateCooldown: 120
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66ba2b009b0d80c4898d67113420c9a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cooldown: 0
-  _skillType: 2
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cde7a3c14ceccf343a9e4c7305b4389d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cooldown: 0
-  _skillType: 0
-  _blocDestructiblePrefab: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
-    type: 2}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,6 +67,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bombExplositionDirections: 0000000001000000
   _defaultBombPrefab: {fileID: 400000, guid: f1e881f2e4e74c84db517325f4a2a5bf, type: 2}
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4c937a67cf2564ebf5505ec9becef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cooldown: 0
+  _skillType: 0
+  _blocDestructiblePrefab: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
+    type: 2}
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b86f9ba1c44a4c40adf333f9db1c173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cooldown: 0
+  _skillType: 2
 --- !u!148 &14800000
 NetworkView:
   m_ObjectHideFlags: 1

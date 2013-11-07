@@ -105,11 +105,11 @@ public class PlayerInputManagerScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
-            foreach (var skill in _skills1)
+            foreach (SkillScript skill in _skills1)
             {
-                if (((SkillScript)skill).useSkill(transform))
+                if (skill.useSkill(transform))
                 {
-                    networkView.RPC("responseUseSkill1", RPCMode.Others);
+                    networkView.RPC("ResponseUseSkill1", RPCMode.Others);
                 }
             }   
         }
@@ -119,10 +119,11 @@ public class PlayerInputManagerScript : MonoBehaviour {
     /// The authorisation for clients to start their skill
     /// </summary>
     [RPC]
-    void responseUseSkill1()
+    void ResponseUseSkill1()
     {
-        foreach (var skill in _skills1)
-            ((SkillScript)skill).useSkill(transform);
+        Debug.Log("ResponseUseSkill1");
+        foreach (SkillScript skill in _skills1)
+            skill.useSkill(transform);
     }
 
 
@@ -134,21 +135,21 @@ public class PlayerInputManagerScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
-            foreach (var skill in _skills2)
+            foreach (SkillScript skill in _skills2)
             {
-                if (((SkillScript)skill).useSkill(transform))
+                if (skill.useSkill(transform))
                 {
-                    networkView.RPC("responseUseSkill2", RPCMode.Others);
+                    networkView.RPC("ResponseUseSkill2", RPCMode.Others);
                 }
             }
         }
     }
 
     [RPC]
-    void responseUseSkill2()
+    void ResponseUseSkill2()
     {
-        foreach (var skill in _skills2)
-            ((SkillScript)skill).useSkill(transform);
+        foreach (SkillScript skill in _skills2)
+            skill.useSkill(transform);
     }
 
     /// <summary>
@@ -160,21 +161,21 @@ public class PlayerInputManagerScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
-            foreach (var skill in _skillsUltimate)
+            foreach (SkillScript skill in _skillsUltimate)
             {
-                if (((SkillScript)skill).useSkill(transform))
+                if (skill.useSkill(transform))
                 {
-                    networkView.RPC("responseUseSkillUltimate", RPCMode.Others);
+                    networkView.RPC("ResponseUseSkillUltimate", RPCMode.Others);
                 }
             }
         }
     }
 
     [RPC]
-    void responseUseSkillUltimate()
+    void ResponseUseSkillUltimate()
     {
-        foreach (var skill in _skillsUltimate)
-            ((SkillScript)skill).useSkill(transform);
+        foreach (SkillScript skill in _skillsUltimate)
+            skill.useSkill(transform);
     }
 
     /// <summary>
@@ -186,30 +187,13 @@ public class PlayerInputManagerScript : MonoBehaviour {
         if (Network.isServer)
         {
             if (_classicBombScript.UseBomb(transform))
-                networkView.RPC("responseUseBomb", RPCMode.Others);
+                networkView.RPC("ResponseUseBomb", RPCMode.Others);
         }
     }
 
     [RPC]
-    void responseUseBomb()
+    void ResponseUseBomb()
     {
         _classicBombScript.UseBomb(transform);
     }
-
-    /* Save if we decide to use NetworkStream on movement
-    void OnSerializeNetworkView(BitStream stream, NetworkMessageInfo info)
-    {
-        if (stream.isWriting)
-        {
-            Vector3 pos = transform.position;
-            stream.Serialize(ref pos);
-        }
-        else
-        {
-            Vector3 posReceive = Vector3.zero;
-            stream.Serialize(ref posReceive);
-            transform.position = posReceive;
-        }
-    }
-    //*/
 }

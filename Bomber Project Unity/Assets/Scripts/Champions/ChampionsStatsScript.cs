@@ -3,7 +3,17 @@ using System.Collections;
 using System;
 
 public class ChampionsStatsScript : MonoBehaviour {
-   
+
+    /// <summary>
+    /// The parent player object
+    /// </summary>
+    private Transform _player;
+    public Transform Player
+    {
+        get { return _player; }
+        set { _player = value; }
+    }
+
     [SerializeField]
     private int _lifePoint; // Default 1 LP
     public int LifePoint
@@ -115,10 +125,22 @@ public class ChampionsStatsScript : MonoBehaviour {
     [RPC]
     private void Die()
     {
-        this.transform.parent.gameObject.SetActive(false);
+        Player.gameObject.SetActive(false);
     }
 
     void Start()
+    {
+        Player = this.transform.parent;
+
+        if (Network.player != Player.GetComponent<PlayerInputManagerScript>().TheOwner)
+        {
+            return;
+        }
+        InitializeInterface();
+    }
+
+    [RPC]
+    void InitializeInterface()
     {
         GameObject interfacePlayer = GameObject.FindGameObjectWithTag("Interface");
         InterfaceScript interfScript = interfacePlayer.GetComponent<InterfaceScript>();
@@ -130,15 +152,14 @@ public class ChampionsStatsScript : MonoBehaviour {
         {
             if (skScript.SkillType == SkillScript.E_SkillType.Skill1)
             {
-                skScript.Cooldown = Skill1Cooldown;
                 if (!skill1InitDone)
                 {
                     interfScript.Skill1.InitializeSkill(IconSkill1, skScript);
                 }
                 skill1InitDone = true;
-            } else if (skScript.SkillType == SkillScript.E_SkillType.Skill2)
+            }
+            else if (skScript.SkillType == SkillScript.E_SkillType.Skill2)
             {
-                skScript.Cooldown = Skill2Cooldown;
                 if (!skill2InitDone)
                 {
                     interfScript.Skill2.InitializeSkill(IconSkill2, skScript);
@@ -147,7 +168,6 @@ public class ChampionsStatsScript : MonoBehaviour {
             }
             else
             {
-                skScript.Cooldown = SkillUltimateCooldown;
                 if (!skillUltimateInitDone)
                 {
                     interfScript.SkillUltimate.InitializeSkill(IconSkillUltimate, skScript);

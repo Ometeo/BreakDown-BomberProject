@@ -23,6 +23,8 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
     private Vector3 _serverCurrentDirection = Vector3.zero;
     private Vector3 _lastPosition;
 
+    private Transform _transform;
+
     [SerializeField]
     private float _minimumMovementToUpdatePos; // Default 0.05f
     public float MinimumMovementToUpdatePos
@@ -35,6 +37,7 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
     void Awake()
     {
         _rigidBody = rigidbody;
+        _transform = this.transform;
         if (Network.isClient)
         {
             enabled = false;
@@ -53,19 +56,24 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
         if (Network.isServer)
         {
             if (_rigidBody != null)
+            {
                 rigidbody.velocity = (ChampionStats.MovementSpeed * _serverCurrentDirection * Time.deltaTime);
+            }
             if (Vector3.Distance(transform.position, _lastPosition) > MinimumMovementToUpdatePos)
             {
-                _lastPosition = transform.position;
-                networkView.RPC("SetPosition", RPCMode.Others, transform.position);
+                if (_serverCurrentDirection != Vector3.zero)
+                    _transform.rotation = Quaternion.LookRotation(_serverCurrentDirection);
+                _lastPosition = _transform.position;
+                networkView.RPC("SetTransform", RPCMode.Others, transform.position, transform.rotation);
             }
         }
     }
 
     [RPC]
-    void SetPosition(Vector3 newPosition)
+    void SetTransform(Vector3 newPosition, Quaternion newRotation)
     {
         transform.position = newPosition;
+        transform.rotation = newRotation;
     }
 
     [RPC]

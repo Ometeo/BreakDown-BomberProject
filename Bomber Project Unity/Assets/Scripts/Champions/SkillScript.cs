@@ -44,13 +44,36 @@ public abstract class SkillScript : MonoBehaviour {
 
     public bool IsSkillActivated()
     {
-        if (TimeBeforeUse()  == 0)
+        if (Network.isServer)
+        {
+            if (TimeBeforeUse() <= .001f)
+            {
+                LastUseTime = Time.time;
+                return true;
+            }
+            return false;
+        }
+        else
         {
             LastUseTime = Time.time;
             return true;
         }
-        return false;
+        
     }
 
     abstract public bool useSkill(Transform playerTransform);
+
+    void Start()
+    {
+        ChampionsStatsScript champStatsScript = GetComponent<ChampionsStatsScript>();
+        if (champStatsScript != null)
+        {
+            if (SkillType == E_SkillType.Skill1)
+                Cooldown = champStatsScript.Skill1Cooldown;
+            else if (SkillType == E_SkillType.Skill2)
+                Cooldown = champStatsScript.Skill2Cooldown;
+            else if (SkillType == E_SkillType.Ultimate)
+                Cooldown = champStatsScript.SkillUltimateCooldown;
+        }
+    }
 }
