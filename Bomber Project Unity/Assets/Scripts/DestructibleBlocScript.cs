@@ -71,7 +71,7 @@ public class DestructibleBlocScript : MonoBehaviour
             // Send the destroy order to clients
             if (Network.isServer && !_isDestroyOrderSent)
             {
-                networkView.RPC("DestroyMe", RPCMode.Others);
+                networkView.RPC("DestroyMe", RPCMode.OthersBuffered);
                 _isDestroyOrderSent = true;
             }
         }

@@ -130,14 +130,11 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
             foreach (var playerInfo in Players.Keys)
             {
                 Transform playerTransform = ((Transform)Players[playerInfo]);
-                playerTransform.networkView.RPC("SetPosition", player, playerTransform.position);
+                playerTransform.networkView.RPC("SetTransform", player, playerTransform.position, playerTransform.rotation);
             }
-
-            Debug.Log("Reconnect");
         }
         else // First Connection
         {
-            Debug.Log("First Connection");
             SpawnPlayer(connectionPlayerInformation);   
         }
         
