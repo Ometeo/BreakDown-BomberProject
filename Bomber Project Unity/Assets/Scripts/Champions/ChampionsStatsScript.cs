@@ -132,14 +132,13 @@ public class ChampionsStatsScript : MonoBehaviour {
     {
         Player = this.transform.parent;
 
-        if (Network.player != Player.GetComponent<PlayerInputManagerScript>().TheOwner)
+        if (!Player.GetComponent<PlayerInputManagerScript>().enabled)
         {
             return;
         }
         InitializeInterface();
     }
 
-    [RPC]
     void InitializeInterface()
     {
         GameObject interfacePlayer = GameObject.FindGameObjectWithTag("Interface");

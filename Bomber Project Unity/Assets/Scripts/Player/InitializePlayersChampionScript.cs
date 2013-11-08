@@ -56,14 +56,4 @@ public class InitializePlayersChampionScript : MonoBehaviour {
         BodyMeshRenderer.material.color = skinColor;
         HeadMeshRenderer.material.color = skinColor;
     }
-
-    /// <summary>
-    /// This function is called by the server to set the champion
-    /// </summary>
-    /// <param name="champID"></param>
-    [RPC]
-    void SetChamp(int champID)
-    {
-        ChampID = champID;
-    }
 }
