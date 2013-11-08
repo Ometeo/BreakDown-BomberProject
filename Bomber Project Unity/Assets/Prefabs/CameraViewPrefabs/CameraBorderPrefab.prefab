@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 65: {fileID: 6500000}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: FrontBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400002}
   - 114: {fileID: 11400000}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: CameraBorderPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400004}
   - 65: {fileID: 6500002}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: RightBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400006}
   - 65: {fileID: 6500004}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: LeftBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400008}
   - 65: {fileID: 6500006}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: BackBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
