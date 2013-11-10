@@ -14,32 +14,60 @@ public class ChampionsStatsScript : MonoBehaviour {
         set { _player = value; }
     }
 
-    [SerializeField]
-    private int _lifePoint; // Default 1 LP
+    private int _lifePoint;
     public int LifePoint
     {
         get { return _lifePoint; }
         set
         {
             _lifePoint = value;
+            if (InterfaceScpt != null)
+                InterfaceScpt.LifePoints.text = _lifePoint.ToString();
             CheckDeath();
         }
     }
 
     [SerializeField]
-    private int _movementSpeed; // Default 100
-    public int MovementSpeed
+    private int _defaultLifePoint; // Default 1 LP
+    public int DefaultLifePoint
+    {
+        get { return _defaultLifePoint; }
+        set { _defaultLifePoint = value; }
+    }
+
+    private float _movementSpeed; 
+    public float MovementSpeed
     {
         get { return _movementSpeed; }
-        set { _movementSpeed = value; }
+        set
+        {
+            _movementSpeed = value;
+            if (InterfaceScpt != null)
+                InterfaceScpt.MovementSpeed.text = _movementSpeed.ToString();
+        }
     }
 
     [SerializeField]
-    private int _nbMaxBomb; // Default 4
+    private float _defaultMovementSpeed; // Default 100
+    public float DefaultMovementSpeed
+    {
+        get { return _defaultMovementSpeed; }
+        set { _defaultMovementSpeed = value; }
+    }
+
+    [SerializeField]
+    private int _nbMaxBombs; // Default 4
     public int NbMaxBomb
     {
-        get { return _nbMaxBomb; }
-        set { _nbMaxBomb = value; }
+        get { return _nbMaxBombs; }
+        set { _nbMaxBombs = value; }
+    }
+
+    private int _nbBombs;
+    public int NbBombs
+    {
+        get { return _nbBombs; }
+        set { _nbBombs = value; }
     }
 
     [SerializeField]
@@ -64,6 +92,22 @@ public class ChampionsStatsScript : MonoBehaviour {
     {
         get { return _skinColor; }
         set { _skinColor = value; }
+    }
+
+    [SerializeField]
+    private Texture _iconPassive;
+    public Texture IconPassive
+    {
+        get { return _iconPassive; }
+        set { _iconPassive = value; }
+    }
+
+    [SerializeField]
+    private float _passiveCooldown;
+    public float PassiveCooldown
+    {
+        get { return _passiveCooldown; }
+        set { _passiveCooldown = value; }
     }
 
     [SerializeField]
@@ -114,6 +158,14 @@ public class ChampionsStatsScript : MonoBehaviour {
         set { _skillUltimateCooldown = value; }
     }
 
+    [SerializeField]
+    private InterfaceScript _interfaceScpt;
+    public InterfaceScript InterfaceScpt
+    {
+        get { return _interfaceScpt; }
+        set { _interfaceScpt = value; }
+    }
+
     public void CheckDeath()
     {
         if (LifePoint <= 0 && Network.isServer)
@@ -132,28 +184,40 @@ public class ChampionsStatsScript : MonoBehaviour {
     {
         Player = this.transform.parent;
 
-        if (!Player.GetComponent<PlayerInputManagerScript>().enabled)
+        if (Player.GetComponent<PlayerInputManagerScript>().enabled)
         {
-            return;
+            InitializeInterface();    
         }
-        InitializeInterface();
+        MovementSpeed = DefaultMovementSpeed;
+        LifePoint = DefaultLifePoint;
+        NbBombs = NbMaxBomb;
     }
 
     void InitializeInterface()
     {
         GameObject interfacePlayer = GameObject.FindGameObjectWithTag("Interface");
-        InterfaceScript interfScript = interfacePlayer.GetComponent<InterfaceScript>();
+        InterfaceScpt = interfacePlayer.GetComponent<InterfaceScript>();
+        bool passiveInitDone = false;
         bool skill1InitDone = false;
         bool skill2InitDone = false;
         bool skillUltimateInitDone = false;
+        InterfaceScpt.BombsAvailable.text = NbMaxBomb.ToString();
 
         foreach (var skScript in this.GetComponents<SkillScript>())
         {
+            if (skScript.SkillType == SkillScript.E_SkillType.Passive)
+            {
+                if (!passiveInitDone)
+                {
+                    InterfaceScpt.PassiveSkill.InitializeSkill(IconPassive, skScript);
+                }
+                passiveInitDone = true;
+            }
             if (skScript.SkillType == SkillScript.E_SkillType.Skill1)
             {
                 if (!skill1InitDone)
                 {
-                    interfScript.Skill1.InitializeSkill(IconSkill1, skScript);
+                    InterfaceScpt.Skill1.InitializeSkill(IconSkill1, skScript);
                 }
                 skill1InitDone = true;
             }
@@ -161,7 +225,7 @@ public class ChampionsStatsScript : MonoBehaviour {
             {
                 if (!skill2InitDone)
                 {
-                    interfScript.Skill2.InitializeSkill(IconSkill2, skScript);
+                    InterfaceScpt.Skill2.InitializeSkill(IconSkill2, skScript);
                 }
                 skill2InitDone = true;
             }
@@ -169,7 +233,7 @@ public class ChampionsStatsScript : MonoBehaviour {
             {
                 if (!skillUltimateInitDone)
                 {
-                    interfScript.SkillUltimate.InitializeSkill(IconSkillUltimate, skScript);
+                    InterfaceScpt.SkillUltimate.InitializeSkill(IconSkillUltimate, skScript);
                 }
                 skillUltimateInitDone = true;
             }

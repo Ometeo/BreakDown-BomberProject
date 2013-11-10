@@ -12,15 +12,20 @@ public class BlockThemAllScript : SkillScript {
         set { _blocDestructiblePrefab = value; }
     }
 
-    public override bool useSkill(Transform playerTransform)
+    protected override bool IsSkillUsable(Transform playerTransform)
     {
         Vector3 futurBlocPosition = new Vector3(Mathf.Round(playerTransform.position.x), playerTransform.position.y, Mathf.Round(playerTransform.position.z)) + playerTransform.forward;
-        Debug.Log(futurBlocPosition);
+        Debug.Log("Check if usable");
 
-        if (!IsSkillActivated())
-            return false;
-        
-        Instantiate(BlocDestructiblePrefab, futurBlocPosition, playerTransform.rotation);
         return true;
+    }
+
+    protected override void InstantiaterSkill(NetworkViewID viewID, Transform playerTransform)
+    {
+        Debug.Log("In BlockThemAll!");
+        Vector3 futurBlocPosition = new Vector3(Mathf.Round(playerTransform.position.x), playerTransform.position.y, Mathf.Round(playerTransform.position.z)) + playerTransform.forward;
+
+        Transform createdItem = (Transform)Instantiate(BlocDestructiblePrefab, futurBlocPosition, playerTransform.rotation);
+        createdItem.networkView.viewID = viewID;
     }
 }

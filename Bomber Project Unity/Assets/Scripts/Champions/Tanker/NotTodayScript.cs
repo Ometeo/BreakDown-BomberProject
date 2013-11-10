@@ -2,11 +2,10 @@
 using System.Collections;
 
 public class NotTodayScript : SkillScript {
-    public override bool useSkill(Transform playerTransform)
-    {
-        if (Network.isServer && !IsSkillActivated())
-            return false;
-        playerTransform.GetComponentInChildren<ChampionsStatsScript>().LifePoint += 1;
-        return false;
+
+    protected override void NormalSkill(Transform playerTransform)
+    {       
+        if (ChampStatsScript.LifePoint < ChampStatsScript.DefaultLifePoint)
+            ChampStatsScript.LifePoint += 1;
     }
 }

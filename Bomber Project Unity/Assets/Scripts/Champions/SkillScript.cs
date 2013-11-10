@@ -4,6 +4,13 @@ using System.Collections;
 public abstract class SkillScript : MonoBehaviour {
 
     [SerializeField]
+    private ChampionsStatsScript _champStatsScript;
+    public ChampionsStatsScript ChampStatsScript
+    {
+        get { return _champStatsScript; }
+        set { _champStatsScript = value; }
+    }
+
     private float _cooldown;
     public float Cooldown
     {
@@ -16,7 +23,7 @@ public abstract class SkillScript : MonoBehaviour {
     /// </summary>
     public enum E_SkillType
     {
-        Skill1, Skill2, Ultimate
+        Passive, Skill1, Skill2, Ultimate
     }
 
     [SerializeField]
@@ -25,6 +32,14 @@ public abstract class SkillScript : MonoBehaviour {
     {
         get { return _skillType; }
         set { _skillType = value; }
+    }
+
+    [SerializeField]
+    private bool _isInstantiater;
+    public bool IsInstantiater
+    {
+        get { return _isInstantiater; }
+        set { _isInstantiater = value; }
     }
 
     private float _lastUseTime = -999999f;
@@ -42,33 +57,73 @@ public abstract class SkillScript : MonoBehaviour {
         return timeBeforeUse;
     }
 
-    public bool IsSkillActivated()
+    public class SkillResponse
     {
-        if (Network.isServer)
+        private bool _isActivated = false;
+        public bool IsActivated
         {
-            if (TimeBeforeUse() <= .001f)
-            {
-                LastUseTime = Time.time;
-                return true;
-            }
-            return false;
+            get { return _isActivated; }
+            set { _isActivated = value; }
         }
-        else
+
+        private NetworkViewID _viewID;
+        public NetworkViewID ViewID
         {
-            LastUseTime = Time.time;
-            return true;
+            get { return _viewID; }
+            set { _viewID = value; }
         }
-        
     }
 
-    abstract public bool useSkill(Transform playerTransform);
+    public void UseSkill(NetworkViewID viewID, Transform playerTransform)
+    {
+        LastUseTime = Time.time;
+        Debug.Log(viewID);
+        if (viewID == NetworkViewID.unassigned)
+            NormalSkill(playerTransform);
+        else
+            InstantiaterSkill(viewID, playerTransform);
+    }
+
+    protected virtual void NormalSkill(Transform playerTransform)
+    {}
+
+    protected virtual void InstantiaterSkill(NetworkViewID viewID, Transform playerTransform)
+    {}
+
+    protected virtual bool IsSkillUsable(Transform playerTransform)
+    {
+        Debug.Log("Mère");
+        return true;
+    }
+
+    public SkillResponse GetSkillResponse(Transform playerTransform)
+    {
+        SkillResponse sr = new SkillResponse();
+
+        // Check if skill isn't under cooldown
+        if (!(TimeBeforeUse() <= .001f))
+            return sr;
+
+        // Check if skill is usable
+        var tmp = IsSkillUsable(playerTransform);
+        Debug.Log(tmp);
+        if (!tmp)
+            return sr;
+
+        if (IsInstantiater)
+            sr.ViewID = Network.AllocateViewID();
+        sr.IsActivated = true;
+        return sr;
+    }
 
     void Start()
     {
         ChampionsStatsScript champStatsScript = GetComponent<ChampionsStatsScript>();
         if (champStatsScript != null)
         {
-            if (SkillType == E_SkillType.Skill1)
+            if (SkillType == E_SkillType.Passive)
+                Cooldown = champStatsScript.PassiveCooldown;
+            else if (SkillType == E_SkillType.Skill1)
                 Cooldown = champStatsScript.Skill1Cooldown;
             else if (SkillType == E_SkillType.Skill2)
                 Cooldown = champStatsScript.Skill2Cooldown;

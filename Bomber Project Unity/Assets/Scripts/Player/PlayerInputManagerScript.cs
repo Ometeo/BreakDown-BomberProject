@@ -39,13 +39,13 @@ public class PlayerInputManagerScript : MonoBehaviour {
     {
         float xAxis = 0;
         float zAxis = 0;
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.Z))
             zAxis += 1;
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             zAxis -= 1;
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.Q))
             xAxis -= 1;
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
             xAxis += 1;
         Vector3 newDirection = new Vector3(xAxis, 0, zAxis).normalized;
 
@@ -63,7 +63,7 @@ public class PlayerInputManagerScript : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Alpha2))
             networkView.RPC("SendUseSkill2", RPCMode.Server);
         if (Input.GetKeyDown(KeyCode.Alpha3))
-            networkView.RPC("SendUseSkillUltime", RPCMode.Server);
+            networkView.RPC("SendUseSkillUltimate", RPCMode.Server);
         if (Input.GetMouseButtonDown(0))
             networkView.RPC("SendUseBomb", RPCMode.Server);
     }
@@ -92,12 +92,15 @@ public class PlayerInputManagerScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
+            int skillNumber = 0;
             foreach (SkillScript skill in _skills1)
             {
-                if (skill.useSkill(transform))
+                SkillScript.SkillResponse sr = skill.GetSkillResponse(transform);
+                if (sr.IsActivated)
                 {
-                    networkView.RPC("ResponseUseSkill1", RPCMode.Others);
+                    networkView.RPC("ResponseUseSkill1", RPCMode.All, skillNumber, sr.ViewID);
                 }
+                skillNumber++;
             }   
         }
     }
@@ -106,11 +109,9 @@ public class PlayerInputManagerScript : MonoBehaviour {
     /// The authorisation for clients to start their skill
     /// </summary>
     [RPC]
-    void ResponseUseSkill1()
+    void ResponseUseSkill1(int skillNumber, NetworkViewID viewID)
     {
-        Debug.Log("ResponseUseSkill1");
-        foreach (SkillScript skill in _skills1)
-            skill.useSkill(transform);
+        ((SkillScript)_skills1[skillNumber]).UseSkill(viewID, transform);
     }
 
 
@@ -122,21 +123,23 @@ public class PlayerInputManagerScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
+            int skillNumber = 0;
             foreach (SkillScript skill in _skills2)
             {
-                if (skill.useSkill(transform))
+                SkillScript.SkillResponse sr = skill.GetSkillResponse(transform);
+                if (sr.IsActivated)
                 {
-                    networkView.RPC("ResponseUseSkill2", RPCMode.Others);
+                    networkView.RPC("ResponseUseSkill2", RPCMode.All, skillNumber, sr.ViewID);
                 }
+                skillNumber++;
             }
         }
     }
 
     [RPC]
-    void ResponseUseSkill2()
+    void ResponseUseSkill2(int skillNumber, NetworkViewID viewID)
     {
-        foreach (SkillScript skill in _skills2)
-            skill.useSkill(transform);
+        ((SkillScript)_skills2[skillNumber]).UseSkill(viewID, transform);
     }
 
     /// <summary>
@@ -148,21 +151,23 @@ public class PlayerInputManagerScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
+            int skillNumber = 0;
             foreach (SkillScript skill in _skillsUltimate)
             {
-                if (skill.useSkill(transform))
+                SkillScript.SkillResponse sr = skill.GetSkillResponse(transform);
+                if (sr.IsActivated)
                 {
-                    networkView.RPC("ResponseUseSkillUltimate", RPCMode.Others);
+                    networkView.RPC("ResponseUseSkillUltimate", RPCMode.All, skillNumber, sr.ViewID);
                 }
+                skillNumber++;
             }
         }
     }
 
     [RPC]
-    void ResponseUseSkillUltimate()
+    void ResponseUseSkillUltimate(int skillNumber, NetworkViewID viewID)
     {
-        foreach (SkillScript skill in _skillsUltimate)
-            skill.useSkill(transform);
+        ((SkillScript)_skillsUltimate[skillNumber]).UseSkill(viewID, transform);
     }
 
     /// <summary>

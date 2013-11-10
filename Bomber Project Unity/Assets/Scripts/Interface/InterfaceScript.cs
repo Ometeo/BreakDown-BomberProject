@@ -4,6 +4,14 @@ using System.Collections;
 public class InterfaceScript : MonoBehaviour {
 
     [SerializeField]
+    private SkillInterfaceScript _passiveSkill;
+    public SkillInterfaceScript PassiveSkill
+    {
+        get { return _passiveSkill; }
+        set { _passiveSkill = value; }
+    }
+
+    [SerializeField]
     private SkillInterfaceScript _skill1;
     public SkillInterfaceScript Skill1
     {
@@ -25,5 +33,29 @@ public class InterfaceScript : MonoBehaviour {
     {
         get { return _skillUltimate; }
         set { _skillUltimate = value; }
+    }
+
+    [SerializeField]
+    private TextMesh _lifePoints;
+    public TextMesh LifePoints
+    {
+        get { return _lifePoints; }
+        set { _lifePoints = value; }
+    }
+
+    [SerializeField]
+    private TextMesh _movementSpeed;
+    public TextMesh MovementSpeed
+    {
+        get { return _movementSpeed; }
+        set { _movementSpeed = value; }
+    }
+
+    [SerializeField]
+    private TextMesh _bombsAvailable;
+    public TextMesh BombsAvailable
+    {
+        get { return _bombsAvailable; }
+        set { _bombsAvailable = value; }
     }
 }

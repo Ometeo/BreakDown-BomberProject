@@ -3,6 +3,14 @@ using System.Collections;
 
 public class ClassicBombScript : MonoBehaviour {
 
+    [SerializeField]
+    LayerMask _everythingButPlayerMask;
+    public LayerMask EverythingButPlayerMask
+    {
+        get { return _everythingButPlayerMask; }
+        set { _everythingButPlayerMask = value; }
+    }
+
     public enum ExplosionDirections
     {
         Vertical, Horizontal, DiagonaleGauche, DiagonaleDroite
@@ -29,11 +37,9 @@ public class ClassicBombScript : MonoBehaviour {
         var onGridPos = new Vector3(Mathf.Round(playerTransform.position.x), playerTransform.position.y, Mathf.Round(playerTransform.position.z));
         if (Network.isServer)
         {
-            int mask = 1 << 8;
-            mask = ~mask;
-            if (BombScript.IsTileEmpty(onGridPos, mask))
+            if (BombScript.IsTileEmpty(onGridPos, EverythingButPlayerMask))
             {
-                Instantiate(DefaultBombPrefab, onGridPos, playerTransform.rotation);
+                Instantiate(DefaultBombPrefab, onGridPos, playerTransform.rotation);                
                 return true;
             }
             else
