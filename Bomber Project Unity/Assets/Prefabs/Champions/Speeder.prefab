@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  - 148: {fileID: 14800000}
+  - 114: {fileID: 11400006}
+  - 114: {fileID: 11400012}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: Speeder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef7dfe062c78e54eaeda36b3515aec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _defaultLifePoint: 1
+  _defaultMovementSpeed: 100
+  _nbMaxBombs: 4
+  _bombDelay: 3
+  _respawnFactor: 1
+  _skinColor: {r: .985294104, g: .544117689, b: .0441176482, a: 0}
+  _iconPassive: {fileID: 0}
+  _passiveCooldown: 0
+  _iconSkill1: {fileID: 0}
+  _skill1Cooldown: 10
+  _iconSkill2: {fileID: 0}
+  _skill2Cooldown: 5
+  _iconSkillUltimate: {fileID: 0}
+  _skillUltimateCooldown: 120
+  _interfaceScpt: {fileID: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 658d670ea3a15a545a2fd28443a44035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _champStatsScript: {fileID: 11400000}
+  _skillType: 2
+  _isInstantiater: 0
+  _buffDuration: 5
+  _layerM:
+    serializedVersion: 2
+    m_Bits: 4294914024
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb5ad403060cc47be0545ea3c5a465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _champStatsScript: {fileID: 11400000}
+  _skillType: 3
+  _isInstantiater: 0
+  _buffDuration: 20
+  _speedMultiplier: 2
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e465c5866badc3248a69707b0c342582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _everythingButPlayerMask:
+    serializedVersion: 2
+    m_Bits: 4294938344
+  _bombExplositionDirections: 0000000001000000
+  _defaultBombPrefab: {fileID: 400000, guid: f1e881f2e4e74c84db517325f4a2a5bf, type: 2}
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9abb55db2406d47889654a43b6d16f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _champStatsScript: {fileID: 11400000}
+  _skillType: 0
+  _isInstantiater: 0
+  _speedBoost: 100
+--- !u!148 &14800000
+NetworkView:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_StateSynchronization: 0
+  m_Observed: {fileID: 0}
+  m_ViewID:
+    m_ID: 0
+    m_Type: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

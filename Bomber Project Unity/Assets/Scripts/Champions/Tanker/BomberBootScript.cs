@@ -36,7 +36,6 @@ public class BomberBootScript : SkillScript {
 
     protected override bool IsSkillUsable(Transform playerTransform)
     {
-        Debug.Log("Fille");
         tilePosition = new Vector3(Mathf.Round(playerTransform.position.x), playerTransform.position.y, Mathf.Round(playerTransform.position.z)) + playerTransform.forward;
         return checkTileForBomb(tilePosition);
     }

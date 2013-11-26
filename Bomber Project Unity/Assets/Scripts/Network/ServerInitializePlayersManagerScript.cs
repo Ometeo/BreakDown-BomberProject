@@ -112,10 +112,12 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
             foreach (PlayerInformation playerInfo in Players)
             {
                 Transform playerTransform = PlayerPoolMngScript.PlayersPrefab[playerInfo.PlayerNumber];
-                var champId = playerTransform.GetComponent<InitializePlayersChampionScript>().ChampID;
+                InitializePlayersChampionScript initScript = playerTransform.GetComponent<InitializePlayersChampionScript>();
+                var champId = initScript.ChampID;
+                var viewId = initScript.NwViewID;
                 var spwnPos = playerTransform.position;
 
-                PlayerPoolMngScript.networkView.RPC("ActivatePlayer", player, connectionPlayerInformation.PlayerNumber, playerInfo.PlayerNumber, spwnPos, champId);
+                PlayerPoolMngScript.networkView.RPC("ActivatePlayer", player, viewId, connectionPlayerInformation.PlayerNumber, playerInfo.PlayerNumber, spwnPos, champId);
             }
         }
         else // First Connection
@@ -139,9 +141,9 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
         var spwnPos = SpwnScript.SpawnPoints[playerNumber].position;
         spwnPos += new Vector3(0, 0.5f, 0);
 
-        
         var randChamp = UnityEngine.Random.Range(0, ChampDbScript.ChampionList.Length);
-        PlayerPoolMngScript.networkView.RPC("ActivatePlayer", RPCMode.All, playerNumber, playerNumber, spwnPos, randChamp);
+        var viewId = Network.AllocateViewID();
+        PlayerPoolMngScript.networkView.RPC("ActivatePlayer", RPCMode.All, viewId, playerNumber, playerNumber, spwnPos, randChamp);
         Players.Add(player);
     }
 }

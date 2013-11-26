@@ -21,8 +21,6 @@ public class PlayerInputManagerScript : MonoBehaviour {
     private ArrayList _skills2;
     private ArrayList _skillsUltimate;
 
-
-
     public void SetPlayer()
     {
         enabled = true;

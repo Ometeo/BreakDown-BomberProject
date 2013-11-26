@@ -7,6 +7,8 @@ TagManager:
   - Destructible
   - Bomb
   - Interface
+  - Ground
+  - CameraBorder
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -23,7 +25,7 @@ TagManager:
   User Layer 12: Interface
   User Layer 13: CameraBorder
   User Layer 14: Camera
-  User Layer 15: 
+  User Layer 15: Ground
   User Layer 16: 
   User Layer 17: 
   User Layer 18: 

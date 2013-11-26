@@ -27,6 +27,15 @@ public class InitializePlayersChampionScript : MonoBehaviour {
         set { _champID = value; }
     }
 
+    // ViewID
+    private NetworkViewID _nwViewID;
+    public NetworkViewID NwViewID
+    {
+        get { return _nwViewID; }
+        set { _nwViewID = value; }
+    }
+
+
     /// <summary>
     /// Cache Transform
     /// </summary>
@@ -46,6 +55,7 @@ public class InitializePlayersChampionScript : MonoBehaviour {
     {
         Transform champion = (Transform)Instantiate(ServerInitializePlayersManagerScript.ChampDbScript.ChampionList[ChampID], _transform.position, _transform.rotation);
         champion.parent = transform;
+        champion.networkView.viewID = NwViewID;
         _transform.GetComponent<PlayerInputManagerScript>().Champion = champion;
 
         InitializeChampion(champion.GetComponent<ChampionsStatsScript>().SkinColor);

@@ -126,9 +126,9 @@ GameObject:
   - 64: {fileID: 2310894}
   - 23: {fileID: 2310893}
   - 114: {fileID: 2310892}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -480,7 +480,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 10523842}
-  - 136: {fileID: 10523844}
   - 65: {fileID: 10523843}
   m_Layer: 8
   m_Name: Logic
@@ -511,21 +510,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: .200000003, z: .200000003}
-  m_Center: {x: 0, y: .699999988, z: .200000003}
---- !u!136 &10523844
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13600000, guid: 4477f611ec58a5e42a3e447d20a61aff,
-    type: 2}
-  m_PrefabInternal: {fileID: 242059512}
-  m_GameObject: {fileID: 10523841}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .25
-  m_Height: 1
-  m_Direction: 1
+  m_Size: {x: .699999988, y: 1, z: .699999988}
   m_Center: {x: 0, y: .5, z: 0}
 --- !u!1 &12016039
 GameObject:
@@ -538,7 +523,7 @@ GameObject:
   - 65: {fileID: 12016041}
   m_Layer: 13
   m_Name: BackBorder
-  m_TagString: Untagged
+  m_TagString: CameraBorder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1227,6 +1212,7 @@ Transform:
   - {fileID: 93914600}
   - {fileID: 706492028}
   - {fileID: 1984649441}
+  - {fileID: 2043170309}
   - {fileID: 196466668}
   - {fileID: 1744201211}
   - {fileID: 514033527}
@@ -1235,7 +1221,6 @@ Transform:
   - {fileID: 461730315}
   - {fileID: 1055681045}
   - {fileID: 820931568}
-  - {fileID: 2043170309}
   - {fileID: 2054926959}
   m_Father: {fileID: 411411140}
 --- !u!1001 &46554666
@@ -1606,9 +1591,9 @@ GameObject:
   - 64: {fileID: 79050523}
   - 23: {fileID: 79050522}
   - 114: {fileID: 79050521}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1798,9 +1783,9 @@ GameObject:
   - 64: {fileID: 85359229}
   - 23: {fileID: 85359228}
   - 114: {fileID: 85359227}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1935,9 +1920,9 @@ GameObject:
   - 64: {fileID: 88696483}
   - 23: {fileID: 88696482}
   - 114: {fileID: 88696481}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2032,9 +2017,9 @@ GameObject:
   - 64: {fileID: 89749886}
   - 23: {fileID: 89749885}
   - 114: {fileID: 89749884}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2181,9 +2166,9 @@ GameObject:
   - 64: {fileID: 93914603}
   - 23: {fileID: 93914602}
   - 114: {fileID: 93914601}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2413,9 +2398,9 @@ GameObject:
   - 64: {fileID: 98256447}
   - 23: {fileID: 98256446}
   - 114: {fileID: 98256445}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2657,9 +2642,9 @@ GameObject:
   - 64: {fileID: 109269815}
   - 23: {fileID: 109269814}
   - 114: {fileID: 109269813}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2802,9 +2787,9 @@ GameObject:
   - 64: {fileID: 110900801}
   - 23: {fileID: 110900800}
   - 114: {fileID: 110900799}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2891,7 +2876,7 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-  m_PrefabInternal: {fileID: 768538057}
+  m_PrefabInternal: {fileID: 905317729}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 116015040}
@@ -2899,9 +2884,9 @@ GameObject:
   - 64: {fileID: 116015043}
   - 23: {fileID: 116015042}
   - 114: {fileID: 116015041}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2910,7 +2895,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-  m_PrefabInternal: {fileID: 768538057}
+  m_PrefabInternal: {fileID: 905317729}
   m_GameObject: {fileID: 116015039}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
   m_LocalPosition: {x: -6, y: 0, z: 0}
@@ -2922,7 +2907,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 768538057}
+  m_PrefabInternal: {fileID: 905317729}
   m_GameObject: {fileID: 116015039}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2948,7 +2933,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 768538057}
+  m_PrefabInternal: {fileID: 905317729}
   m_GameObject: {fileID: 116015039}
   m_Enabled: 1
   m_CastShadows: 1
@@ -2967,7 +2952,7 @@ MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6400000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 768538057}
+  m_PrefabInternal: {fileID: 905317729}
   m_GameObject: {fileID: 116015039}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -2981,7 +2966,7 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 768538057}
+  m_PrefabInternal: {fileID: 905317729}
   m_GameObject: {fileID: 116015039}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &116327169
@@ -3216,7 +3201,7 @@ GameObject:
   - 65: {fileID: 128049921}
   m_Layer: 13
   m_Name: FrontBorder
-  m_TagString: Untagged
+  m_TagString: CameraBorder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3454,11 +3439,11 @@ Transform:
   - {fileID: 2310891}
   - {fileID: 912891111}
   - {fileID: 1563079581}
-  - {fileID: 837371581}
-  - {fileID: 116015040}
-  - {fileID: 1178462770}
-  - {fileID: 1484841617}
   - {fileID: 1872698858}
+  - {fileID: 837371581}
+  - {fileID: 1178462770}
+  - {fileID: 116015040}
+  - {fileID: 1484841617}
   - {fileID: 624601195}
   - {fileID: 922429779}
   - {fileID: 1785421349}
@@ -3477,9 +3462,9 @@ GameObject:
   - 64: {fileID: 153135022}
   - 23: {fileID: 153135021}
   - 114: {fileID: 153135020}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3997,9 +3982,9 @@ GameObject:
   - 64: {fileID: 183582074}
   - 23: {fileID: 183582073}
   - 114: {fileID: 183582072}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4090,7 +4075,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 184846799}
-  - 136: {fileID: 184846801}
   - 65: {fileID: 184846800}
   m_Layer: 8
   m_Name: Logic
@@ -4121,21 +4105,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: .200000003, z: .200000003}
-  m_Center: {x: 0, y: .699999988, z: .200000003}
---- !u!136 &184846801
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13600000, guid: 4477f611ec58a5e42a3e447d20a61aff,
-    type: 2}
-  m_PrefabInternal: {fileID: 180766459}
-  m_GameObject: {fileID: 184846798}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .25
-  m_Height: 1
-  m_Direction: 1
+  m_Size: {x: .699999988, y: 1, z: .699999988}
   m_Center: {x: 0, y: .5, z: 0}
 --- !u!1 &188399575
 GameObject:
@@ -4149,9 +4119,9 @@ GameObject:
   - 64: {fileID: 188399579}
   - 23: {fileID: 188399578}
   - 114: {fileID: 188399577}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4246,9 +4216,9 @@ GameObject:
   - 64: {fileID: 196466671}
   - 23: {fileID: 196466670}
   - 114: {fileID: 196466669}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4343,9 +4313,9 @@ GameObject:
   - 64: {fileID: 201945353}
   - 23: {fileID: 201945352}
   - 114: {fileID: 201945351}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4772,9 +4742,9 @@ GameObject:
   - 64: {fileID: 211925731}
   - 23: {fileID: 211925730}
   - 114: {fileID: 211925729}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5121,9 +5091,9 @@ GameObject:
   - 64: {fileID: 229674813}
   - 23: {fileID: 229674812}
   - 114: {fileID: 229674811}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5539,9 +5509,9 @@ GameObject:
   - 64: {fileID: 249304506}
   - 23: {fileID: 249304505}
   - 114: {fileID: 249304504}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5676,9 +5646,9 @@ GameObject:
   - 64: {fileID: 268344788}
   - 23: {fileID: 268344787}
   - 114: {fileID: 268344786}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6568,9 +6538,9 @@ GameObject:
   - 64: {fileID: 318928438}
   - 23: {fileID: 318928437}
   - 114: {fileID: 318928436}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6934,9 +6904,9 @@ GameObject:
   - 64: {fileID: 332445361}
   - 23: {fileID: 332445360}
   - 114: {fileID: 332445359}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7027,7 +6997,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 336188288}
-  - 136: {fileID: 336188290}
   - 65: {fileID: 336188289}
   m_Layer: 8
   m_Name: Logic
@@ -7058,21 +7027,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: .200000003, z: .200000003}
-  m_Center: {x: 0, y: .699999988, z: .200000003}
---- !u!136 &336188290
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13600000, guid: 4477f611ec58a5e42a3e447d20a61aff,
-    type: 2}
-  m_PrefabInternal: {fileID: 1579326225}
-  m_GameObject: {fileID: 336188287}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .25
-  m_Height: 1
-  m_Direction: 1
+  m_Size: {x: .699999988, y: 1, z: .699999988}
   m_Center: {x: 0, y: .5, z: 0}
 --- !u!1 &336560968
 GameObject:
@@ -7086,9 +7041,9 @@ GameObject:
   - 64: {fileID: 336560972}
   - 23: {fileID: 336560971}
   - 114: {fileID: 336560970}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7500,9 +7455,9 @@ GameObject:
   - 64: {fileID: 342199651}
   - 23: {fileID: 342199650}
   - 114: {fileID: 342199649}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7597,9 +7552,9 @@ GameObject:
   - 64: {fileID: 344496797}
   - 23: {fileID: 344496796}
   - 114: {fileID: 344496795}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7914,9 +7869,9 @@ GameObject:
   - 64: {fileID: 363304713}
   - 23: {fileID: 363304712}
   - 114: {fileID: 363304711}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8078,9 +8033,9 @@ GameObject:
   - 64: {fileID: 372469190}
   - 23: {fileID: 372469189}
   - 114: {fileID: 372469188}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9240,9 +9195,9 @@ GameObject:
   - 64: {fileID: 441146750}
   - 23: {fileID: 441146749}
   - 114: {fileID: 441146748}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9337,9 +9292,9 @@ GameObject:
   - 64: {fileID: 442992499}
   - 23: {fileID: 442992498}
   - 114: {fileID: 442992497}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9434,9 +9389,9 @@ GameObject:
   - 64: {fileID: 443332763}
   - 23: {fileID: 443332762}
   - 114: {fileID: 443332761}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9651,9 +9606,9 @@ GameObject:
   - 64: {fileID: 449114301}
   - 23: {fileID: 449114300}
   - 114: {fileID: 449114299}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9828,9 +9783,9 @@ GameObject:
   - 64: {fileID: 461730318}
   - 23: {fileID: 461730317}
   - 114: {fileID: 461730316}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10281,9 +10236,9 @@ GameObject:
   - 64: {fileID: 484344690}
   - 23: {fileID: 484344689}
   - 114: {fileID: 484344688}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10847,9 +10802,9 @@ GameObject:
   - 64: {fileID: 499319247}
   - 23: {fileID: 499319246}
   - 114: {fileID: 499319245}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10984,9 +10939,9 @@ GameObject:
   - 64: {fileID: 500885287}
   - 23: {fileID: 500885286}
   - 114: {fileID: 500885285}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11188,9 +11143,9 @@ GameObject:
   - 64: {fileID: 502452451}
   - 23: {fileID: 502452450}
   - 114: {fileID: 502452449}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11449,9 +11404,9 @@ GameObject:
   - 64: {fileID: 514033530}
   - 23: {fileID: 514033529}
   - 114: {fileID: 514033528}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11921,9 +11876,9 @@ GameObject:
   - 64: {fileID: 533296281}
   - 23: {fileID: 533296280}
   - 114: {fileID: 533296279}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12321,9 +12276,9 @@ GameObject:
   - 64: {fileID: 560876270}
   - 23: {fileID: 560876269}
   - 114: {fileID: 560876268}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12473,9 +12428,9 @@ GameObject:
   - 64: {fileID: 572432456}
   - 23: {fileID: 572432455}
   - 114: {fileID: 572432454}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12678,6 +12633,46 @@ Prefab:
   m_RootGameObject: {fileID: 1309536644}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1001 &579427052
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 141498714}
+    m_Modifications:
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+  m_RootGameObject: {fileID: 1872698857}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &582838884
 Prefab:
   m_ObjectHideFlags: 0
@@ -12778,9 +12773,9 @@ GameObject:
   - 64: {fileID: 589706967}
   - 23: {fileID: 589706966}
   - 114: {fileID: 589706965}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13125,6 +13120,54 @@ Transform:
   - {fileID: 1148068608}
   - {fileID: 1136410917}
   m_Father: {fileID: 411411140}
+--- !u!1001 &608356885
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 46018918}
+    m_Modifications:
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: _spawnValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: _isSpawn
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+  m_RootGameObject: {fileID: 2043170308}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &611370011
 GameObject:
   m_ObjectHideFlags: 0
@@ -13407,9 +13450,9 @@ GameObject:
   - 64: {fileID: 618637023}
   - 23: {fileID: 618637022}
   - 114: {fileID: 618637021}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13590,9 +13633,9 @@ GameObject:
   - 64: {fileID: 624320411}
   - 23: {fileID: 624320410}
   - 114: {fileID: 624320409}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13687,9 +13730,9 @@ GameObject:
   - 64: {fileID: 624601198}
   - 23: {fileID: 624601197}
   - 114: {fileID: 624601196}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13784,9 +13827,9 @@ GameObject:
   - 64: {fileID: 629868894}
   - 23: {fileID: 629868893}
   - 114: {fileID: 629868892}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14309,9 +14352,9 @@ GameObject:
   - 64: {fileID: 652569159}
   - 23: {fileID: 652569158}
   - 114: {fileID: 652569157}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15351,9 +15394,9 @@ GameObject:
   - 64: {fileID: 706492031}
   - 23: {fileID: 706492030}
   - 114: {fileID: 706492029}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16092,9 +16135,9 @@ GameObject:
   - 64: {fileID: 723859385}
   - 23: {fileID: 723859384}
   - 114: {fileID: 723859383}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17064,9 +17107,9 @@ GameObject:
   - 64: {fileID: 767657744}
   - 23: {fileID: 767657743}
   - 114: {fileID: 767657742}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17187,46 +17230,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c22260a5436a2c54ba4d632a5ca89b54, type: 2}
   m_RootGameObject: {fileID: 814453233}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
---- !u!1001 &768538057
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 141498714}
-    m_Modifications:
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -6
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: .707106829
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .707106829
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-  m_RootGameObject: {fileID: 116015039}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1 &777949035
@@ -17470,9 +17473,9 @@ GameObject:
   - 64: {fileID: 786031272}
   - 23: {fileID: 786031271}
   - 114: {fileID: 786031270}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17782,9 +17785,9 @@ GameObject:
   - 64: {fileID: 803752299}
   - 23: {fileID: 803752298}
   - 114: {fileID: 803752297}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18501,9 +18504,9 @@ GameObject:
   - 64: {fileID: 817279896}
   - 23: {fileID: 817279895}
   - 114: {fileID: 817279894}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18638,9 +18641,9 @@ GameObject:
   - 64: {fileID: 818826101}
   - 23: {fileID: 818826100}
   - 114: {fileID: 818826099}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18797,9 +18800,9 @@ GameObject:
   - 64: {fileID: 820931571}
   - 23: {fileID: 820931570}
   - 114: {fileID: 820931569}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18894,9 +18897,9 @@ GameObject:
   - 64: {fileID: 824615839}
   - 23: {fileID: 824615838}
   - 114: {fileID: 824615837}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19046,9 +19049,9 @@ GameObject:
   - 64: {fileID: 830958535}
   - 23: {fileID: 830958534}
   - 114: {fileID: 830958533}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19143,9 +19146,9 @@ GameObject:
   - 64: {fileID: 831880174}
   - 23: {fileID: 831880173}
   - 114: {fileID: 831880172}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19240,9 +19243,9 @@ GameObject:
   - 64: {fileID: 837371584}
   - 23: {fileID: 837371583}
   - 114: {fileID: 837371582}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19333,7 +19336,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 840207629}
-  - 136: {fileID: 840207631}
   - 65: {fileID: 840207630}
   m_Layer: 8
   m_Name: Logic
@@ -19364,21 +19366,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: .200000003, z: .200000003}
-  m_Center: {x: 0, y: .699999988, z: .200000003}
---- !u!136 &840207631
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13600000, guid: 4477f611ec58a5e42a3e447d20a61aff,
-    type: 2}
-  m_PrefabInternal: {fileID: 2140294680}
-  m_GameObject: {fileID: 840207628}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .25
-  m_Height: 1
-  m_Direction: 1
+  m_Size: {x: .699999988, y: 1, z: .699999988}
   m_Center: {x: 0, y: .5, z: 0}
 --- !u!1 &846468921
 GameObject:
@@ -19823,9 +19811,9 @@ GameObject:
   - 64: {fileID: 856538054}
   - 23: {fileID: 856538053}
   - 114: {fileID: 856538052}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20214,9 +20202,9 @@ GameObject:
   - 64: {fileID: 882292470}
   - 23: {fileID: 882292469}
   - 114: {fileID: 882292468}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20525,9 +20513,9 @@ GameObject:
   - 64: {fileID: 899616112}
   - 23: {fileID: 899616111}
   - 114: {fileID: 899616110}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20696,6 +20684,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 443805851}
   m_GameObject: {fileID: 904432346}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &905317729
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 141498714}
+    m_Modifications:
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
+  m_RootGameObject: {fileID: 116015039}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &905513385
 GameObject:
   m_ObjectHideFlags: 0
@@ -20708,9 +20736,9 @@ GameObject:
   - 64: {fileID: 905513389}
   - 23: {fileID: 905513388}
   - 114: {fileID: 905513387}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20805,9 +20833,9 @@ GameObject:
   - 64: {fileID: 912891114}
   - 23: {fileID: 912891113}
   - 114: {fileID: 912891112}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20902,9 +20930,9 @@ GameObject:
   - 64: {fileID: 916386893}
   - 23: {fileID: 916386892}
   - 114: {fileID: 916386891}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21039,9 +21067,9 @@ GameObject:
   - 64: {fileID: 921929680}
   - 23: {fileID: 921929679}
   - 114: {fileID: 921929678}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21136,9 +21164,9 @@ GameObject:
   - 64: {fileID: 922429782}
   - 23: {fileID: 922429781}
   - 114: {fileID: 922429780}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21664,9 +21692,9 @@ GameObject:
   - 64: {fileID: 961938152}
   - 23: {fileID: 961938151}
   - 114: {fileID: 961938150}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21749,46 +21777,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 215607202}
   m_GameObject: {fileID: 961938148}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &962342065
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 141498714}
-    m_Modifications:
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: .707106829
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .707106829
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-  m_RootGameObject: {fileID: 1872698857}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &963542894
 GameObject:
   m_ObjectHideFlags: 0
@@ -21801,9 +21789,9 @@ GameObject:
   - 64: {fileID: 963542898}
   - 23: {fileID: 963542897}
   - 114: {fileID: 963542896}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22025,7 +22013,7 @@ GameObject:
   - 65: {fileID: 974944284}
   m_Layer: 13
   m_Name: LeftBorder
-  m_TagString: Untagged
+  m_TagString: CameraBorder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22331,9 +22319,9 @@ GameObject:
   - 64: {fileID: 987526858}
   - 23: {fileID: 987526857}
   - 114: {fileID: 987526856}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22428,9 +22416,9 @@ GameObject:
   - 64: {fileID: 994717204}
   - 23: {fileID: 994717203}
   - 114: {fileID: 994717202}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23047,7 +23035,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1051631445}
-  - 136: {fileID: 1051631447}
   - 65: {fileID: 1051631446}
   m_Layer: 8
   m_Name: Logic
@@ -23078,21 +23065,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: .200000003, z: .200000003}
-  m_Center: {x: 0, y: .699999988, z: .200000003}
---- !u!136 &1051631447
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13600000, guid: 4477f611ec58a5e42a3e447d20a61aff,
-    type: 2}
-  m_PrefabInternal: {fileID: 1745762634}
-  m_GameObject: {fileID: 1051631444}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .25
-  m_Height: 1
-  m_Direction: 1
+  m_Size: {x: .699999988, y: 1, z: .699999988}
   m_Center: {x: 0, y: .5, z: 0}
 --- !u!1001 &1054039948
 Prefab:
@@ -23154,9 +23127,9 @@ GameObject:
   - 64: {fileID: 1055681048}
   - 23: {fileID: 1055681047}
   - 114: {fileID: 1055681046}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24158,9 +24131,9 @@ GameObject:
   - 64: {fileID: 1098809984}
   - 23: {fileID: 1098809983}
   - 114: {fileID: 1098809982}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24518,9 +24491,9 @@ GameObject:
   - 64: {fileID: 1117623864}
   - 23: {fileID: 1117623863}
   - 114: {fileID: 1117623862}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24924,6 +24897,7 @@ Transform:
   - {fileID: 1729415486}
   - {fileID: 1011135414}
   - {fileID: 1608007432}
+  - {fileID: 1973611767}
   - {fileID: 1101693284}
   - {fileID: 598410096}
   - {fileID: 701162598}
@@ -24940,7 +24914,6 @@ Transform:
   - {fileID: 1670387809}
   - {fileID: 1299616145}
   - {fileID: 96854394}
-  - {fileID: 1973611767}
   - {fileID: 1942127587}
   - {fileID: 960251707}
   m_Father: {fileID: 0}
@@ -24996,9 +24969,9 @@ GameObject:
   - 64: {fileID: 1136410920}
   - 23: {fileID: 1136410919}
   - 114: {fileID: 1136410918}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25133,9 +25106,9 @@ GameObject:
   - 64: {fileID: 1148068611}
   - 23: {fileID: 1148068610}
   - 114: {fileID: 1148068609}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25562,9 +25535,9 @@ GameObject:
   - 64: {fileID: 1178462773}
   - 23: {fileID: 1178462772}
   - 114: {fileID: 1178462771}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25707,9 +25680,9 @@ GameObject:
   - 64: {fileID: 1194938183}
   - 23: {fileID: 1194938182}
   - 114: {fileID: 1194938181}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25804,9 +25777,9 @@ GameObject:
   - 64: {fileID: 1198760600}
   - 23: {fileID: 1198760599}
   - 114: {fileID: 1198760598}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26153,9 +26126,9 @@ GameObject:
   - 64: {fileID: 1212026032}
   - 23: {fileID: 1212026031}
   - 114: {fileID: 1212026030}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26733,9 +26706,9 @@ GameObject:
   - 64: {fileID: 1238417759}
   - 23: {fileID: 1238417758}
   - 114: {fileID: 1238417757}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26830,9 +26803,9 @@ GameObject:
   - 64: {fileID: 1238682108}
   - 23: {fileID: 1238682107}
   - 114: {fileID: 1238682106}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27037,9 +27010,9 @@ GameObject:
   - 64: {fileID: 1247854356}
   - 23: {fileID: 1247854355}
   - 114: {fileID: 1247854354}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27521,9 +27494,9 @@ GameObject:
   - 64: {fileID: 1268970946}
   - 23: {fileID: 1268970945}
   - 114: {fileID: 1268970944}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27666,9 +27639,9 @@ GameObject:
   - 64: {fileID: 1276814126}
   - 23: {fileID: 1276814125}
   - 114: {fileID: 1276814124}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28271,9 +28244,9 @@ GameObject:
   - 64: {fileID: 1309536648}
   - 23: {fileID: 1309536647}
   - 114: {fileID: 1309536646}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28551,9 +28524,9 @@ GameObject:
   - 64: {fileID: 1316180017}
   - 23: {fileID: 1316180016}
   - 114: {fileID: 1316180015}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28648,9 +28621,9 @@ GameObject:
   - 64: {fileID: 1318382117}
   - 23: {fileID: 1318382116}
   - 114: {fileID: 1318382115}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28957,9 +28930,9 @@ GameObject:
   - 64: {fileID: 1329678195}
   - 23: {fileID: 1329678194}
   - 114: {fileID: 1329678193}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29102,9 +29075,9 @@ GameObject:
   - 64: {fileID: 1337362530}
   - 23: {fileID: 1337362529}
   - 114: {fileID: 1337362528}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29334,9 +29307,9 @@ GameObject:
   - 64: {fileID: 1355212173}
   - 23: {fileID: 1355212172}
   - 114: {fileID: 1355212171}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29431,9 +29404,9 @@ GameObject:
   - 64: {fileID: 1363411126}
   - 23: {fileID: 1363411125}
   - 114: {fileID: 1363411124}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29736,9 +29709,9 @@ GameObject:
   - 64: {fileID: 1385458171}
   - 23: {fileID: 1385458170}
   - 114: {fileID: 1385458169}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29833,9 +29806,9 @@ GameObject:
   - 64: {fileID: 1387235836}
   - 23: {fileID: 1387235835}
   - 114: {fileID: 1387235834}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30287,9 +30260,9 @@ GameObject:
   - 64: {fileID: 1410847639}
   - 23: {fileID: 1410847638}
   - 114: {fileID: 1410847637}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30426,7 +30399,7 @@ Prefab:
     - target: {fileID: 11400002, guid: 64fe3504fa0392543b79bbe504aeea19, type: 2}
       propertyPath: _championList.Array.data[0]
       value: 
-      objectReference: {fileID: 400000, guid: 836daa6262945d64eb651cdf03e53678, type: 2}
+      objectReference: {fileID: 400000, guid: 21393cf330ec93e4cb86d71a04088515, type: 2}
     - target: {fileID: 11400000, guid: 64fe3504fa0392543b79bbe504aeea19, type: 2}
       propertyPath: _spwnScript
       value: 
@@ -30435,6 +30408,10 @@ Prefab:
       propertyPath: _playerPoolMngScript
       value: 
       objectReference: {fileID: 869130453}
+    - target: {fileID: 11400002, guid: 64fe3504fa0392543b79bbe504aeea19, type: 2}
+      propertyPath: _championList.Array.data[1]
+      value: 
+      objectReference: {fileID: 400000, guid: 21393cf330ec93e4cb86d71a04088515, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64fe3504fa0392543b79bbe504aeea19, type: 2}
   m_RootGameObject: {fileID: 1760449538}
@@ -30452,9 +30429,9 @@ GameObject:
   - 64: {fileID: 1415492009}
   - 23: {fileID: 1415492008}
   - 114: {fileID: 1415492007}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30785,9 +30762,9 @@ GameObject:
   - 64: {fileID: 1424818373}
   - 23: {fileID: 1424818372}
   - 114: {fileID: 1424818371}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30878,7 +30855,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1437601376}
-  - 136: {fileID: 1437601378}
   - 65: {fileID: 1437601377}
   m_Layer: 8
   m_Name: Logic
@@ -30909,21 +30885,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: .200000003, z: .200000003}
-  m_Center: {x: 0, y: .699999988, z: .200000003}
---- !u!136 &1437601378
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13600000, guid: 4477f611ec58a5e42a3e447d20a61aff,
-    type: 2}
-  m_PrefabInternal: {fileID: 714102947}
-  m_GameObject: {fileID: 1437601375}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .25
-  m_Height: 1
-  m_Direction: 1
+  m_Size: {x: .699999988, y: 1, z: .699999988}
   m_Center: {x: 0, y: .5, z: 0}
 --- !u!1001 &1438169865
 Prefab:
@@ -31257,6 +31219,54 @@ MeshFilter:
   m_PrefabInternal: {fileID: 814544812}
   m_GameObject: {fileID: 1454146590}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1456465698
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1132002560}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 14800000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
+      propertyPath: m_ViewID.m_ID
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 14800000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
+      propertyPath: m_ViewID.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
+  m_RootGameObject: {fileID: 1973611766}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &1456890739
 Prefab:
   m_ObjectHideFlags: 0
@@ -31475,9 +31485,9 @@ GameObject:
   - 64: {fileID: 1464105754}
   - 23: {fileID: 1464105753}
   - 114: {fileID: 1464105752}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31766,9 +31776,9 @@ GameObject:
   - 64: {fileID: 1476670195}
   - 23: {fileID: 1476670194}
   - 114: {fileID: 1476670193}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31964,9 +31974,9 @@ GameObject:
   - 64: {fileID: 1484841620}
   - 23: {fileID: 1484841619}
   - 114: {fileID: 1484841618}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32432,9 +32442,9 @@ GameObject:
   - 64: {fileID: 1500227177}
   - 23: {fileID: 1500227176}
   - 114: {fileID: 1500227175}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32529,9 +32539,9 @@ GameObject:
   - 64: {fileID: 1500426706}
   - 23: {fileID: 1500426705}
   - 114: {fileID: 1500426704}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32626,9 +32636,9 @@ GameObject:
   - 64: {fileID: 1508492233}
   - 23: {fileID: 1508492232}
   - 114: {fileID: 1508492231}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32723,9 +32733,9 @@ GameObject:
   - 64: {fileID: 1509361361}
   - 23: {fileID: 1509361360}
   - 114: {fileID: 1509361359}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32946,9 +32956,9 @@ GameObject:
   - 64: {fileID: 1512453010}
   - 23: {fileID: 1512453009}
   - 114: {fileID: 1512453008}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33169,9 +33179,9 @@ GameObject:
   - 64: {fileID: 1518901174}
   - 23: {fileID: 1518901173}
   - 114: {fileID: 1518901172}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33392,7 +33402,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1529844274}
-  - 136: {fileID: 1529844276}
   - 65: {fileID: 1529844275}
   m_Layer: 8
   m_Name: Logic
@@ -33423,21 +33432,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: .200000003, z: .200000003}
-  m_Center: {x: 0, y: .699999988, z: .200000003}
---- !u!136 &1529844276
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13600000, guid: 4477f611ec58a5e42a3e447d20a61aff,
-    type: 2}
-  m_PrefabInternal: {fileID: 632673116}
-  m_GameObject: {fileID: 1529844273}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .25
-  m_Height: 1
-  m_Direction: 1
+  m_Size: {x: .699999988, y: 1, z: .699999988}
   m_Center: {x: 0, y: .5, z: 0}
 --- !u!1 &1534362838
 GameObject:
@@ -33726,9 +33721,9 @@ GameObject:
   - 64: {fileID: 1548661665}
   - 23: {fileID: 1548661664}
   - 114: {fileID: 1548661663}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33823,9 +33818,9 @@ GameObject:
   - 64: {fileID: 1550350852}
   - 23: {fileID: 1550350851}
   - 114: {fileID: 1550350850}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33920,9 +33915,9 @@ GameObject:
   - 64: {fileID: 1563079584}
   - 23: {fileID: 1563079583}
   - 114: {fileID: 1563079582}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34542,9 +34537,9 @@ GameObject:
   - 64: {fileID: 1605767832}
   - 23: {fileID: 1605767831}
   - 114: {fileID: 1605767830}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34814,9 +34809,9 @@ GameObject:
   - 64: {fileID: 1611320635}
   - 23: {fileID: 1611320634}
   - 114: {fileID: 1611320633}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35894,9 +35889,9 @@ GameObject:
   - 64: {fileID: 1657866225}
   - 23: {fileID: 1657866224}
   - 114: {fileID: 1657866223}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36166,9 +36161,9 @@ GameObject:
   - 64: {fileID: 1675657172}
   - 23: {fileID: 1675657171}
   - 114: {fileID: 1675657170}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36383,9 +36378,9 @@ GameObject:
   - 64: {fileID: 1686509674}
   - 23: {fileID: 1686509673}
   - 114: {fileID: 1686509672}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36480,9 +36475,9 @@ GameObject:
   - 64: {fileID: 1686682051}
   - 23: {fileID: 1686682050}
   - 114: {fileID: 1686682049}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36617,9 +36612,9 @@ GameObject:
   - 64: {fileID: 1698143122}
   - 23: {fileID: 1698143121}
   - 114: {fileID: 1698143120}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36996,9 +36991,9 @@ GameObject:
   - 64: {fileID: 1713198711}
   - 23: {fileID: 1713198710}
   - 114: {fileID: 1713198709}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -37141,9 +37136,9 @@ GameObject:
   - 64: {fileID: 1719217490}
   - 23: {fileID: 1719217489}
   - 114: {fileID: 1719217488}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -37238,9 +37233,9 @@ GameObject:
   - 64: {fileID: 1719578217}
   - 23: {fileID: 1719578216}
   - 114: {fileID: 1719578215}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -37331,7 +37326,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1720447008}
-  - 136: {fileID: 1720447010}
   - 65: {fileID: 1720447009}
   m_Layer: 8
   m_Name: Logic
@@ -37362,21 +37356,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: .200000003, z: .200000003}
-  m_Center: {x: 0, y: .699999988, z: .200000003}
---- !u!136 &1720447010
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13600000, guid: 4477f611ec58a5e42a3e447d20a61aff,
-    type: 2}
-  m_PrefabInternal: {fileID: 345682160}
-  m_GameObject: {fileID: 1720447007}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .25
-  m_Height: 1
-  m_Direction: 1
+  m_Size: {x: .699999988, y: 1, z: .699999988}
   m_Center: {x: 0, y: .5, z: 0}
 --- !u!1001 &1720465823
 Prefab:
@@ -37556,9 +37536,9 @@ GameObject:
   - 64: {fileID: 1727086585}
   - 23: {fileID: 1727086584}
   - 114: {fileID: 1727086583}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -37843,9 +37823,9 @@ GameObject:
   - 64: {fileID: 1744201214}
   - 23: {fileID: 1744201213}
   - 114: {fileID: 1744201212}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -38278,7 +38258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _championList:
-  - {fileID: 400000, guid: 836daa6262945d64eb651cdf03e53678, type: 2}
+  - {fileID: 400000, guid: 21393cf330ec93e4cb86d71a04088515, type: 2}
 --- !u!148 &1760449542
 NetworkView:
   m_ObjectHideFlags: 0
@@ -38547,9 +38527,9 @@ GameObject:
   - 64: {fileID: 1769553297}
   - 23: {fileID: 1769553296}
   - 114: {fileID: 1769553295}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -38684,9 +38664,9 @@ GameObject:
   - 64: {fileID: 1776364836}
   - 23: {fileID: 1776364835}
   - 114: {fileID: 1776364834}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -38821,9 +38801,9 @@ GameObject:
   - 64: {fileID: 1785421352}
   - 23: {fileID: 1785421351}
   - 114: {fileID: 1785421350}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39180,9 +39160,9 @@ GameObject:
   - 64: {fileID: 1806103579}
   - 23: {fileID: 1806103578}
   - 114: {fileID: 1806103577}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39491,9 +39471,9 @@ GameObject:
   - 64: {fileID: 1829472157}
   - 23: {fileID: 1829472156}
   - 114: {fileID: 1829472155}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39588,9 +39568,9 @@ GameObject:
   - 64: {fileID: 1832323210}
   - 23: {fileID: 1832323209}
   - 114: {fileID: 1832323208}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40172,9 +40152,9 @@ GameObject:
   - 64: {fileID: 1856552387}
   - 23: {fileID: 1856552386}
   - 114: {fileID: 1856552385}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40444,9 +40424,9 @@ GameObject:
   - 64: {fileID: 1872411137}
   - 23: {fileID: 1872411136}
   - 114: {fileID: 1872411135}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40533,7 +40513,7 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-  m_PrefabInternal: {fileID: 962342065}
+  m_PrefabInternal: {fileID: 579427052}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1872698858}
@@ -40541,9 +40521,9 @@ GameObject:
   - 64: {fileID: 1872698861}
   - 23: {fileID: 1872698860}
   - 114: {fileID: 1872698859}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40552,7 +40532,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-  m_PrefabInternal: {fileID: 962342065}
+  m_PrefabInternal: {fileID: 579427052}
   m_GameObject: {fileID: 1872698857}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
   m_LocalPosition: {x: 6, y: 0, z: 0}
@@ -40564,7 +40544,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 962342065}
+  m_PrefabInternal: {fileID: 579427052}
   m_GameObject: {fileID: 1872698857}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -40590,7 +40570,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 962342065}
+  m_PrefabInternal: {fileID: 579427052}
   m_GameObject: {fileID: 1872698857}
   m_Enabled: 1
   m_CastShadows: 1
@@ -40609,7 +40589,7 @@ MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6400000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 962342065}
+  m_PrefabInternal: {fileID: 579427052}
   m_GameObject: {fileID: 1872698857}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -40623,7 +40603,7 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 962342065}
+  m_PrefabInternal: {fileID: 579427052}
   m_GameObject: {fileID: 1872698857}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1873512624
@@ -40838,7 +40818,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1891671540}
-  - 136: {fileID: 1891671542}
   - 65: {fileID: 1891671541}
   m_Layer: 8
   m_Name: Logic
@@ -40869,21 +40848,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: .200000003, z: .200000003}
-  m_Center: {x: 0, y: .699999988, z: .200000003}
---- !u!136 &1891671542
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13600000, guid: 4477f611ec58a5e42a3e447d20a61aff,
-    type: 2}
-  m_PrefabInternal: {fileID: 92357996}
-  m_GameObject: {fileID: 1891671539}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .25
-  m_Height: 1
-  m_Direction: 1
+  m_Size: {x: .699999988, y: 1, z: .699999988}
   m_Center: {x: 0, y: .5, z: 0}
 --- !u!1001 &1905043654
 Prefab:
@@ -40937,9 +40902,9 @@ GameObject:
   - 64: {fileID: 1906507202}
   - 23: {fileID: 1906507201}
   - 114: {fileID: 1906507200}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41034,9 +40999,9 @@ GameObject:
   - 64: {fileID: 1907775806}
   - 23: {fileID: 1907775805}
   - 114: {fileID: 1907775804}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41435,9 +41400,9 @@ GameObject:
   - 64: {fileID: 1930736424}
   - 23: {fileID: 1930736423}
   - 114: {fileID: 1930736422}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41528,7 +41493,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1940455451}
-  - 136: {fileID: 1940455453}
   - 65: {fileID: 1940455452}
   m_Layer: 8
   m_Name: Logic
@@ -41559,21 +41523,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .200000003, y: .200000003, z: .200000003}
-  m_Center: {x: 0, y: .699999988, z: .200000003}
---- !u!136 &1940455453
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13600000, guid: 4477f611ec58a5e42a3e447d20a61aff,
-    type: 2}
-  m_PrefabInternal: {fileID: 1155362871}
-  m_GameObject: {fileID: 1940455450}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .25
-  m_Height: 1
-  m_Direction: 1
+  m_Size: {x: .699999988, y: 1, z: .699999988}
   m_Center: {x: 0, y: .5, z: 0}
 --- !u!1 &1940509995
 GameObject:
@@ -41586,7 +41536,7 @@ GameObject:
   - 65: {fileID: 1940509996}
   m_Layer: 13
   m_Name: RightBorder
-  m_TagString: Untagged
+  m_TagString: CameraBorder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41817,9 +41767,9 @@ GameObject:
   - 64: {fileID: 1942319662}
   - 23: {fileID: 1942319661}
   - 114: {fileID: 1942319660}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41914,9 +41864,9 @@ GameObject:
   - 64: {fileID: 1942815187}
   - 23: {fileID: 1942815186}
   - 114: {fileID: 1942815185}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42541,9 +42491,9 @@ GameObject:
   - 64: {fileID: 1953624975}
   - 23: {fileID: 1953624974}
   - 114: {fileID: 1953624973}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -42795,7 +42745,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-  m_PrefabInternal: {fileID: 2090345886}
+  m_PrefabInternal: {fileID: 1456465698}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1973611767}
@@ -42817,7 +42767,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-  m_PrefabInternal: {fileID: 2090345886}
+  m_PrefabInternal: {fileID: 1456465698}
   m_GameObject: {fileID: 1973611766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6, y: .5, z: 2}
@@ -42829,7 +42779,7 @@ NetworkView:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 14800000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
     type: 2}
-  m_PrefabInternal: {fileID: 2090345886}
+  m_PrefabInternal: {fileID: 1456465698}
   m_GameObject: {fileID: 1973611766}
   m_Enabled: 1
   m_StateSynchronization: 0
@@ -42842,7 +42792,7 @@ Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5400000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
     type: 2}
-  m_PrefabInternal: {fileID: 2090345886}
+  m_PrefabInternal: {fileID: 1456465698}
   m_GameObject: {fileID: 1973611766}
   serializedVersion: 2
   m_Mass: 1
@@ -42858,7 +42808,7 @@ Animation:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11100000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
     type: 2}
-  m_PrefabInternal: {fileID: 2090345886}
+  m_PrefabInternal: {fileID: 1456465698}
   m_GameObject: {fileID: 1973611766}
   m_Enabled: 1
   serializedVersion: 3
@@ -42878,7 +42828,7 @@ BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6500000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
     type: 2}
-  m_PrefabInternal: {fileID: 2090345886}
+  m_PrefabInternal: {fileID: 1456465698}
   m_GameObject: {fileID: 1973611766}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -42891,7 +42841,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
     type: 2}
-  m_PrefabInternal: {fileID: 2090345886}
+  m_PrefabInternal: {fileID: 1456465698}
   m_GameObject: {fileID: 1973611766}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -42904,7 +42854,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
     type: 2}
-  m_PrefabInternal: {fileID: 2090345886}
+  m_PrefabInternal: {fileID: 1456465698}
   m_GameObject: {fileID: 1973611766}
   m_Enabled: 1
   m_CastShadows: 1
@@ -42923,7 +42873,7 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
     type: 2}
-  m_PrefabInternal: {fileID: 2090345886}
+  m_PrefabInternal: {fileID: 1456465698}
   m_GameObject: {fileID: 1973611766}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1984649440
@@ -42938,9 +42888,9 @@ GameObject:
   - 64: {fileID: 1984649444}
   - 23: {fileID: 1984649443}
   - 114: {fileID: 1984649442}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43155,9 +43105,9 @@ GameObject:
   - 64: {fileID: 2002146377}
   - 23: {fileID: 2002146376}
   - 114: {fileID: 2002146375}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43240,54 +43190,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1404942750}
   m_GameObject: {fileID: 2002146373}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &2004749603
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 46018918}
-    m_Modifications:
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -6
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: .707106829
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .707106829
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: _isSpawn
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-      propertyPath: _spawnValue
-      value: 5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-  m_RootGameObject: {fileID: 2043170308}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &2006695069
 GameObject:
   m_ObjectHideFlags: 0
@@ -43808,7 +43710,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-  m_PrefabInternal: {fileID: 2004749603}
+  m_PrefabInternal: {fileID: 608356885}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2043170309}
@@ -43816,9 +43718,9 @@ GameObject:
   - 64: {fileID: 2043170312}
   - 23: {fileID: 2043170311}
   - 114: {fileID: 2043170310}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -43827,7 +43729,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
-  m_PrefabInternal: {fileID: 2004749603}
+  m_PrefabInternal: {fileID: 608356885}
   m_GameObject: {fileID: 2043170308}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
   m_LocalPosition: {x: -6, y: 0, z: 0}
@@ -43839,7 +43741,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 2004749603}
+  m_PrefabInternal: {fileID: 608356885}
   m_GameObject: {fileID: 2043170308}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -43865,7 +43767,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 2004749603}
+  m_PrefabInternal: {fileID: 608356885}
   m_GameObject: {fileID: 2043170308}
   m_Enabled: 1
   m_CastShadows: 1
@@ -43884,7 +43786,7 @@ MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6400000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 2004749603}
+  m_PrefabInternal: {fileID: 608356885}
   m_GameObject: {fileID: 2043170308}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -43898,7 +43800,7 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: f60273a2722f092428823514ddc7fad8,
     type: 2}
-  m_PrefabInternal: {fileID: 2004749603}
+  m_PrefabInternal: {fileID: 608356885}
   m_GameObject: {fileID: 2043170308}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &2044244574
@@ -43961,9 +43863,9 @@ GameObject:
   - 64: {fileID: 2045714022}
   - 23: {fileID: 2045714021}
   - 114: {fileID: 2045714020}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44058,9 +43960,9 @@ GameObject:
   - 64: {fileID: 2054926962}
   - 23: {fileID: 2054926961}
   - 114: {fileID: 2054926960}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44155,9 +44057,9 @@ GameObject:
   - 64: {fileID: 2055419863}
   - 23: {fileID: 2055419862}
   - 114: {fileID: 2055419861}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44372,9 +44274,9 @@ GameObject:
   - 64: {fileID: 2060155629}
   - 23: {fileID: 2060155628}
   - 114: {fileID: 2060155627}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44730,9 +44632,9 @@ GameObject:
   - 64: {fileID: 2079535847}
   - 23: {fileID: 2079535846}
   - 114: {fileID: 2079535845}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44948,54 +44850,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f60273a2722f092428823514ddc7fad8, type: 2}
   m_RootGameObject: {fileID: 723859381}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
---- !u!1001 &2090345886
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1132002560}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -6
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 14800000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-      propertyPath: m_ViewID.m_ID
-      value: 96
-      objectReference: {fileID: 0}
-    - target: {fileID: 14800000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-      propertyPath: m_ViewID.m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2ba8ae313a4dda641ac46bd67beb3669, type: 2}
-  m_RootGameObject: {fileID: 1973611766}
   m_IsPrefabParent: 0
   m_IsExploded: 1
 --- !u!1001 &2091398439
@@ -45525,9 +45379,9 @@ GameObject:
   - 64: {fileID: 2126814717}
   - 23: {fileID: 2126814716}
   - 114: {fileID: 2126814715}
-  m_Layer: 11
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

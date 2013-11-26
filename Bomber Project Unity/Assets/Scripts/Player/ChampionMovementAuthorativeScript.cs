@@ -19,8 +19,14 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
         set { _championStats = value; }
     }
 
-    private Rigidbody _rigidBody;    
+    private Rigidbody _rigidBody;
     private Vector3 _serverCurrentDirection = Vector3.zero;
+    public Vector3 ServerCurrentDirection
+    {
+        get { return _serverCurrentDirection; }
+        set { _serverCurrentDirection = value; }
+    }
+
     private Vector3 _lastPosition;
 
     private Transform _transform;
@@ -57,12 +63,12 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
         {
             if (_rigidBody != null)
             {
-                rigidbody.velocity = (ChampionStats.MovementSpeed * _serverCurrentDirection * Time.deltaTime);
+                rigidbody.velocity = (ChampionStats.MovementSpeed * ServerCurrentDirection * Time.deltaTime);
             }
             if (Vector3.Distance(transform.position, _lastPosition) > MinimumMovementToUpdatePos)
             {
-                if (_serverCurrentDirection != Vector3.zero)
-                    _transform.rotation = Quaternion.LookRotation(_serverCurrentDirection);
+                if (ServerCurrentDirection != Vector3.zero)
+                    _transform.rotation = Quaternion.LookRotation(ServerCurrentDirection);
                 _lastPosition = _transform.position;
                 networkView.RPC("SetTransform", RPCMode.Others, transform.position, transform.rotation);
             }
@@ -79,6 +85,6 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
     [RPC]
     void SendMovementDirection(Vector3 direction)
     {
-        _serverCurrentDirection = direction;
+        ServerCurrentDirection = direction;
     }
 }

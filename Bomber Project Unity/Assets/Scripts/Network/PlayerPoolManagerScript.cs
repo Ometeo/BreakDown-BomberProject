@@ -16,7 +16,7 @@ public class PlayerPoolManagerScript : MonoBehaviour {
     /// </summary>
     /// <param name="position">Futur player position</param>
     [RPC]
-    void ActivatePlayer(int callerPlayerNum, int instiantePlayerNum, Vector3 position, int champNumber)
+    void ActivatePlayer(NetworkViewID viewID, int callerPlayerNum, int instiantePlayerNum, Vector3 position, int champNumber)
     {
         Transform newPlayer = PlayersPrefab[instiantePlayerNum];
         newPlayer.parent = null;
@@ -24,7 +24,10 @@ public class PlayerPoolManagerScript : MonoBehaviour {
         newPlayer.gameObject.SetActive(true);
         
         // Set the player champion
-        newPlayer.GetComponent<InitializePlayersChampionScript>().ChampID = champNumber;
+        InitializePlayersChampionScript initScript = newPlayer.GetComponent<InitializePlayersChampionScript>();
+        initScript.ChampID = champNumber;
+        initScript.NwViewID = viewID;
+
         if (callerPlayerNum == instiantePlayerNum)
             newPlayer.GetComponent<PlayerInputManagerScript>().SetPlayer();
     }

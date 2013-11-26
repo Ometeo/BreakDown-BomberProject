@@ -42,16 +42,16 @@ public abstract class SkillScript : MonoBehaviour {
         set { _isInstantiater = value; }
     }
 
-    private float _lastUseTime = -999999f;
-    public float LastUseTime
+    private float _lastTimeUsed = -999999f;
+    public float LastTimeUsed
     {
-        get { return _lastUseTime; }
-        set { _lastUseTime = value; }
+        get { return _lastTimeUsed; }
+        set { _lastTimeUsed = value; }
     }
 
     public float TimeBeforeUse()
     {
-        float timeBeforeUse = (LastUseTime + Cooldown) - Time.time;
+        float timeBeforeUse = (LastTimeUsed + Cooldown) - Time.time;
         if (timeBeforeUse < 0)
             return 0;
         return timeBeforeUse;
@@ -76,8 +76,7 @@ public abstract class SkillScript : MonoBehaviour {
 
     public void UseSkill(NetworkViewID viewID, Transform playerTransform)
     {
-        LastUseTime = Time.time;
-        Debug.Log(viewID);
+        LastTimeUsed = Time.time;
         if (viewID == NetworkViewID.unassigned)
             NormalSkill(playerTransform);
         else
@@ -92,7 +91,6 @@ public abstract class SkillScript : MonoBehaviour {
 
     protected virtual bool IsSkillUsable(Transform playerTransform)
     {
-        Debug.Log("Mère");
         return true;
     }
 
@@ -106,7 +104,6 @@ public abstract class SkillScript : MonoBehaviour {
 
         // Check if skill is usable
         var tmp = IsSkillUsable(playerTransform);
-        Debug.Log(tmp);
         if (!tmp)
             return sr;
 

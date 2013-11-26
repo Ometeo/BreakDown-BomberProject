@@ -191,7 +191,68 @@ public class ChampionsStatsScript : MonoBehaviour {
         MovementSpeed = DefaultMovementSpeed;
         LifePoint = DefaultLifePoint;
         NbBombs = NbMaxBomb;
+
+        networkView.RPC("AskSynchronizeStats", RPCMode.Server, Network.player);
     }
+
+    /// <summary>
+    /// Order synchronization with server
+    /// </summary>
+    /// <param name="player"></param>
+    [RPC]
+    void AskSynchronizeStats(NetworkPlayer player)
+    {
+        float tbfPassive = -999999f, tbfSkill1 = -999999f, tbfSkill2 = -999999f, tbfUltimate = -999999f;
+        foreach (var skScript in this.GetComponents<SkillScript>())
+        {
+            if (skScript.SkillType == SkillScript.E_SkillType.Passive)
+            {
+                tbfPassive = skScript.TimeBeforeUse();
+            }
+            else if (skScript.SkillType == SkillScript.E_SkillType.Skill1)
+            {
+                tbfSkill1 = skScript.TimeBeforeUse();
+            }
+            else if (skScript.SkillType == SkillScript.E_SkillType.Skill2)
+            {
+                tbfSkill2 = skScript.TimeBeforeUse();
+            }
+            else if (skScript.SkillType == SkillScript.E_SkillType.Ultimate)
+            {
+                tbfUltimate = skScript.TimeBeforeUse();
+            }
+        }
+        networkView.RPC("ResponseSynchronizeStats", player, tbfPassive, tbfSkill1, tbfSkill2, tbfUltimate, LifePoint, NbBombs, MovementSpeed, RespawnFactor);
+    }
+
+    [RPC]
+    void ResponseSynchronizeStats(float tbfPassive, float tbfSkill1, float tbfSkill2, float tbfUltimate, int lifePoint, int nbBombs, float movementSpeed, float spawnFactor)
+    {
+        foreach (var skScript in this.GetComponents<SkillScript>())
+        {
+            if (skScript.SkillType == SkillScript.E_SkillType.Passive)
+            {
+                skScript.LastTimeUsed = Time.time + tbfPassive - PassiveCooldown;
+            }
+            else if (skScript.SkillType == SkillScript.E_SkillType.Skill1)
+            {
+                skScript.LastTimeUsed = Time.time + tbfSkill1 - Skill1Cooldown;
+            }
+            else if (skScript.SkillType == SkillScript.E_SkillType.Skill2)
+            {
+                skScript.LastTimeUsed = Time.time + tbfSkill2 - Skill2Cooldown;
+            }
+            else if (skScript.SkillType == SkillScript.E_SkillType.Ultimate)
+            {
+                skScript.LastTimeUsed = Time.time + tbfUltimate - SkillUltimateCooldown;
+            }
+        }
+        LifePoint = lifePoint;
+        NbBombs = nbBombs;
+        MovementSpeed = movementSpeed;
+        RespawnFactor = spawnFactor;
+    }
+
 
     void InitializeInterface()
     {
@@ -213,7 +274,7 @@ public class ChampionsStatsScript : MonoBehaviour {
                 }
                 passiveInitDone = true;
             }
-            if (skScript.SkillType == SkillScript.E_SkillType.Skill1)
+            else if (skScript.SkillType == SkillScript.E_SkillType.Skill1)
             {
                 if (!skill1InitDone)
                 {
@@ -229,7 +290,7 @@ public class ChampionsStatsScript : MonoBehaviour {
                 }
                 skill2InitDone = true;
             }
-            else
+            else if (skScript.SkillType == SkillScript.E_SkillType.Ultimate)
             {
                 if (!skillUltimateInitDone)
                 {
