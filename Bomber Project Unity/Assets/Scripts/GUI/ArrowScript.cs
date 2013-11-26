@@ -49,6 +49,14 @@ public class ArrowScript : GUIItemScript
             {
                 AssociatedField.GetComponent<QualityTextScript>().Increment();
             }
+            else if (AssociatedField.GetComponent<GameModeTextScript>())
+            {
+                AssociatedField.GetComponent<GameModeTextScript>().Increment();
+            }
+            else if (AssociatedField.GetComponent<ArenaTextScript>())
+            {
+                AssociatedField.GetComponent<ArenaTextScript>().Increment();
+            }
         }
         else
         {
@@ -59,6 +67,14 @@ public class ArrowScript : GUIItemScript
             else if (AssociatedField.GetComponent<QualityTextScript>())
             {
                 AssociatedField.GetComponent<QualityTextScript>().Decrement();
+            }
+            else if (AssociatedField.GetComponent<GameModeTextScript>())
+            {
+                AssociatedField.GetComponent<GameModeTextScript>().Decrement();
+            }
+            else if (AssociatedField.GetComponent<ArenaTextScript>())
+            {
+                AssociatedField.GetComponent<ArenaTextScript>().Decrement();
             }
         }
     }
