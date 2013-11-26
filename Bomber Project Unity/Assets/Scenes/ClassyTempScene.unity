@@ -1209,28 +1209,15 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-<<<<<<< HEAD
-  - {fileID: 93914600}
-  - {fileID: 706492028}
-  - {fileID: 1984649441}
   - {fileID: 2043170309}
-  - {fileID: 196466668}
-  - {fileID: 1744201211}
-  - {fileID: 514033527}
-=======
-  - {fileID: 2043170309}
->>>>>>> 87c5222cad016846a0be1071807dfb19dacfd3fe
   - {fileID: 1675657169}
   - {fileID: 1415492006}
   - {fileID: 1055681045}
   - {fileID: 820931568}
-<<<<<<< HEAD
-=======
   - {fileID: 461730315}
   - {fileID: 196466668}
   - {fileID: 93914600}
   - {fileID: 706492028}
->>>>>>> 87c5222cad016846a0be1071807dfb19dacfd3fe
   - {fileID: 2054926959}
   - {fileID: 1744201211}
   - {fileID: 514033527}
@@ -3449,20 +3436,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-<<<<<<< HEAD
-  - {fileID: 2310891}
-  - {fileID: 912891111}
-  - {fileID: 1563079581}
-  - {fileID: 1872698858}
-  - {fileID: 837371581}
-  - {fileID: 1178462770}
-  - {fileID: 116015040}
-  - {fileID: 1484841617}
-=======
   - {fileID: 1484841617}
   - {fileID: 1178462770}
   - {fileID: 153135019}
->>>>>>> 87c5222cad016846a0be1071807dfb19dacfd3fe
   - {fileID: 624601195}
   - {fileID: 922429779}
   - {fileID: 116015040}
