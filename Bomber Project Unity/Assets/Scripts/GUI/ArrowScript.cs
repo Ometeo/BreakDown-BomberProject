@@ -57,6 +57,10 @@ public class ArrowScript : GUIItemScript
             {
                 AssociatedField.GetComponent<ArenaTextScript>().Increment();
             }
+            else if (AssociatedField.GetComponent<AvatarTextScript>())
+            {
+                AssociatedField.GetComponent<AvatarTextScript>().Increment();
+            }
         }
         else
         {
@@ -75,6 +79,10 @@ public class ArrowScript : GUIItemScript
             else if (AssociatedField.GetComponent<ArenaTextScript>())
             {
                 AssociatedField.GetComponent<ArenaTextScript>().Decrement();
+            }
+            else if (AssociatedField.GetComponent<AvatarTextScript>())
+            {
+                AssociatedField.GetComponent<AvatarTextScript>().Decrement();
             }
         }
     }
