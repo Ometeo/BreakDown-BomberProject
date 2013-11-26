@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿/* --------------------------Header-------------------------------------
+ * File : CameraBorderResizeScript.cs
+ * Description : Script that resize the camera view border object.
+ * Version : 1.0.0
+ * Created Date : 25/11/2013 14:57:07
+ * Created by : Jonathan Bihet
+ * Modification Date : 25/11/2013 14:57:07
+ * Modified by : Jonathan Bihet
+ * ------------------------------------------------------------------------ */
+
+using UnityEngine;
 using UnityEditor;
 using System.Collections;
 

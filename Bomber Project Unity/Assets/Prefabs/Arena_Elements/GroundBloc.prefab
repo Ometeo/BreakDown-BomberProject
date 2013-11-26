@@ -80,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}

@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿/* --------------------------Header-------------------------------------
+ * File : ArenaHelperScript.cs
+ * Description : Script that helps to create arena by creating ground and border.
+ * Version : 1.0.0
+ * Created Date : 25/11/2013 14:56:52
+ * Created by : Jonathan Bihet
+ * Modification Date : 25/11/2013 16:42:58
+ * Modified by : Jonathan Bihet
+ * ------------------------------------------------------------------------ */
+
+using UnityEngine;
 using UnityEditor;
 using System.Collections;
 
@@ -84,13 +94,13 @@ public class ArenaHelperScript : EditorWindow
                     {
                         GameObject borderBloc = Instantiate(borderObject) as GameObject;
                         borderBloc.transform.parent = borderParentObject.transform;
-                        borderBloc.transform.position = new Vector3((float)j, 0.5f, (-(arenaSize.x -1) / 2));
+                        borderBloc.transform.position = new Vector3((float)j, 0.5f, (-(arenaSize.y + 1) / 2));
                     }
                     for (int j = -(int)((arenaSize.x + 1) / 2); j <= (int)((arenaSize.x + 1) / 2); j++)
                     {
                         GameObject borderBloc = Instantiate(borderObject) as GameObject;
                         borderBloc.transform.parent = borderParentObject.transform;
-                        borderBloc.transform.position = new Vector3((float)j, 0.5f, ((arenaSize.x - 1) / 2));
+                        borderBloc.transform.position = new Vector3((float)j, 0.5f, ((arenaSize.y + 1) / 2));
                     }
                     for (int i = -(int)(arenaSize.y / 2); i <= (int)(arenaSize.y / 2); i++)
                     {
