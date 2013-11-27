@@ -4,17 +4,26 @@
  * Version : 1.0.1
  * Created Date : 26/11/2013 08:23:57
  * Created by : Jonathan Bihet
- * Modification Date : 26/11/2013 08:36:27
+ * Modification Date : 27/11/2013 18:00:46
  * Modified by : Jonathan Bihet
  * ------------------------------------------------------------------------ */
 
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class CaseAndTickScript : GUIItemScript
 {
+    /// <summary>
+    /// 
+    /// </summary>
     private enum _caseMaterialEnum { Case = 0, CaseGlow, CaseTick, CaseTickGlow };
 
+    /// <summary>
+    /// 
+    /// </summary>
     [SerializeField]
     private bool _checked;
     public bool Checked
@@ -23,6 +32,9 @@ public class CaseAndTickScript : GUIItemScript
         set { _checked = value; }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     [SerializeField]
     private Material[] _caseMaterial;
     public Material[] CaseMaterial
@@ -51,11 +63,17 @@ public class CaseAndTickScript : GUIItemScript
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public override void OnMouseDown()
     {
         ClickOnCaseAction();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     void OnMouseEnter()
     {
         _item[1].gameObject.SetActive(false);
@@ -71,6 +89,9 @@ public class CaseAndTickScript : GUIItemScript
         _item[2].gameObject.SetActive(false);
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public void ClickOnCaseAction()
     {
         if (Checked)

@@ -4,18 +4,24 @@
  * Version : 1.0.0
  * Created Date : 26/11/2013 08:19:56
  * Created by : Jonathan Bihet
- * Modification Date : 26/11/2013 08:19:56
+ * Modification Date : 27/11/2013 18:02:11
  * Modified by : Jonathan Bihet
  * ------------------------------------------------------------------------ */
 
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class ResolutionTextScript : MonoBehaviour
 {
 
     private string[] _values;
 
+    /// <summary>
+    /// 
+    /// </summary>
     [SerializeField]
     private int _currentValue = 0;
     public int CurrentValue
@@ -24,7 +30,9 @@ public class ResolutionTextScript : MonoBehaviour
         set { _currentValue = value; }
     }
 
-    // Use this for initialization
+    /// <summary>
+    /// 
+    /// </summary>
     void Start()
     {
         _values = new string[Screen.resolutions.Length];
@@ -36,12 +44,17 @@ public class ResolutionTextScript : MonoBehaviour
         this.gameObject.GetComponent<TextMesh>().text = _values[CurrentValue];
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// 
+    /// </summary>
     void Update()
     {
 
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public void Increment()
     {
         if (_currentValue == _values.Length - 1)
@@ -55,6 +68,9 @@ public class ResolutionTextScript : MonoBehaviour
         this.gameObject.GetComponent<TextMesh>().text = _values[CurrentValue];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public void Decrement()
     {
         if (_currentValue == 0)

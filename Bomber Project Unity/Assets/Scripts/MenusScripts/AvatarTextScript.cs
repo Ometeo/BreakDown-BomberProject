@@ -1,6 +1,19 @@
-﻿using UnityEngine;
+﻿/* --------------------------Header-------------------------------------
+ * File : AvatarTextScript.cs
+ * Description : 
+ * Version : 1.0.0
+ * Created Date : 27/11/2013 18:01:29
+ * Created by : Jonathan Bihet
+ * Modification Date : 27/11/2013 18:01:29
+ * Modified by : Jonathan Bihet
+ * ------------------------------------------------------------------------ */
+
+using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class AvatarTextScript : MonoBehaviour {
 
     /// <summary>

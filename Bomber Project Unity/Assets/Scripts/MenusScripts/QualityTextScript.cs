@@ -4,18 +4,24 @@
  * Version : 1.0.0
  * Created Date : 26/11/2013 08:20:01
  * Created by : Jonathan Bihet
- * Modification Date : 26/11/2013 08:20:01
+ * Modification Date : 27/11/2013 17:56:45
  * Modified by : Jonathan Bihet
  * ------------------------------------------------------------------------ */
 
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class QualityTextScript : MonoBehaviour
 {
 
     private static string[] _values = {"Fastest", "Fast", "Simple", "Good", "Beautiful", "Fantastic"};
 
+    /// <summary>
+    /// 
+    /// </summary>
     [SerializeField]
     private int _currentValue = 0;
     public int CurrentValue
@@ -24,7 +30,9 @@ public class QualityTextScript : MonoBehaviour
         set { _currentValue = value; }
     }
 
-    // Use this for initialization
+    /// <summary>
+    /// 
+    /// </summary>
     void Start()
     {
         CurrentValue = QualitySettings.GetQualityLevel();
@@ -32,12 +40,17 @@ public class QualityTextScript : MonoBehaviour
         this.gameObject.GetComponent<TextMesh>().text = _values[CurrentValue];
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// 
+    /// </summary>
     void Update()
     {
 
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public void Increment()
     {
         if (CurrentValue == _values.Length - 1)
@@ -51,6 +64,9 @@ public class QualityTextScript : MonoBehaviour
         this.gameObject.GetComponent<TextMesh>().text = _values[CurrentValue];
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public void Decrement()
     {
         if (CurrentValue == 0)

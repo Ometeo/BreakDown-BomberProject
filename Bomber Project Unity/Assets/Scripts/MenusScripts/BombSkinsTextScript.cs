@@ -1,6 +1,19 @@
-﻿using UnityEngine;
+﻿/* --------------------------Header-------------------------------------
+ * File : BombSkinsTextScript.cs
+ * Description : 
+ * Version : 1.0.0
+ * Created Date : 27/11/2013 18:01:03
+ * Created by : Jonathan Bihet
+ * Modification Date : 27/11/2013 18:01:03
+ * Modified by : Jonathan Bihet
+ * ------------------------------------------------------------------------ */
+
+using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class BombSkinsTextScript : MonoBehaviour {
 
     /// <summary>
@@ -14,6 +27,9 @@ public class BombSkinsTextScript : MonoBehaviour {
         set { _bombSkins = value; }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     [SerializeField]
     private int _currentValue = 0;
     public int CurrentValue

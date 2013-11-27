@@ -4,13 +4,16 @@
  * Version : 1.0.0
  * Created Date : 26/11/2013 08:38:03
  * Created by : Jonathan Bihet
- * Modification Date : 26/11/2013 08:38:04
+ * Modification Date : 27/11/2013 18:02:27
  * Modified by : Jonathan Bihet
  * ------------------------------------------------------------------------ */
 
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class ApplySettingsScript : GUIItemScript
 {
     /// <summary>
