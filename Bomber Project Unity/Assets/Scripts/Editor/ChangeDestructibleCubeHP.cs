@@ -4,7 +4,7 @@
  * Version : 1.0.1
  * Created Date : 25/11/2013 14:56:46
  * Created by : Jonathan Bihet
- * Modification Date : 26/11/2013 14:26:33
+ * Modification Date : 27/11/2013 17:55:45
  * Modified by : Jonathan Bihet
  * ------------------------------------------------------------------------ */
 
@@ -12,11 +12,17 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class ChangeDestructibleCubeHP : EditorWindow
 {
     private Object _object;
     private Object _material;
 
+    /// <summary>
+    /// 
+    /// </summary>
     void OnGUI()
     {
         GUILayout.BeginHorizontal();
@@ -61,6 +67,9 @@ public class ChangeDestructibleCubeHP : EditorWindow
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     [MenuItem("ArenaCreator/Destructible HP")]
     public static void ManageLevelsButton()
     {

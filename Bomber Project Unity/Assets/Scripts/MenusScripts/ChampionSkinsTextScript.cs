@@ -1,6 +1,19 @@
-﻿using UnityEngine;
+﻿/* --------------------------Header-------------------------------------
+ * File : ChampionSkinsTextScript.cs
+ * Description : 
+ * Version : 1.0.0
+ * Created Date : 27/11/2013 18:00:16
+ * Created by : Jonathan Bihet
+ * Modification Date : 27/11/2013 18:00:16
+ * Modified by : Jonathan Bihet
+ * ------------------------------------------------------------------------ */
+
+using UnityEngine;
 using System.Collections;
 
+/// <summary>
+///
+/// </summary>
 public class ChampionSkinsTextScript : MonoBehaviour {
     /// <summary>
     /// 
@@ -13,6 +26,9 @@ public class ChampionSkinsTextScript : MonoBehaviour {
         set { _championSkins = value; }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     [SerializeField]
     private int _currentValue = 0;
     public int CurrentValue

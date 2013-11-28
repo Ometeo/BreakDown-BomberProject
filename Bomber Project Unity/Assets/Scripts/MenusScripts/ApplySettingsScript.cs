@@ -4,13 +4,16 @@
  * Version : 1.0.0
  * Created Date : 26/11/2013 08:38:03
  * Created by : Jonathan Bihet
- * Modification Date : 26/11/2013 08:38:04
+ * Modification Date : 27/11/2013 18:38:43
  * Modified by : Jonathan Bihet
  * ------------------------------------------------------------------------ */
 
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class ApplySettingsScript : GUIItemScript
 {
     /// <summary>
@@ -47,29 +50,11 @@ public class ApplySettingsScript : GUIItemScript
     }
 
     /// <summary>
-    /// 
+    /// Initialize the GUI on start.
     /// </summary>
     void Start()
     {
         InitializeGUI();
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    void OnMouseEnter()
-    {
-        _item[1].gameObject.SetActive(false);
-        _item[2].gameObject.SetActive(true);
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    void OnMouseExit()
-    {
-        _item[1].gameObject.SetActive(true);
-        _item[2].gameObject.SetActive(false);
     }
 
     /// <summary>

@@ -11,9 +11,11 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public abstract class GUIItemScript : MonoBehaviour
 {
-
     protected Transform[] _item;
 
     /// <summary>

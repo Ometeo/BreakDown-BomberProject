@@ -4,13 +4,16 @@
  * Version : 1.0.0
  * Created Date : 26/11/2013 08:18:46
  * Created by : Jonathan Bihet
- * Modification Date : 26/11/2013 08:18:46
+ * Modification Date : 27/11/2013 18:00:00
  * Modified by : Jonathan Bihet
  * ------------------------------------------------------------------------ */
 
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class FullScreenTextScript : GUIItemScript
 {
     /// <summary>

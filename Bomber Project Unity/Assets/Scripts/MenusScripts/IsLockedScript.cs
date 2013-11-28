@@ -1,6 +1,19 @@
-﻿using UnityEngine;
+﻿/* --------------------------Header-------------------------------------
+ * File : IsLockedScript.cs
+ * Description : 
+ * Version : 1.0.0
+ * Created Date : 27/11/2013 17:58:51
+ * Created by : Jonathan Bihet
+ * Modification Date : 27/11/2013 17:58:51
+ * Modified by : Jonathan Bihet
+ * ------------------------------------------------------------------------ */
+
+using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class IsLockedScript : GUIItemScript
 {
     /// <summary>
@@ -24,6 +37,9 @@ public class IsLockedScript : GUIItemScript
         InitializeGUI();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public override void OnMouseDown()
     {
         Case.GetComponent<PlayerCaseScript>().SetLocked();

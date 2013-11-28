@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿/* --------------------------Header-------------------------------------
+ * File : GameModeTextScript.cs
+ * Description : 
+ * Version : 1.0.0
+ * Created Date : 27/11/2013 17:59:46
+ * Created by : Jonathan Bihet
+ * Modification Date : 27/11/2013 17:59:46
+ * Modified by : Jonathan Bihet
+ * ------------------------------------------------------------------------ */
+
+using UnityEngine;
 using System.Collections;
 
 /// <summary>
@@ -17,6 +27,9 @@ public class GameModeTextScript : MonoBehaviour
         set { _gameMode = value; }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     [SerializeField]
     private int _currentValue = 0;
     public int CurrentValue

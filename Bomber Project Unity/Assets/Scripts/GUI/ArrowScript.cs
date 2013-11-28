@@ -11,9 +11,14 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 
+/// </summary>
 public class ArrowScript : GUIItemScript
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     [SerializeField]
     private bool _increment;
     public bool Increment
@@ -22,7 +27,9 @@ public class ArrowScript : GUIItemScript
         set { _increment = value; }
     }
     
-
+    /// <summary>
+    /// 
+    /// </summary>
     [SerializeField]
     private Transform _associatedField;
     public Transform AssociatedField
@@ -31,12 +38,17 @@ public class ArrowScript : GUIItemScript
         set { _associatedField = value; }
     }
 
-    // Use this for initialization
+    /// <summary>
+    /// 
+    /// </summary>
     void Start()
     {
         InitializeGUI();
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public override void OnMouseDown()
     {
         if (Increment)

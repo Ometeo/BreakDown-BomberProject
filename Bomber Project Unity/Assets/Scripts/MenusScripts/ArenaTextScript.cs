@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿/* --------------------------Header-------------------------------------
+ * File : ArenaTextScript.cs
+ * Description : 
+ * Version : 1.0.0
+ * Created Date : 27/11/2013 18:01:39
+ * Created by : Jonathan Bihet
+ * Modification Date : 27/11/2013 18:01:40
+ * Modified by : Jonathan Bihet
+ * ------------------------------------------------------------------------ */
+
+using UnityEngine;
 using System.Collections;
 
 /// <summary>
