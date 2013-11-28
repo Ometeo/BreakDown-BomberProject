@@ -15,7 +15,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
   m_Layer: 9
-  m_Name: DestroyerBomb
+  m_Name: BaseBomb
   m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,12 +102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Explosion: {fileID: 100000, guid: 8cda89f0f22f3ed47836dd478270ec3e, type: 2}
-  _timeToLive: 3
+  _defaultTimeToLive: 3
   _distance: 2
-  _horizontalDirection: 1
-  _verticalDirection: 1
-  _leftDiagonalDirection: 1
-  _rightDiagonalDirection: 1
+  _explDirection: 0000000001000000
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

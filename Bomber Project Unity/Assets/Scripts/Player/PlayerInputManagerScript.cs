@@ -31,6 +31,7 @@ public class PlayerInputManagerScript : MonoBehaviour {
         _skills1 = new ArrayList();
         _skills2 = new ArrayList();
         _skillsUltimate = new ArrayList();
+        _classicBombScript = GetComponent<ClassicBombScript>();
     }
 
     void Update()
@@ -68,7 +69,6 @@ public class PlayerInputManagerScript : MonoBehaviour {
 
     private void cacheChampionData()
     {
-        _classicBombScript = Champion.GetComponent<ClassicBombScript>();
         foreach (var skill in Champion.GetComponents<SkillScript>())
         {
             if (skill.SkillType == SkillScript.E_SkillType.Skill1)

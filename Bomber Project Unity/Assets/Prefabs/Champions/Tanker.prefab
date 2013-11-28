@@ -105,8 +105,7 @@ MonoBehaviour:
   _everythingButPlayerMask:
     serializedVersion: 2
     m_Bits: 4294938344
-  _bombExplositionDirections: 0000000001000000
-  _defaultBombPrefab: {fileID: 400000, guid: f1e881f2e4e74c84db517325f4a2a5bf, type: 2}
+  _bombsPoolScr: {fileID: 0}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1

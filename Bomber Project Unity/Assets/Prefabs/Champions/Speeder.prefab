@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11400012}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
+  - 114: {fileID: 11400008}
   m_Layer: 0
   m_Name: Speeder
   m_TagString: Untagged
@@ -106,8 +107,25 @@ MonoBehaviour:
   _everythingButPlayerMask:
     serializedVersion: 2
     m_Bits: 4294938344
-  _bombExplositionDirections: 0000000001000000
-  _defaultBombPrefab: {fileID: 400000, guid: f1e881f2e4e74c84db517325f4a2a5bf, type: 2}
+  _bombsPoolScr: {fileID: 0}
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b1c8e4adc564b44a3d0dccdd292bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _champStatsScript: {fileID: 11400000}
+  _skillType: 1
+  _isInstantiater: 1
+  _slowBombPrefab: {fileID: 400000, guid: ab2ee13f86476b144b23fc1ccb3e300a, type: 2}
+  _everythingButPlayerMask:
+    serializedVersion: 2
+    m_Bits: 4294905576
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1

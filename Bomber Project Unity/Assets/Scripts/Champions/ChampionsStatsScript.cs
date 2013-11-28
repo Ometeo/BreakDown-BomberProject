@@ -67,7 +67,12 @@ public class ChampionsStatsScript : MonoBehaviour {
     public int NbBombs
     {
         get { return _nbBombs; }
-        set { _nbBombs = value; }
+        set
+        {
+            _nbBombs = value;
+            if (InterfaceScpt != null)
+                InterfaceScpt.BombsAvailable.text = _nbBombs.ToString();
+        }
     }
 
     [SerializeField]

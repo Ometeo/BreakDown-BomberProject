@@ -11,25 +11,24 @@ public class ClassicBombScript : MonoBehaviour {
         set { _everythingButPlayerMask = value; }
     }
 
-    public enum ExplosionDirections
+    [SerializeField]
+    private BombsPoolScript _bombsPoolScr;
+    public BombsPoolScript BombsPoolScr
     {
-        Vertical, Horizontal, DiagonaleGauche, DiagonaleDroite
+        get { return _bombsPoolScr; }
+        set { _bombsPoolScr = value; }
     }
 
-    [SerializeField]
-    private ExplosionDirections[] _bombExplositionDirections; // Default Horizontal / Vertical
-    public ExplosionDirections[] BombExplositionDirections
+    private ChampionsStatsScript _champStatsScr;
+    public ChampionsStatsScript ChampStatsScr
     {
-        get { return _bombExplositionDirections; }
-        set { _bombExplositionDirections = value; }
-    }
-
-    [SerializeField]
-    private Transform _defaultBombPrefab;
-    public Transform DefaultBombPrefab
-    {
-        get { return _defaultBombPrefab; }
-        set { _defaultBombPrefab = value; }
+        get
+        {
+            if (_champStatsScr == null)
+                ChampStatsScr = GetComponentInChildren<ChampionsStatsScript>();
+            return _champStatsScr;
+        }
+        set { _champStatsScr = value; }
     }
 
     public bool UseBomb(Transform playerTransform)
@@ -37,15 +36,17 @@ public class ClassicBombScript : MonoBehaviour {
         var onGridPos = new Vector3(Mathf.Round(playerTransform.position.x), playerTransform.position.y, Mathf.Round(playerTransform.position.z));
         if (Network.isServer)
         {
-            if (BombScript.IsTileEmpty(onGridPos, EverythingButPlayerMask))
+            if (BombScript.IsTileEmpty(onGridPos, EverythingButPlayerMask) && ChampStatsScr.NbBombs > 0)
             {
-                Instantiate(DefaultBombPrefab, onGridPos, playerTransform.rotation);                
+                BombsPoolScr.PlaceNextBomb(playerTransform, onGridPos);
+                ChampStatsScr.NbBombs--;
                 return true;
             }
             else
                 return false;
         }
-        Instantiate(DefaultBombPrefab, onGridPos, playerTransform.rotation);
+        ChampStatsScr.NbBombs--;
+        BombsPoolScr.PlaceNextBomb(playerTransform, onGridPos);
         return true;
     }
 }

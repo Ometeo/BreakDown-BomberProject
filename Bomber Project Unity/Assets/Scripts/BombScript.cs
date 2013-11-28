@@ -24,7 +24,6 @@ public class BombScript : MonoBehaviour
     /// <summary>
     /// Time before bomb destruction and explosion instantiate.
     /// </summary>
-    [SerializeField]
     private float _timeToLive;
     public float TimeToLive
     {
@@ -36,6 +35,14 @@ public class BombScript : MonoBehaviour
         {
             _timeToLive = value;
         }
+    }
+
+    [SerializeField]
+    private float _defaultTimeToLive;
+    public float DefaultTimeToLive
+    {
+        get { return _defaultTimeToLive; }
+        set { _defaultTimeToLive = value; }
     }
 
     /// <summary>
@@ -55,48 +62,24 @@ public class BombScript : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Boolean to allow horiontal direction.
-    /// </summary>
-    [SerializeField]
-    private bool _horizontalDirection;
-    public bool HorizontalDirection
+    public enum ExplosionDirections
     {
-        get { return _horizontalDirection; }
-        set { _horizontalDirection = value; }
+        Vertical, Horizontal, DiagonaleGauche, DiagonaleDroite
     }
 
-    /// <summary>
-    /// Boolean to allow vertical direction.
-    /// </summary>
     [SerializeField]
-    private bool _verticalDirection;
-    public bool VerticalDirection
+    private ExplosionDirections[] _explDirection;
+    public ExplosionDirections[] ExplDirection
     {
-        get { return _verticalDirection; }
-        set { _verticalDirection = value; }
+        get { return _explDirection; }
+        set { _explDirection = value; }
     }
 
-    /// <summary>
-    /// Boolean to allow left diagonal direction.
-    /// </summary>
-    [SerializeField]
-    private bool _leftDiagonalDirection;
-    public bool LeftDiagonalDirection
+    private Transform _playerTransform;
+    public Transform PlayerTransform
     {
-        get { return _leftDiagonalDirection; }
-        set { _leftDiagonalDirection = value; }
-    }
-
-    /// <summary>
-    /// Boolean to right diagonal direction.
-    /// </summary>
-    [SerializeField]
-    private bool _rightDiagonalDirection;
-    public bool RightDiagonalDirection
-    {
-        get { return _rightDiagonalDirection; }
-        set { _rightDiagonalDirection = value; }
+        get { return _playerTransform; }
+        set { _playerTransform = value; }
     }
 
     private Animation _destroyBombAnimation;
@@ -111,12 +94,23 @@ public class BombScript : MonoBehaviour
 
     private int nbTriggerEnter = 0;
 
+    private bool doInit = true;
+
     /// <summary>
     /// Cache Collider
     /// </summary>
     private Collider _collider;
 
+    private ArrayList _explDirArrList;
 
+
+    void Awake()
+    {
+        _explDirArrList = new ArrayList();
+        foreach (var dir in ExplDirection)
+            _explDirArrList.Add(dir);
+    }
+    
     /// <summary>
     /// When the bomb is instantiate, get the animation, and start the countdown.
     /// </summary>
@@ -124,14 +118,31 @@ public class BombScript : MonoBehaviour
     {
         _collider = this.collider;
         _destroyBombAnimation = this.gameObject.GetComponent<Animation>();
-        StartCoroutine(BombCountDown());
     }
 
-    /// <summary>
-    /// Nothing for the moment.
-    /// </summary>
     void Update()
     {
+        if (doInit)
+        {
+            Init();
+            doInit = false;
+        }
+    }
+
+    void Init()
+    {
+        _rightOk = true;
+        _leftOk = true;
+        _forwardOk = true;
+        _backOk = true;
+        _diagLeftFwdOk = true;
+        _diagRightFwdOk = true;
+        _diagLeftBackOk = true;
+        _diagRightBackOk = true;
+        _collider.isTrigger = true;
+        TimeToLive = DefaultTimeToLive;
+        this.transform.localScale = Vector3.one;
+        StartCoroutine(BombCountDown());
     }
 
     void OnTriggerEnter()
@@ -158,7 +169,8 @@ public class BombScript : MonoBehaviour
     /// </summary>
     void DestroyBomb()
     {
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
+        doInit = true;
     }
 
     /// <summary>
@@ -193,7 +205,7 @@ public class BombScript : MonoBehaviour
         yield return new WaitForSeconds(0.10f);
         for (int i = 1; i <= Distance; i++)
         {
-            if (HorizontalDirection)
+            if (_explDirArrList.Contains(ExplosionDirections.Horizontal))
             {
                 if (_rightOk)
                 {
@@ -205,7 +217,7 @@ public class BombScript : MonoBehaviour
                 }
             }
 
-            if (VerticalDirection)
+            if (_explDirArrList.Contains(ExplosionDirections.Vertical))
             {
                 if (_forwardOk)
                 {
@@ -217,7 +229,7 @@ public class BombScript : MonoBehaviour
                 }
             }
 
-            if (RightDiagonalDirection)
+            if (_explDirArrList.Contains(ExplosionDirections.DiagonaleDroite))
             {
                 if (_diagRightFwdOk)
                 {
@@ -229,7 +241,7 @@ public class BombScript : MonoBehaviour
                 }
             }
 
-            if (LeftDiagonalDirection)
+            if (_explDirArrList.Contains(ExplosionDirections.DiagonaleGauche))
             {
                 if (_diagLeftFwdOk)
                 {
