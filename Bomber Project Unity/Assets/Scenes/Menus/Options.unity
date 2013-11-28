@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13317372166aaa49a1de53020f1eb87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _length: 15
+  _maxLength: 15
 --- !u!102 &327057656
 TextMesh:
   serializedVersion: 3
@@ -1693,7 +1693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13317372166aaa49a1de53020f1eb87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _length: 16
+  _maxLength: 23
 --- !u!65 &991974935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2819,7 +2819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13317372166aaa49a1de53020f1eb87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _length: 5
+  _maxLength: 5
 --- !u!102 &1840714450
 TextMesh:
   serializedVersion: 3
