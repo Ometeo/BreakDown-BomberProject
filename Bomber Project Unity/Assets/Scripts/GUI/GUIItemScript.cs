@@ -48,6 +48,6 @@ public abstract class GUIItemScript : MonoBehaviour
     /// <summary>
     /// 
     /// </summary>
-    public abstract void OnMouseDown();
+    public abstract void OnMouseUp();
 
 }

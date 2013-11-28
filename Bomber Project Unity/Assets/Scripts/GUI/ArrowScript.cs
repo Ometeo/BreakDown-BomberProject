@@ -49,7 +49,7 @@ public class ArrowScript : GUIItemScript
     /// <summary>
     /// 
     /// </summary>
-    public override void OnMouseDown()
+    public override void OnMouseUp()
     {
         if (Increment)
         {

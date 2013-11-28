@@ -42,7 +42,7 @@ public class MenuItemScript : GUIItemScript
     /// <summary>
     /// 
     /// </summary>
-    public override void OnMouseDown()
+    public override void OnMouseUp()
     {
         if (_itemName == "Quit")
             Application.Quit();

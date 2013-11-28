@@ -66,27 +66,9 @@ public class CaseAndTickScript : GUIItemScript
     /// <summary>
     /// 
     /// </summary>
-    public override void OnMouseDown()
+    public override void OnMouseUp()
     {
         ClickOnCaseAction();
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    void OnMouseEnter()
-    {
-        _item[1].gameObject.SetActive(false);
-        _item[2].gameObject.SetActive(true);
-    }
-
-    /// <summary>
-    /// 
-    /// </summary>
-    void OnMouseExit()
-    {
-        _item[1].gameObject.SetActive(true);
-        _item[2].gameObject.SetActive(false);
     }
 
     /// <summary>

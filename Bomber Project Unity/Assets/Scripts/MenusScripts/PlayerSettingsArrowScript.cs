@@ -40,7 +40,7 @@ public class PlayerSettingsArrowScript : GUIItemScript
     /// <summary>
     /// 
     /// </summary>
-    public override void OnMouseDown()
+    public override void OnMouseUp()
     {
         foreach (Transform anim in Animations)
         {
