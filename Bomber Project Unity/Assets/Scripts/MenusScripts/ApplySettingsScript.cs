@@ -60,7 +60,7 @@ public class ApplySettingsScript : GUIItemScript
     /// <summary>
     /// 
     /// </summary>
-    public override void OnMouseDown()
+    public override void OnMouseUp()
     {
         Resolution res = Screen.resolutions[ResolutionOption.CurrentValue];
         Screen.SetResolution(res.width, res.height, FullScreenOption.Checked);

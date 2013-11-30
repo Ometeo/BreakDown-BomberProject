@@ -40,7 +40,7 @@ public class IsLockedScript : GUIItemScript
     /// <summary>
     /// 
     /// </summary>
-    public override void OnMouseDown()
+    public override void OnMouseUp()
     {
         Case.GetComponent<PlayerCaseScript>().SetLocked();
         this.gameObject.SetActive(false);

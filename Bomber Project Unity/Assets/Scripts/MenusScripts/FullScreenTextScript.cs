@@ -40,7 +40,7 @@ public class FullScreenTextScript : GUIItemScript
     /// <summary>
     /// 
     /// </summary>
-    public override void OnMouseDown()
+    public override void OnMouseUp()
     {
         AssociatedTick.GetComponent<CaseAndTickScript>().ClickOnCaseAction();
     }

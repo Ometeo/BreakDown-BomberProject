@@ -39,7 +39,7 @@ public class IsIAScript : GUIItemScript
     /// <summary>
     /// 
     /// </summary>
-    public override void OnMouseDown()
+    public override void OnMouseUp()
     {
         Case.GetComponent<PlayerCaseScript>().SetIA();
         this.gameObject.SetActive(false);

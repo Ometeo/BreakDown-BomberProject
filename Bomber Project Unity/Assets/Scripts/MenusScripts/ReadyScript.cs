@@ -24,7 +24,7 @@ public class ReadyScript : GUIItemScript {
         InitializeGUI();
 	}
 
-    public override void OnMouseDown()
+    public override void OnMouseUp()
     {
         //Todo : Launch game!
     }
