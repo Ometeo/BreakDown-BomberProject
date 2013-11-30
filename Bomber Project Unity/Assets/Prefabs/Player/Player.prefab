@@ -266,12 +266,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 100006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e465c5866badc3248a69707b0c342582, type: 3}
+  m_Script: {fileID: 11500000, guid: 41a43b4113203fa4c813f5d6bd86d13e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _everythingButPlayerMask:
     serializedVersion: 2
-    m_Bits: 4294938344
+    m_Bits: 3584
   _bombsPoolScr: {fileID: 0}
 --- !u!148 &14800000
 NetworkView:

@@ -75,6 +75,14 @@ public class BombScript : MonoBehaviour
         set { _explDirection = value; }
     }
 
+    [SerializeField]
+    private int _nbExplosition;
+    public int NbExplosition
+    {
+        get { return _nbExplosition; }
+        set { _nbExplosition = value; }
+    }
+
     private Transform _playerTransform;
     public Transform PlayerTransform
     {
@@ -179,7 +187,10 @@ public class BombScript : MonoBehaviour
     void Destruction()
     {
         _destroyBombAnimation.Play();
-        StartCoroutine(BombExplosion());
+        for (int nbExplosions = 0; nbExplosions < NbExplosition; nbExplosions++)
+        {
+            StartCoroutine("BombExplosion", nbExplosions);
+        }
     }
 
     /// <summary>
@@ -198,8 +209,10 @@ public class BombScript : MonoBehaviour
     /// Instantiate the explosion, and handles collisions.
     /// </summary>
     /// <returns>IEnumerator</returns>
-    IEnumerator BombExplosion()
+    IEnumerator BombExplosion(float delayBeforeExplosion)
     {
+        yield return new WaitForSeconds(delayBeforeExplosion);
+
         Vector3 localTransformPosition = this.transform.position;
         InstantiateBombExplosion(localTransformPosition);
         yield return new WaitForSeconds(0.10f);

@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
   - 148: {fileID: 14800000}
+  - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: Destroyer
@@ -41,12 +41,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ef7dfe062c78e54eaeda36b3515aec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lifePoint: 1
-  _movementSpeed: 100
-  _nbMaxBomb: 4
+  _defaultLifePoint: 1
+  _defaultMovementSpeed: 100
+  _nbMaxBombs: 4
   _bombDelay: 3
   _respawnFactor: 1
   _skinColor: {r: .933823526, g: .0892625749, b: .0892625749, a: 0}
+  _iconPassive: {fileID: 0}
+  _passiveCooldown: 0
+  _iconSkill1: {fileID: 0}
+  _skill1Cooldown: 0
+  _iconSkill2: {fileID: 0}
+  _skill2Cooldown: 0
+  _iconSkillUltimate: {fileID: 0}
+  _skillUltimateCooldown: 3
+  _interfaceScpt: {fileID: 0}
+  _explDirection: 0000000001000000
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,14 +65,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cde7a3c14ceccf343a9e4c7305b4389d, type: 3}
+  m_Script: {fileID: 11500000, guid: 04993a7509a6cfb4a8fdc4c520ed925d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _icon: {fileID: 0}
-  _cooldown: 5
+  _champStatsScript: {fileID: 11400000}
   _skillType: 0
-  _blocDestructiblePrefab: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
-    type: 2}
+  _isInstantiater: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -71,11 +79,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e465c5866badc3248a69707b0c342582, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a8d1142775097347a86e0c451611862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bombExplositionDirections: 0000000001000000
-  _defaultBombPrefab: {fileID: 400000, guid: f1e881f2e4e74c84db517325f4a2a5bf, type: 2}
+  _champStatsScript: {fileID: 11400000}
+  _skillType: 3
+  _isInstantiater: 1
+  _bombPrefab: {fileID: 400000, guid: 2712adcfa233e54458ac54311fb1ebce, type: 2}
+  _everythingButPlayerMask:
+    serializedVersion: 2
+    m_Bits: 3584
 --- !u!148 &14800000
 NetworkView:
   m_ObjectHideFlags: 1

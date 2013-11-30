@@ -29,7 +29,11 @@ public class BombsPoolScript : MonoBehaviour {
         Transform bomb = (Transform)_bombsStack.Pop();
         _bombsOnField.Add(bomb);
 
-        bomb.GetComponent<BombScript>().PlayerTransform = playerTransform;
+        var champStatsScript = playerTransform.GetComponentInChildren<ChampionsStatsScript>();
+        var bombScript = bomb.GetComponent<BombScript>();
+        
+        bombScript.ExplDirection = champStatsScript.ExplDirection;
+        bombScript.PlayerTransform = playerTransform;
         bomb.parent = null;
         bomb.position = bombPosition;
         bomb.gameObject.SetActive(true);

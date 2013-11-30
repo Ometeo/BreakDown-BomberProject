@@ -171,6 +171,14 @@ public class ChampionsStatsScript : MonoBehaviour {
         set { _interfaceScpt = value; }
     }
 
+    [SerializeField]
+    private BombScript.ExplosionDirections[] _explDirection;
+    public BombScript.ExplosionDirections[] ExplDirection
+    {
+        get { return _explDirection; }
+        set { _explDirection = value; }
+    }
+
     public void CheckDeath()
     {
         if (LifePoint <= 0 && Network.isServer)

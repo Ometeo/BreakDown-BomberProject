@@ -102,9 +102,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Explosion: {fileID: 100000, guid: 8cda89f0f22f3ed47836dd478270ec3e, type: 2}
-  _defaultTimeToLive: 0
-  _distance: 2
-  _explDirection: 
+  _defaultTimeToLive: 3
+  _distance: 50
+  _explDirection: 0000000001000000
+  _nbExplosition: 3
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

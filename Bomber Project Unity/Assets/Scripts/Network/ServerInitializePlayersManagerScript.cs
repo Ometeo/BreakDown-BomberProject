@@ -135,6 +135,7 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
 
     void SpawnPlayer(PlayerInformation player)
     {
+        Debug.Log("SpawnPlayer");
         int playerNumber = player.PlayerNumber;
 
         // Instantiate the player

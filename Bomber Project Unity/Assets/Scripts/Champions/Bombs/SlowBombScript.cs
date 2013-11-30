@@ -59,6 +59,20 @@ public class SlowBombScript : MonoBehaviour {
     }
 
     private bool _bombHasExploded = false;
+    public bool BombHasExploded
+    {
+        get { return _bombHasExploded; }
+        set { _bombHasExploded = value; }
+    }
+
+
+    [SerializeField]
+    private LayerMask _playerLayer;
+    public LayerMask PlayerLayer
+    {
+        get { return _playerLayer; }
+        set { _playerLayer = value; }
+    }
 
 	void Start () {
         TimeExpandingLeft = TimeToExpand;
@@ -66,20 +80,9 @@ public class SlowBombScript : MonoBehaviour {
 	}
 	
 	void Update () {
-        if (_bombHasExploded)
+        if (BombHasExploded)
         {
-            TimeExpandingLeft -= Time.deltaTime;
-            float sizeValue = Mathf.Clamp(TimeToExpand / TimeExpandingLeft, 0f, MaxRange);
-            Nova.transform.localScale = new Vector3(sizeValue, 0.5f, sizeValue);
-            if (TimeExpandingLeft < 0.5f && TimeExpandingLeft > 0f)
-            {
-                Color c = Nova.renderer.material.color;
-                Nova.renderer.material.color = new Color(c.r, c.g, c.b, TimeExpandingLeft);
-            }
-            else if (TimeExpandingLeft <= 0f)
-            {
-                Destroy(this.gameObject);
-            }
+            Destroy(this.gameObject);
         }
 	}
 
@@ -92,19 +95,9 @@ public class SlowBombScript : MonoBehaviour {
     void Destruction()
     {
         Nova.gameObject.SetActive(true);
-        _bombHasExploded = true;
+        Nova.parent = null;
+        BombHasExploded = true;
     }
 
-    void OnTriggerEnter(Collider col)
-    {
-        if (col.CompareTag("Player"))
-        {
-            Debug.LogError(col.name);
-            GameObject player = col.transform.parent.gameObject;
-            MovementSpeedBuffScript mvSpeedBuff = player.AddComponent<MovementSpeedBuffScript>();
-            mvSpeedBuff.Duration = SlowDuration;
-            mvSpeedBuff.ChampStatScript = player.GetComponentInChildren<ChampionsStatsScript>();
-            mvSpeedBuff.SpeedMultiplier = SlowPercentage;
-        }
-    }
+
 }
