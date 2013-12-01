@@ -1,10 +1,10 @@
 ﻿/* --------------------------Header-------------------------------------
  * File : CameraViewScript.cs
- * Description : 
+ * Description : Scrpt that enables to move the camera with mouse.
  * Version : 1.0.0
  * Created Date : 05/11/2013 18:08:38
  * Created by : Jonathan Bihet
- * Modification Date : 06/11/2013 10:51:27
+ * Modification Date : 01/12/2013 19:43:55
  * Modified by : Jonathan Bihet
  * ------------------------------------------------------------------------ */
 
@@ -12,9 +12,14 @@
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Class to move camera with mouse.
+/// </summary>
 public class CameraViewScript : MonoBehaviour
 {
-
+    /// <summary>
+    /// Camera Speed = the speed the camera moves.
+    /// </summary>
     [SerializeField]
     private float _cameraSpeed;
     public float CameraSpeed
@@ -23,17 +28,9 @@ public class CameraViewScript : MonoBehaviour
         set { _cameraSpeed = value; }
     }
 
-    [SerializeField]
-    private Transform[] _players;
-    public Transform[] Players
-    {
-        get { return _players; }
-        set { _players = value; }
-    }
-
-    [SerializeField]
-    private Transform _currentPlayer;
-
+    /// <summary>
+    /// The key maped to center the camera on player.
+    /// </summary>
     [SerializeField]
     private KeyCode _centerOnPlayerKey;
     public KeyCode CenterOnPlayerKey
@@ -50,6 +47,9 @@ public class CameraViewScript : MonoBehaviour
     private float _mouseBorderDetect = 30.0f;
     private Vector3 _cameraDirection;
 
+    /// <summary>
+    /// Enable moving if one player or more is connected.
+    /// </summary>
     void Start()
     {
         if (Network.connections.Length == 0)
@@ -58,6 +58,9 @@ public class CameraViewScript : MonoBehaviour
             EnableMoving(true);
     }
 
+    /// <summary>
+    /// Move The camera accordingly to the mouse moves.
+    /// </summary>
     void Update()
     {
         _cameraDirection = Vector3.zero;
@@ -83,10 +86,13 @@ public class CameraViewScript : MonoBehaviour
             if (_canMoveBack)
                 _cameraDirection.z = -1.0f;
         }
-
         transform.Translate(_cameraDirection.normalized * CameraSpeed);
     }
 
+    /// <summary>
+    /// Detect if the "camera" enters on the border of the arena.
+    /// </summary>
+    /// <param name="other"></param>
     void OnTriggerEnter(Collider other)
     {
         if (other.transform.name.Equals("LeftBorder"))
@@ -107,6 +113,10 @@ public class CameraViewScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Detect if the "camera" exits the border of the arena.
+    /// </summary>
+    /// <param name="other"></param>
     void OnTriggerExit(Collider other)
     {
         if (other.transform.name.Equals("LeftBorder"))
@@ -127,6 +137,10 @@ public class CameraViewScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Enable movement or not.
+    /// </summary>
+    /// <param name="value">can move or not.</param>
     void EnableMoving(bool value)
     {
         _canMoveLeft = value;
@@ -135,18 +149,38 @@ public class CameraViewScript : MonoBehaviour
         _canMoveBack = value;
     }
 
+    /// <summary>
+    /// disable movement on server initialisation.
+    /// </summary>
     void OnServerInitialized()
     {
         EnableMoving(false);
     }
 
+    /// <summary>
+    /// Enable movement when a player is connected.
+    /// </summary>
+    /// <param name="player"></param>
     void OnPlayerConnected(NetworkPlayer player)
     {
         EnableMoving(true);
     }
 
+    /// <summary>
+    /// Enable movement when a player is connected.
+    /// </summary>
     void OnConnectedToServer()
     {
         EnableMoving(true);
     }
+
+    /// <summary>
+    /// Method to center the camera on the player.
+    /// </summary>
+    /// <param name="player"></param>
+    void CenterOnPlayer(Transform player)
+    {
+        this.transform.position = player.position;
+    }
+
 }
