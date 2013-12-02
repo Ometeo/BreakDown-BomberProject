@@ -52,12 +52,10 @@ public class InitializeServerScript : GUIItemScript
     /// </summary>
     public override void OnMouseUp()
     {
-        string ip = ServerIP.text;
         int port = int.Parse(ServerPort.GetText());
 
-        //??
-        Network.Connect(ip, port);
+        Network.InitializeSecurity();
+        Network.InitializeServer(10, port, false);
         Application.LoadLevel("Play");
-        //??
     }
 }

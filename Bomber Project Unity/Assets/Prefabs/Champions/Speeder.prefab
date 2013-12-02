@@ -49,13 +49,13 @@ MonoBehaviour:
   _bombDelay: 3
   _respawnFactor: 1
   _skinColor: {r: .985294104, g: .544117689, b: .0441176482, a: 0}
-  _iconPassive: {fileID: 0}
+  _iconPassive: {fileID: 2800000, guid: 82c452193640dc942a376cd75fbdcb1f, type: 3}
   _passiveCooldown: 0
-  _iconSkill1: {fileID: 0}
+  _iconSkill1: {fileID: 2800000, guid: 6c985b423132887409267ad096d4b512, type: 3}
   _skill1Cooldown: 10
-  _iconSkill2: {fileID: 0}
+  _iconSkill2: {fileID: 2800000, guid: 941abeccbe14bcb43a30cf71ebf7641f, type: 3}
   _skill2Cooldown: 5
-  _iconSkillUltimate: {fileID: 0}
+  _iconSkillUltimate: {fileID: 2800000, guid: 02c2200df65d6bd4dbd416d11a71ccd5, type: 3}
   _skillUltimateCooldown: 120
   _interfaceScpt: {fileID: 0}
   _explDirection: 0000000001000000

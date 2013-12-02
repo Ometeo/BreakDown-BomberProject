@@ -46,5 +46,6 @@ public class GraphicsSettingArrowScript : GUIItemScript
             anim.animation.Play(anim.animation.clip.name);
             anim.animation[anim.animation.clip.name].speed = -1;
         }
+        PlayerPrefs.Save();
     }
 }

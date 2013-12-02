@@ -105,6 +105,9 @@ MonoBehaviour:
   _champStatsScript: {fileID: 11400000}
   _skillType: 1
   _isInstantiater: 1
+  _mask:
+    serializedVersion: 2
+    m_Bits: 3840
   _blocDestructiblePrefab: {fileID: 400000, guid: 2ba8ae313a4dda641ac46bd67beb3669,
     type: 2}
 --- !u!114 &11400010

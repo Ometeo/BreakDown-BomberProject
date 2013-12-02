@@ -26,6 +26,44 @@ public class ReadyScript : GUIItemScript {
 
     public override void OnMouseUp()
     {
-        //Todo : Launch game!
+        networkView.RPC("SendPlayerIsReady", RPCMode.Server);
+    }
+
+    [RPC]
+    void SendPlayerIsReady(NetworkMessageInfo info)
+    {
+        if (PlayersSingleton.Instance.AllPlayerReady(info.sender))
+        {
+            LoadGame(GameOptionSingleton.Instance.NumScene);
+            networkView.RPC("ResponsePlayerIsReady", RPCMode.Others, GameOptionSingleton.Instance.NumScene);
+        }
+    }
+
+    [RPC]
+    void ResponsePlayerIsReady(int numScene)
+    {
+        LoadGame(numScene);
+    }
+
+    void LoadGame(int numScene)
+    {
+        string arenaName;
+
+        switch (numScene)
+        {
+            case 1:
+                arenaName = "TinyScene";
+                break;
+            case 2:
+                arenaName = "EdgyScene";
+                break;
+            case 3:
+                arenaName = "CrunchyScene";
+                break;
+            default:
+                arenaName = "ClassyTempScene";
+                break;
+        }
+        GameOptionSingleton.Instance.SceneMngScript.LoadLevel(arenaName);
     }
 }

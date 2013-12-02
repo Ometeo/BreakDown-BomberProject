@@ -9,6 +9,7 @@ TagManager:
   - Interface
   - Ground
   - CameraBorder
+  - Border
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   User Layer 13: CameraBorder
   User Layer 14: Camera
   User Layer 15: Ground
-  User Layer 16: 
+  User Layer 16: PlayerDetector
   User Layer 17: 
   User Layer 18: 
   User Layer 19: 

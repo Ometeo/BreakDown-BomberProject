@@ -52,7 +52,28 @@ public class MenuItemScript : GUIItemScript
         }
         else
         {
-            Application.LoadLevel(_itemName);
+            if ("MainMenu".Equals(_itemName))
+            {
+                PlayerPrefs.Save();
+                if (Network.isClient)
+                {
+                    if (networkView != null)
+                        networkView.RPC("SendRemovePlayer", RPCMode.Server);
+                    Network.Disconnect();
+                }
+                else if (Network.isServer)
+                {
+                    Network.Disconnect();
+                    GameOptionSingleton.Instance.GameStarted = false;
+                }
+                Application.LoadLevel(_itemName);
+            }
+            else if ("Play!".Equals(_itemName))
+            {
+                networkView.RPC("SendChangeScene", RPCMode.Server, _itemName);
+            }
+            else
+                Application.LoadLevel(_itemName);
         }
     }
 
@@ -65,5 +86,28 @@ public class MenuItemScript : GUIItemScript
         TitleEffectObject.gameObject.SetActive(true);
         yield return new WaitForSeconds(10.0f);
         TitleEffectObject.gameObject.SetActive(false);
+    }
+
+    [RPC]
+    void SendRemovePlayer(NetworkMessageInfo info)
+    {
+        PlayersSingleton.Instance.RemovePlayer(info.sender);
+    }
+
+    [RPC]
+    void SendChangeScene(string _itemName, NetworkMessageInfo info)
+    {
+        if (GameOptionSingleton.Instance.HostPlayer == info.sender)
+        {
+            GameOptionSingleton.Instance.GameStarted = true;
+            GameOptionSingleton.Instance.SceneMngScript.LoadLevel(_itemName);
+            networkView.RPC("ResponseChangeScene", RPCMode.Others, _itemName);
+        }
+    }
+
+    [RPC]
+    void ResponseChangeScene(string _itemName)
+    {
+        GameOptionSingleton.Instance.SceneMngScript.LoadLevel(_itemName);
     }
 }

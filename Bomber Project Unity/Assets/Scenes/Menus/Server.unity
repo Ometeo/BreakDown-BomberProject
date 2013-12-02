@@ -493,6 +493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13317372166aaa49a1de53020f1eb87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerPrefsField: ServerPort
   _maxLength: 5
 --- !u!1 &947072606
 GameObject:

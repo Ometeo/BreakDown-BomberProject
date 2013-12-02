@@ -19,7 +19,7 @@ public class WalkThroughMatterScript : BuffScript {
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.collider.CompareTag("CameraBorder"))
+        if (col.collider.CompareTag("Border"))
             return;
 
         var cpNormal = col.contacts[0].normal;

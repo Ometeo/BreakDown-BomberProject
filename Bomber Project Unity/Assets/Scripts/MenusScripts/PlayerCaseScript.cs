@@ -111,6 +111,23 @@ public class PlayerCaseScript : MonoBehaviour {
     /// </summary>
     public void OnMouseDown()
     {
+        networkView.RPC("SendSetNothing", RPCMode.Server);
+        SetNothing();
+    }
+
+    [RPC]
+    void SendSetNothing(NetworkMessageInfo info)
+    {
+        if (GameOptionSingleton.Instance.HostPlayer == info.sender)
+        {
+            SetNothing();
+            networkView.RPC("ResponseSetNothing", RPCMode.Others);
+        }
+    }
+
+    [RPC]
+    void ResponseSetNothing()
+    {
         SetNothing();
     }
 

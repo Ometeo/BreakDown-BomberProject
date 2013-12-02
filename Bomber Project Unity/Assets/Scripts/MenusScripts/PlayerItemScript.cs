@@ -16,6 +16,14 @@ using System.Collections;
 /// </summary>
 public class PlayerItemScript : MonoBehaviour
 {
+    [SerializeField]
+    private string defaultText;
+    public string DefaultText
+    {
+        get { return defaultText; }
+        set { defaultText = value; }
+    }
+
     /// <summary>
     /// 
     /// </summary>
@@ -42,11 +50,11 @@ public class PlayerItemScript : MonoBehaviour
     /// 
     /// </summary>
     [SerializeField]
-    private string playerName;
-    public string PlayerName
+    private int _playerNb;
+    public int PlayerNb
     {
-        get { return playerName; }
-        set { playerName = value; }
+        get { return _playerNb; }
+        set { _playerNb = value; }
     }
 
     /// <summary>
@@ -66,7 +74,8 @@ public class PlayerItemScript : MonoBehaviour
     /// </summary>
     void Start()
     {
-
+        NameText.text = DefaultText;
+        GetComponentInChildren<PlaySelectPlayerItemScript>().PlayerNb = PlayerNb;
     }
 
     /// <summary>

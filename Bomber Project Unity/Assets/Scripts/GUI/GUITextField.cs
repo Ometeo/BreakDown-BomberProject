@@ -17,7 +17,20 @@ using System.Collections;
 public class GUITextField : MonoBehaviour
 {
     private TextMesh Text;
-    private bool Selected = false;
+
+    private bool _selected = false;
+    private bool _eraseText = false;
+
+    /// <summary>
+    /// The name of the Player Prefs key
+    /// </summary>
+    [SerializeField]
+    private string _playerPrefsField;
+    public string PlayerPrefsField
+    {
+        get { return _playerPrefsField; }
+        set { _playerPrefsField = value; }
+    }
 
     /// <summary>
     /// The max length of the Text.
@@ -30,6 +43,7 @@ public class GUITextField : MonoBehaviour
         set { _maxLength = value; }
     }
 
+    public static GUITextField PreviousField;
 
     /// <summary>
     /// Get the text mesh at start.
@@ -37,6 +51,12 @@ public class GUITextField : MonoBehaviour
     void Start()
     {
         Text = this.gameObject.GetComponent<TextMesh>();
+        if (PlayerPrefsField != null && PlayerPrefsField.Length > 0)
+        {
+            var savedPrefs = PlayerPrefs.GetString(PlayerPrefsField);
+            if (savedPrefs.Length > 0)
+                Text.text = savedPrefs;
+        }
     }
 
     /// <summary>
@@ -45,8 +65,13 @@ public class GUITextField : MonoBehaviour
     void Update()
     {
         //If we wrote something and the field is selected.
-        if (Input.inputString != "" && Selected)
+        if (Input.inputString != "" && _selected)
         {
+            if (_eraseText)
+            {
+                _eraseText = false;
+                Text.text = "";
+            }
             foreach (char c in Input.inputString)
                 if (c == "\b"[0]) //Delete
                 {
@@ -57,8 +82,7 @@ public class GUITextField : MonoBehaviour
                 {
                     if (c == "\n"[0] || c == "\r"[0]) //jump line
                     {
-                        Selected = false;
-                        Text.color = Color.white;
+                        UnselectField();                        
                     }
                     else
                     {
@@ -74,17 +98,20 @@ public class GUITextField : MonoBehaviour
     /// </summary>
     void OnMouseUp()
     {
-        Selected = true;
+        if (PreviousField != null)
+            PreviousField.UnselectField();
+        PreviousField = this;
+
+        _eraseText = true;
+        _selected = true;
         Text.color = Color.red;
     }
 
-    /// <summary>
-    /// Deselect the Field when the mouse go away.
-    /// </summary>
-    void OnMouseExit()
+    public void UnselectField()
     {
-        Selected = false;
+        _selected = false;
         Text.color = Color.white;
+        SavePlayerPrefs();
     }
 
     /// <summary>
@@ -94,5 +121,13 @@ public class GUITextField : MonoBehaviour
     public string GetText()
     {
         return Text.text;
+    }
+
+    void SavePlayerPrefs()
+    {
+        if (PlayerPrefsField != null && PlayerPrefsField.Length > 0)
+        {
+            PlayerPrefs.SetString(PlayerPrefsField, Text.text);
+        }
     }
 }

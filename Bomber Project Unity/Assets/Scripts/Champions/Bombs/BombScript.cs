@@ -289,13 +289,15 @@ public class BombScript : MonoBehaviour
             }
             else if (hitColliders[0].transform.CompareTag("Bomb"))
             {
-                print("Hit Bomb : [" + hitColliders[0].gameObject + "]");
-                hitColliders[0].gameObject.GetComponent<BombScript>().StopCoroutine("BombCountDown");
-                hitColliders[0].gameObject.GetComponent<BombScript>().Destruction();
+                BombScript bmbScript = hitColliders[0].gameObject.GetComponent<BombScript>();
+                if (bmbScript != null)
+                {
+                    bmbScript.StopCoroutine("BombCountDown");
+                    bmbScript.Destruction();
+                }
             }
             else if (hitColliders[0].transform.CompareTag("Player"))
             {
-                print("Hit Player : [" + hitColliders[0].gameObject + "]");
                 HitPlayer(hitColliders[0].transform.parent);
             }
         }
@@ -313,7 +315,6 @@ public class BombScript : MonoBehaviour
         {
             if (hitColliders[0].transform.CompareTag("Player"))
             {
-                print("Hit Player : [" + hitColliders[0].gameObject + "]");
                 HitPlayer(hitColliders[0].transform.parent);
             }
         }

@@ -38,12 +38,22 @@ public class ArrowScript : GUIItemScript
         set { _associatedField = value; }
     }
 
+    private ResolutionTextScript _rts;
+    private QualityTextScript _qts;
+    private GameModeTextScript _gmts;
+    private ArenaTextScript _ats;
+    private AvatarTextScript _avTxScr;
     /// <summary>
     /// 
     /// </summary>
     void Start()
     {
         InitializeGUI();
+        _rts = AssociatedField.GetComponent<ResolutionTextScript>();
+        _qts = AssociatedField.GetComponent<QualityTextScript>();
+        _gmts = AssociatedField.GetComponent<GameModeTextScript>();
+        _ats = AssociatedField.GetComponent<ArenaTextScript>();
+        _avTxScr = AssociatedField.GetComponent<AvatarTextScript>();
     }
 
     /// <summary>
@@ -51,52 +61,71 @@ public class ArrowScript : GUIItemScript
     /// </summary>
     public override void OnMouseUp()
     {
-        if (Increment)
+        if (_rts != null)
         {
-            if (AssociatedField.GetComponent<ResolutionTextScript>())
-            {
-                AssociatedField.GetComponent<ResolutionTextScript>().Increment();
-            }
-            else if (AssociatedField.GetComponent<QualityTextScript>())
-            {
-                AssociatedField.GetComponent<QualityTextScript>().Increment();
-            }
-            else if (AssociatedField.GetComponent<GameModeTextScript>())
-            {
-                AssociatedField.GetComponent<GameModeTextScript>().Increment();
-            }
-            else if (AssociatedField.GetComponent<ArenaTextScript>())
-            {
-                AssociatedField.GetComponent<ArenaTextScript>().Increment();
-            }
-            else if (AssociatedField.GetComponent<AvatarTextScript>())
-            {
-                AssociatedField.GetComponent<AvatarTextScript>().Increment();
-            }
+            if (Increment)
+                _rts.Increment();
+            else
+                _rts.Decrement();
+        }
+        else if (_qts != null)
+        {
+            if (Increment)
+                _qts.Increment();
+            else
+                _qts.Decrement();
         }
         else
         {
-            if (AssociatedField.GetComponent<ResolutionTextScript>())
-            {
-                AssociatedField.GetComponent<ResolutionTextScript>().Decrement();
-            }
-            else if (AssociatedField.GetComponent<QualityTextScript>())
-            {
-                AssociatedField.GetComponent<QualityTextScript>().Decrement();
-            }
-            else if (AssociatedField.GetComponent<GameModeTextScript>())
-            {
-                AssociatedField.GetComponent<GameModeTextScript>().Decrement();
-            }
-            else if (AssociatedField.GetComponent<ArenaTextScript>())
-            {
-                AssociatedField.GetComponent<ArenaTextScript>().Decrement();
-            }
-            else if (AssociatedField.GetComponent<AvatarTextScript>())
-            {
-                AssociatedField.GetComponent<AvatarTextScript>().Decrement();
-            }
+            if (networkView != null && Network.isClient)
+                networkView.RPC("SendClick", RPCMode.Server);
         }
     }
 
+    [RPC]
+    void SendClick(NetworkMessageInfo info)
+    {
+        if (GameOptionSingleton.Instance.HostPlayer == info.sender)
+        {
+            Click(info.sender);
+            networkView.RPC("ResponseClick", RPCMode.Others);
+        }
+    }
+
+    [RPC]
+    void ResponseClick()
+    {
+        Click(Network.player);
+    }
+
+    void Click(NetworkPlayer player)
+    {
+        if (_gmts != null)
+        {
+            if (Increment)
+                _gmts.Increment();
+            else
+                _gmts.Decrement();
+            if (Network.isServer)
+                GameOptionSingleton.Instance.NumMode = _gmts.CurrentValue;
+        }
+        else if (_ats != null)
+        {
+            if (Increment)
+                _ats.Increment();
+            else
+                _ats.Decrement();
+            if (Network.isServer)
+                GameOptionSingleton.Instance.NumScene = _ats.CurrentValue;
+        }
+        else if (_avTxScr != null)
+        {
+            if (Increment)
+                _avTxScr.Increment();
+            else
+                _avTxScr.Decrement();
+            if (Network.isServer)
+                PlayersSingleton.Instance.SetPlayerChamp(player, _avTxScr.CurrentValue);
+        }
+    }
 }

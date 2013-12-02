@@ -183,6 +183,7 @@ public class ChampionsStatsScript : MonoBehaviour {
     {
         if (LifePoint <= 0 && Network.isServer)
         {
+            Debug.LogError("Die");
             networkView.RPC("Die", RPCMode.All);
         }
     }
@@ -205,7 +206,8 @@ public class ChampionsStatsScript : MonoBehaviour {
         LifePoint = DefaultLifePoint;
         NbBombs = NbMaxBomb;
 
-        networkView.RPC("AskSynchronizeStats", RPCMode.Server, Network.player);
+        if (Network.isClient)
+            networkView.RPC("AskSynchronizeStats", RPCMode.Server, Network.player);
     }
 
     /// <summary>

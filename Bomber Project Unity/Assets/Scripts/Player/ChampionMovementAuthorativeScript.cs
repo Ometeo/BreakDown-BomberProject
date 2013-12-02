@@ -61,7 +61,7 @@ public class ChampionMovementAuthorativeScript : MonoBehaviour {
     {
         if (Network.isServer)
         {
-            if (_rigidBody != null)
+            if (_rigidBody != null && ChampionStats != null)
             {
                 rigidbody.velocity = (ChampionStats.MovementSpeed * ServerCurrentDirection * Time.deltaTime);
             }

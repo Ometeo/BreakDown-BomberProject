@@ -276,6 +276,7 @@ GameObject:
   - 4: {fileID: 320534035}
   - 65: {fileID: 320534037}
   - 114: {fileID: 320534036}
+  - 148: {fileID: 320534038}
   m_Layer: 0
   m_Name: BackAvatar
   m_TagString: Untagged
@@ -321,6 +322,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!148 &320534038
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 320534034}
+  m_Enabled: 1
+  m_StateSynchronization: 0
+  m_Observed: {fileID: 0}
+  m_ViewID:
+    m_ID: 1
+    m_Type: 1
 --- !u!1 &348586942
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,6 +478,7 @@ GameObject:
   - 4: {fileID: 372436650}
   - 114: {fileID: 372436651}
   - 65: {fileID: 372436652}
+  - 148: {fileID: 372436653}
   m_Layer: 0
   m_Name: Ready
   m_TagString: Untagged
@@ -508,6 +522,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!148 &372436653
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372436649}
+  m_Enabled: 1
+  m_StateSynchronization: 0
+  m_Observed: {fileID: 0}
+  m_ViewID:
+    m_ID: 4
+    m_Type: 1
 --- !u!1 &416477956
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,6 +666,7 @@ GameObject:
   - 4: {fileID: 530129895}
   - 65: {fileID: 530129897}
   - 114: {fileID: 530129896}
+  - 148: {fileID: 530129898}
   m_Layer: 0
   m_Name: ForwardAvatar
   m_TagString: Untagged
@@ -685,6 +712,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!148 &530129898
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530129894}
+  m_Enabled: 1
+  m_StateSynchronization: 0
+  m_Observed: {fileID: 0}
+  m_ViewID:
+    m_ID: 2
+    m_Type: 1
 --- !u!1 &540446826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,6 +2023,68 @@ MonoBehaviour:
   _championSkins:
   - Default
   _currentValue: 0
+--- !u!1 &1497277082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1497277085}
+  - 114: {fileID: 1497277084}
+  - 148: {fileID: 1497277083}
+  m_Layer: 0
+  m_Name: _NetworkMenuManagerScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!148 &1497277083
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1497277082}
+  m_Enabled: 1
+  m_StateSynchronization: 0
+  m_Observed: {fileID: 0}
+  m_ViewID:
+    m_ID: 3
+    m_Type: 1
+--- !u!114 &1497277084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1497277082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764a5cd4e0c9fe743bae810fe8cec8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playersItemScr:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!4 &1497277085
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1497277082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -999, y: -999, z: -999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1618691099
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,7 +2882,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _champions:
   - Tanker
-  - Destroyer
   - Speeder
   _currentValue: 0
 --- !u!102 &1893286801

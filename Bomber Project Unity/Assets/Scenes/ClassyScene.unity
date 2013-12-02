@@ -254,7 +254,7 @@ GameObject:
   - 23: {fileID: 25723830}
   - 65: {fileID: 25723829}
   - 54: {fileID: 25723828}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   - 23: {fileID: 28967414}
   - 65: {fileID: 28967413}
   - 54: {fileID: 28967412}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,7 +546,7 @@ GameObject:
   - 23: {fileID: 43923440}
   - 65: {fileID: 43923439}
   - 54: {fileID: 43923438}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -632,9 +632,9 @@ GameObject:
   - 64: {fileID: 45311044}
   - 23: {fileID: 45311043}
   - 114: {fileID: 45311042}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -663,7 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -768,9 +768,9 @@ GameObject:
   - 64: {fileID: 53065900}
   - 23: {fileID: 53065899}
   - 114: {fileID: 53065898}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -799,7 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -865,9 +865,9 @@ GameObject:
   - 64: {fileID: 53901079}
   - 23: {fileID: 53901078}
   - 114: {fileID: 53901077}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -896,7 +896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -1002,9 +1002,9 @@ GameObject:
   - 64: {fileID: 65294792}
   - 23: {fileID: 65294791}
   - 114: {fileID: 65294790}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -1139,7 +1139,7 @@ GameObject:
   - 23: {fileID: 70899567}
   - 65: {fileID: 70899566}
   - 54: {fileID: 70899565}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1345,9 +1345,9 @@ GameObject:
   - 64: {fileID: 97893156}
   - 23: {fileID: 97893155}
   - 114: {fileID: 97893154}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -1442,7 +1442,7 @@ GameObject:
   - 23: {fileID: 100334834}
   - 65: {fileID: 100334833}
   - 54: {fileID: 100334832}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1648,9 +1648,9 @@ GameObject:
   - 64: {fileID: 133572947}
   - 23: {fileID: 133572946}
   - 114: {fileID: 133572945}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1679,7 +1679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -1745,9 +1745,9 @@ GameObject:
   - 64: {fileID: 137302878}
   - 23: {fileID: 137302877}
   - 114: {fileID: 137302876}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1776,7 +1776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -1921,7 +1921,7 @@ GameObject:
   - 23: {fileID: 141531334}
   - 65: {fileID: 141531333}
   - 54: {fileID: 141531332}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2007,9 +2007,9 @@ GameObject:
   - 64: {fileID: 142899984}
   - 23: {fileID: 142899983}
   - 114: {fileID: 142899982}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2038,7 +2038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -2104,7 +2104,7 @@ GameObject:
   - 23: {fileID: 148021020}
   - 65: {fileID: 148021019}
   - 54: {fileID: 148021018}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2318,9 +2318,9 @@ GameObject:
   - 64: {fileID: 174860818}
   - 23: {fileID: 174860817}
   - 114: {fileID: 174860816}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2349,7 +2349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -2455,9 +2455,9 @@ GameObject:
   - 64: {fileID: 188042245}
   - 23: {fileID: 188042244}
   - 114: {fileID: 188042243}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2475,7 +2475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -2555,7 +2555,7 @@ GameObject:
   - 111: {fileID: 188195919}
   - 54: {fileID: 188195918}
   - 148: {fileID: 188195925}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -2727,9 +2727,9 @@ GameObject:
   - 64: {fileID: 202472972}
   - 23: {fileID: 202472971}
   - 114: {fileID: 202472970}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2758,7 +2758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -2824,9 +2824,9 @@ GameObject:
   - 64: {fileID: 203850657}
   - 23: {fileID: 203850656}
   - 114: {fileID: 203850655}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2855,7 +2855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -2921,9 +2921,9 @@ GameObject:
   - 64: {fileID: 205477759}
   - 23: {fileID: 205477758}
   - 114: {fileID: 205477757}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2952,7 +2952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -3058,9 +3058,9 @@ GameObject:
   - 64: {fileID: 210378561}
   - 23: {fileID: 210378560}
   - 114: {fileID: 210378559}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3089,7 +3089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -3235,9 +3235,9 @@ GameObject:
   - 64: {fileID: 228206737}
   - 23: {fileID: 228206736}
   - 114: {fileID: 228206735}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3266,7 +3266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -3332,9 +3332,9 @@ GameObject:
   - 64: {fileID: 231650024}
   - 23: {fileID: 231650023}
   - 114: {fileID: 231650022}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3363,7 +3363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -3648,7 +3648,7 @@ GameObject:
   - 111: {fileID: 237116917}
   - 54: {fileID: 237116916}
   - 148: {fileID: 237116923}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -3780,9 +3780,9 @@ GameObject:
   - 64: {fileID: 237125900}
   - 23: {fileID: 237125899}
   - 114: {fileID: 237125898}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3811,7 +3811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -3917,9 +3917,9 @@ GameObject:
   - 64: {fileID: 274383588}
   - 23: {fileID: 274383587}
   - 114: {fileID: 274383586}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3948,7 +3948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -4014,9 +4014,9 @@ GameObject:
   - 64: {fileID: 276924995}
   - 23: {fileID: 276924994}
   - 114: {fileID: 276924993}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4045,7 +4045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -4199,9 +4199,9 @@ GameObject:
   - 64: {fileID: 280758272}
   - 23: {fileID: 280758271}
   - 114: {fileID: 280758270}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4335,7 +4335,7 @@ GameObject:
   - 23: {fileID: 298444600}
   - 65: {fileID: 298444599}
   - 54: {fileID: 298444598}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4421,9 +4421,9 @@ GameObject:
   - 64: {fileID: 299042435}
   - 23: {fileID: 299042434}
   - 114: {fileID: 299042433}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4452,7 +4452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -4558,9 +4558,9 @@ GameObject:
   - 64: {fileID: 301125277}
   - 23: {fileID: 301125276}
   - 114: {fileID: 301125275}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4589,7 +4589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -4703,9 +4703,9 @@ GameObject:
   - 64: {fileID: 305779689}
   - 23: {fileID: 305779688}
   - 114: {fileID: 305779687}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4734,7 +4734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -4800,7 +4800,7 @@ GameObject:
   - 23: {fileID: 312000538}
   - 65: {fileID: 312000537}
   - 54: {fileID: 312000536}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4937,7 +4937,7 @@ GameObject:
   - 111: {fileID: 320013233}
   - 54: {fileID: 320013232}
   - 148: {fileID: 320013239}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -5069,9 +5069,9 @@ GameObject:
   - 64: {fileID: 320328767}
   - 23: {fileID: 320328766}
   - 114: {fileID: 320328765}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5100,7 +5100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -5166,7 +5166,7 @@ GameObject:
   - 23: {fileID: 322506885}
   - 65: {fileID: 322506884}
   - 54: {fileID: 322506883}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5452,9 +5452,9 @@ GameObject:
   - 64: {fileID: 338622178}
   - 23: {fileID: 338622177}
   - 114: {fileID: 338622176}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5483,7 +5483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -5637,9 +5637,9 @@ GameObject:
   - 64: {fileID: 343443134}
   - 23: {fileID: 343443133}
   - 114: {fileID: 343443132}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5668,7 +5668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -5734,9 +5734,9 @@ GameObject:
   - 64: {fileID: 346868231}
   - 23: {fileID: 346868230}
   - 114: {fileID: 346868229}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5765,7 +5765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -5919,9 +5919,9 @@ GameObject:
   - 64: {fileID: 350483143}
   - 23: {fileID: 350483142}
   - 114: {fileID: 350483141}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5950,7 +5950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -6067,7 +6067,7 @@ GameObject:
   - 111: {fileID: 362935039}
   - 54: {fileID: 362935038}
   - 148: {fileID: 362935045}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -6239,7 +6239,7 @@ GameObject:
   - 23: {fileID: 364169578}
   - 65: {fileID: 364169577}
   - 54: {fileID: 364169576}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6548,7 +6548,7 @@ GameObject:
   - 23: {fileID: 382683181}
   - 65: {fileID: 382683180}
   - 54: {fileID: 382683179}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6674,9 +6674,9 @@ GameObject:
   - 64: {fileID: 384697647}
   - 23: {fileID: 384697646}
   - 114: {fileID: 384697645}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6705,7 +6705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -6982,7 +6982,7 @@ GameObject:
   - 111: {fileID: 397612292}
   - 54: {fileID: 397612291}
   - 148: {fileID: 397612298}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -7154,7 +7154,7 @@ GameObject:
   - 23: {fileID: 407612837}
   - 65: {fileID: 407612836}
   - 54: {fileID: 407612835}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7240,9 +7240,9 @@ GameObject:
   - 64: {fileID: 409430608}
   - 23: {fileID: 409430607}
   - 114: {fileID: 409430606}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7260,7 +7260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -7340,7 +7340,7 @@ GameObject:
   - 111: {fileID: 410339478}
   - 54: {fileID: 410339477}
   - 148: {fileID: 410339484}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -7472,9 +7472,9 @@ GameObject:
   - 64: {fileID: 410582443}
   - 23: {fileID: 410582442}
   - 114: {fileID: 410582441}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7503,7 +7503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -7734,9 +7734,9 @@ GameObject:
   - 64: {fileID: 427278773}
   - 23: {fileID: 427278772}
   - 114: {fileID: 427278771}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7765,7 +7765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -7871,9 +7871,9 @@ GameObject:
   - 64: {fileID: 437113238}
   - 23: {fileID: 437113237}
   - 114: {fileID: 437113236}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7902,7 +7902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -7968,7 +7968,7 @@ GameObject:
   - 23: {fileID: 443628881}
   - 65: {fileID: 443628880}
   - 54: {fileID: 443628879}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8342,7 +8342,7 @@ GameObject:
   - 23: {fileID: 481978636}
   - 65: {fileID: 481978635}
   - 54: {fileID: 481978634}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8511,7 +8511,7 @@ GameObject:
   - 111: {fileID: 486461669}
   - 54: {fileID: 486461668}
   - 148: {fileID: 486461675}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -8629,7 +8629,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 50
+    m_ID: 1
     m_Type: 1
 --- !u!1001 &490509025
 Prefab:
@@ -8731,9 +8731,9 @@ GameObject:
   - 64: {fileID: 502834439}
   - 23: {fileID: 502834438}
   - 114: {fileID: 502834437}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8762,7 +8762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -8828,7 +8828,7 @@ GameObject:
   - 23: {fileID: 504629248}
   - 65: {fileID: 504629247}
   - 54: {fileID: 504629246}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9074,9 +9074,9 @@ GameObject:
   - 64: {fileID: 518481262}
   - 23: {fileID: 518481261}
   - 114: {fileID: 518481260}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9105,7 +9105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -9171,9 +9171,9 @@ GameObject:
   - 64: {fileID: 528509868}
   - 23: {fileID: 528509867}
   - 114: {fileID: 528509866}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9191,7 +9191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -9308,9 +9308,9 @@ GameObject:
   - 64: {fileID: 535358997}
   - 23: {fileID: 535358996}
   - 114: {fileID: 535358995}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9328,7 +9328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -9493,9 +9493,9 @@ GameObject:
   - 64: {fileID: 548853976}
   - 23: {fileID: 548853975}
   - 114: {fileID: 548853974}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9524,7 +9524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -9590,7 +9590,7 @@ GameObject:
   - 23: {fileID: 548944104}
   - 65: {fileID: 548944103}
   - 54: {fileID: 548944102}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9679,7 +9679,7 @@ GameObject:
   - 111: {fileID: 563136691}
   - 54: {fileID: 563136690}
   - 148: {fileID: 563136697}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -9814,7 +9814,7 @@ GameObject:
   - 111: {fileID: 565062986}
   - 54: {fileID: 565062985}
   - 148: {fileID: 565062992}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -10026,9 +10026,9 @@ GameObject:
   - 64: {fileID: 566925259}
   - 23: {fileID: 566925258}
   - 114: {fileID: 566925257}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10057,7 +10057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -10123,9 +10123,9 @@ GameObject:
   - 64: {fileID: 580542311}
   - 23: {fileID: 580542310}
   - 114: {fileID: 580542309}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10154,7 +10154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -10300,7 +10300,7 @@ GameObject:
   - 23: {fileID: 583993525}
   - 65: {fileID: 583993524}
   - 54: {fileID: 583993523}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10437,7 +10437,7 @@ GameObject:
   - 111: {fileID: 588129397}
   - 54: {fileID: 588129396}
   - 148: {fileID: 588129403}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -10649,7 +10649,7 @@ GameObject:
   - 23: {fileID: 602130412}
   - 65: {fileID: 602130411}
   - 54: {fileID: 602130410}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10735,7 +10735,7 @@ GameObject:
   - 23: {fileID: 606238580}
   - 65: {fileID: 606238579}
   - 54: {fileID: 606238578}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10860,9 +10860,9 @@ GameObject:
   - 64: {fileID: 607435707}
   - 23: {fileID: 607435706}
   - 114: {fileID: 607435705}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10891,7 +10891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -11040,7 +11040,7 @@ GameObject:
   - 111: {fileID: 624997025}
   - 54: {fileID: 624997024}
   - 148: {fileID: 624997031}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -11220,9 +11220,9 @@ GameObject:
   - 64: {fileID: 628462690}
   - 23: {fileID: 628462689}
   - 114: {fileID: 628462688}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11251,7 +11251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -11399,7 +11399,7 @@ GameObject:
   - 111: {fileID: 638746653}
   - 54: {fileID: 638746652}
   - 148: {fileID: 638746659}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -11531,9 +11531,9 @@ GameObject:
   - 64: {fileID: 645244705}
   - 23: {fileID: 645244704}
   - 114: {fileID: 645244703}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11551,7 +11551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -11628,9 +11628,9 @@ GameObject:
   - 64: {fileID: 647388215}
   - 23: {fileID: 647388214}
   - 114: {fileID: 647388213}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11659,7 +11659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -11805,7 +11805,7 @@ GameObject:
   - 23: {fileID: 656774814}
   - 65: {fileID: 656774813}
   - 54: {fileID: 656774812}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11971,9 +11971,9 @@ GameObject:
   - 64: {fileID: 669396455}
   - 23: {fileID: 669396454}
   - 114: {fileID: 669396453}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12002,7 +12002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -12119,7 +12119,7 @@ GameObject:
   - 111: {fileID: 675407825}
   - 54: {fileID: 675407824}
   - 148: {fileID: 675407831}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -12419,7 +12419,7 @@ GameObject:
   - 23: {fileID: 687756283}
   - 65: {fileID: 687756282}
   - 54: {fileID: 687756281}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12505,9 +12505,9 @@ GameObject:
   - 64: {fileID: 689568651}
   - 23: {fileID: 689568650}
   - 114: {fileID: 689568649}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -12536,7 +12536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -12642,7 +12642,7 @@ GameObject:
   - 23: {fileID: 705401569}
   - 65: {fileID: 705401568}
   - 54: {fileID: 705401567}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12731,7 +12731,7 @@ GameObject:
   - 111: {fileID: 705745366}
   - 54: {fileID: 705745365}
   - 148: {fileID: 705745372}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -13023,9 +13023,9 @@ GameObject:
   - 64: {fileID: 737645505}
   - 23: {fileID: 737645504}
   - 114: {fileID: 737645503}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13054,7 +13054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -13120,9 +13120,9 @@ GameObject:
   - 64: {fileID: 750798913}
   - 23: {fileID: 750798912}
   - 114: {fileID: 750798911}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13140,7 +13140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -13257,9 +13257,9 @@ GameObject:
   - 64: {fileID: 764967712}
   - 23: {fileID: 764967711}
   - 114: {fileID: 764967710}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13288,7 +13288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -13354,9 +13354,9 @@ GameObject:
   - 64: {fileID: 765366391}
   - 23: {fileID: 765366390}
   - 114: {fileID: 765366389}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13385,7 +13385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -13454,7 +13454,7 @@ GameObject:
   - 111: {fileID: 768001700}
   - 54: {fileID: 768001699}
   - 148: {fileID: 768001706}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -13589,7 +13589,7 @@ GameObject:
   - 111: {fileID: 777949037}
   - 54: {fileID: 777949036}
   - 148: {fileID: 777949043}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -13840,9 +13840,9 @@ GameObject:
   - 64: {fileID: 789006537}
   - 23: {fileID: 789006536}
   - 114: {fileID: 789006535}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13871,7 +13871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -13937,9 +13937,9 @@ GameObject:
   - 64: {fileID: 802332888}
   - 23: {fileID: 802332887}
   - 114: {fileID: 802332886}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13968,7 +13968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -14034,7 +14034,7 @@ GameObject:
   - 23: {fileID: 802999160}
   - 65: {fileID: 802999159}
   - 54: {fileID: 802999158}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14120,7 +14120,7 @@ GameObject:
   - 23: {fileID: 804026586}
   - 65: {fileID: 804026585}
   - 54: {fileID: 804026584}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14447,7 +14447,7 @@ GameObject:
   - 111: {fileID: 832125779}
   - 54: {fileID: 832125778}
   - 148: {fileID: 832125785}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -14579,7 +14579,7 @@ GameObject:
   - 23: {fileID: 835194254}
   - 65: {fileID: 835194253}
   - 54: {fileID: 835194252}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14721,9 +14721,9 @@ GameObject:
   - 64: {fileID: 847271629}
   - 23: {fileID: 847271628}
   - 114: {fileID: 847271627}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14752,7 +14752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -14818,9 +14818,9 @@ GameObject:
   - 64: {fileID: 849422521}
   - 23: {fileID: 849422520}
   - 114: {fileID: 849422519}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14849,7 +14849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -14955,7 +14955,7 @@ GameObject:
   - 23: {fileID: 851459388}
   - 65: {fileID: 851459387}
   - 54: {fileID: 851459386}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15089,9 +15089,9 @@ GameObject:
   - 64: {fileID: 859770827}
   - 23: {fileID: 859770826}
   - 114: {fileID: 859770825}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15120,7 +15120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -15186,9 +15186,9 @@ GameObject:
   - 64: {fileID: 863593841}
   - 23: {fileID: 863593840}
   - 114: {fileID: 863593839}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15217,7 +15217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -15283,9 +15283,9 @@ GameObject:
   - 64: {fileID: 865201356}
   - 23: {fileID: 865201355}
   - 114: {fileID: 865201354}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15314,7 +15314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -15460,9 +15460,9 @@ GameObject:
   - 64: {fileID: 878902611}
   - 23: {fileID: 878902610}
   - 114: {fileID: 878902609}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15491,7 +15491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -15597,7 +15597,7 @@ GameObject:
   - 23: {fileID: 908434783}
   - 65: {fileID: 908434782}
   - 54: {fileID: 908434781}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15683,7 +15683,7 @@ GameObject:
   - 23: {fileID: 912070835}
   - 65: {fileID: 912070834}
   - 54: {fileID: 912070833}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15769,9 +15769,9 @@ GameObject:
   - 64: {fileID: 920454456}
   - 23: {fileID: 920454455}
   - 114: {fileID: 920454454}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15800,7 +15800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -16041,9 +16041,9 @@ GameObject:
   - 64: {fileID: 940310762}
   - 23: {fileID: 940310761}
   - 114: {fileID: 940310760}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16072,7 +16072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -16338,9 +16338,9 @@ GameObject:
   - 64: {fileID: 957011672}
   - 23: {fileID: 957011671}
   - 114: {fileID: 957011670}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16369,7 +16369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -16555,7 +16555,7 @@ GameObject:
   - 23: {fileID: 969931834}
   - 65: {fileID: 969931833}
   - 54: {fileID: 969931832}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16684,7 +16684,7 @@ GameObject:
   - 111: {fileID: 979384396}
   - 54: {fileID: 979384395}
   - 148: {fileID: 979384402}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -16896,7 +16896,7 @@ GameObject:
   - 23: {fileID: 996288798}
   - 65: {fileID: 996288797}
   - 54: {fileID: 996288796}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16970,47 +16970,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 166503889}
   m_GameObject: {fileID: 996288794}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &997775797
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: a359ac274788eec419c8ddbf8df39504, type: 2}
-  m_PrefabInternal: {fileID: 1175658218}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 997775799}
-  - 114: {fileID: 997775798}
-  m_Layer: 0
-  m_Name: _NetworkManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &997775798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a359ac274788eec419c8ddbf8df39504,
-    type: 2}
-  m_PrefabInternal: {fileID: 1175658218}
-  m_GameObject: {fileID: 997775797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7de393731485eb4790c14389234e971, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _serverIp: 127.0.0.1
-  _connectionPort: 25001
---- !u!4 &997775799
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: a359ac274788eec419c8ddbf8df39504, type: 2}
-  m_PrefabInternal: {fileID: 1175658218}
-  m_GameObject: {fileID: 997775797}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.75034928, y: .328875542, z: .441640079}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &998690064
 GameObject:
   m_ObjectHideFlags: 0
@@ -17023,9 +16982,9 @@ GameObject:
   - 64: {fileID: 998690068}
   - 23: {fileID: 998690067}
   - 114: {fileID: 998690066}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17054,7 +17013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -17120,7 +17079,7 @@ GameObject:
   - 23: {fileID: 999243922}
   - 65: {fileID: 999243921}
   - 54: {fileID: 999243920}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17246,7 +17205,7 @@ GameObject:
   - 23: {fileID: 1006404138}
   - 65: {fileID: 1006404137}
   - 54: {fileID: 1006404136}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17335,7 +17294,7 @@ GameObject:
   - 111: {fileID: 1011135409}
   - 54: {fileID: 1011135408}
   - 148: {fileID: 1011135415}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -17555,9 +17514,9 @@ GameObject:
   - 64: {fileID: 1018763141}
   - 23: {fileID: 1018763140}
   - 114: {fileID: 1018763139}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17586,7 +17545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -17703,7 +17662,7 @@ GameObject:
   - 111: {fileID: 1025513369}
   - 54: {fileID: 1025513368}
   - 148: {fileID: 1025513375}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -17923,7 +17882,7 @@ GameObject:
   - 23: {fileID: 1035778144}
   - 65: {fileID: 1035778143}
   - 54: {fileID: 1035778142}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18012,7 +17971,7 @@ GameObject:
   - 111: {fileID: 1042371983}
   - 54: {fileID: 1042371982}
   - 148: {fileID: 1042371989}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -18344,7 +18303,7 @@ GameObject:
   - 23: {fileID: 1071633210}
   - 65: {fileID: 1071633209}
   - 54: {fileID: 1071633208}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18549,9 +18508,9 @@ GameObject:
   - 64: {fileID: 1084288513}
   - 23: {fileID: 1084288512}
   - 114: {fileID: 1084288511}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -18580,7 +18539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -18686,7 +18645,7 @@ GameObject:
   - 23: {fileID: 1087622519}
   - 65: {fileID: 1087622518}
   - 54: {fileID: 1087622517}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18860,7 +18819,7 @@ GameObject:
   - 23: {fileID: 1097892578}
   - 65: {fileID: 1097892577}
   - 54: {fileID: 1097892576}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18994,7 +18953,7 @@ GameObject:
   - 23: {fileID: 1101100500}
   - 65: {fileID: 1101100499}
   - 54: {fileID: 1101100498}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19208,7 +19167,7 @@ GameObject:
   - 23: {fileID: 1118103489}
   - 65: {fileID: 1118103488}
   - 54: {fileID: 1118103487}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19294,9 +19253,9 @@ GameObject:
   - 64: {fileID: 1120432597}
   - 23: {fileID: 1120432596}
   - 114: {fileID: 1120432595}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19325,7 +19284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -19391,7 +19350,7 @@ GameObject:
   - 23: {fileID: 1121300652}
   - 65: {fileID: 1121300651}
   - 54: {fileID: 1121300650}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19477,9 +19436,9 @@ GameObject:
   - 64: {fileID: 1131045670}
   - 23: {fileID: 1131045669}
   - 114: {fileID: 1131045668}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19508,7 +19467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -19574,9 +19533,9 @@ GameObject:
   - 64: {fileID: 1131780396}
   - 23: {fileID: 1131780395}
   - 114: {fileID: 1131780394}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19605,7 +19564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -19747,7 +19706,7 @@ GameObject:
   - 23: {fileID: 1132932668}
   - 65: {fileID: 1132932667}
   - 54: {fileID: 1132932666}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19833,9 +19792,9 @@ GameObject:
   - 64: {fileID: 1138467595}
   - 23: {fileID: 1138467594}
   - 114: {fileID: 1138467593}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19853,7 +19812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -19930,9 +19889,9 @@ GameObject:
   - 64: {fileID: 1138921125}
   - 23: {fileID: 1138921124}
   - 114: {fileID: 1138921123}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19961,7 +19920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -20027,9 +19986,9 @@ GameObject:
   - 64: {fileID: 1144214688}
   - 23: {fileID: 1144214687}
   - 114: {fileID: 1144214686}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20058,7 +20017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -20207,7 +20166,7 @@ GameObject:
   - 111: {fileID: 1153446262}
   - 54: {fileID: 1153446261}
   - 148: {fileID: 1153446268}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -20339,9 +20298,9 @@ GameObject:
   - 64: {fileID: 1154215456}
   - 23: {fileID: 1154215455}
   - 114: {fileID: 1154215454}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20370,7 +20329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -20556,7 +20515,7 @@ GameObject:
   - 23: {fileID: 1167197659}
   - 65: {fileID: 1167197658}
   - 54: {fileID: 1167197657}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20682,7 +20641,7 @@ GameObject:
   - 23: {fileID: 1170747392}
   - 65: {fileID: 1170747391}
   - 54: {fileID: 1170747390}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20771,7 +20730,7 @@ GameObject:
   - 111: {fileID: 1175633776}
   - 54: {fileID: 1175633775}
   - 148: {fileID: 1175633782}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -20891,46 +20850,6 @@ NetworkView:
   m_ViewID:
     m_ID: 18
     m_Type: 1
---- !u!1001 &1175658218
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: a359ac274788eec419c8ddbf8df39504, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.75034928
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a359ac274788eec419c8ddbf8df39504, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .328875542
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a359ac274788eec419c8ddbf8df39504, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: .441640079
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a359ac274788eec419c8ddbf8df39504, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a359ac274788eec419c8ddbf8df39504, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a359ac274788eec419c8ddbf8df39504, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a359ac274788eec419c8ddbf8df39504, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a359ac274788eec419c8ddbf8df39504, type: 2}
-  m_RootGameObject: {fileID: 997775797}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1001 &1177302208
 Prefab:
   m_ObjectHideFlags: 0
@@ -20986,7 +20905,7 @@ GameObject:
   - 111: {fileID: 1178454577}
   - 54: {fileID: 1178454576}
   - 148: {fileID: 1178454583}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -21118,9 +21037,9 @@ GameObject:
   - 64: {fileID: 1183173866}
   - 23: {fileID: 1183173865}
   - 114: {fileID: 1183173864}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21149,7 +21068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -21215,9 +21134,9 @@ GameObject:
   - 64: {fileID: 1187110434}
   - 23: {fileID: 1187110433}
   - 114: {fileID: 1187110432}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21246,7 +21165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -21352,7 +21271,7 @@ GameObject:
   - 23: {fileID: 1191812275}
   - 65: {fileID: 1191812274}
   - 54: {fileID: 1191812273}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21478,7 +21397,7 @@ GameObject:
   - 23: {fileID: 1194030259}
   - 65: {fileID: 1194030258}
   - 54: {fileID: 1194030257}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21684,9 +21603,9 @@ GameObject:
   - 64: {fileID: 1199098535}
   - 23: {fileID: 1199098534}
   - 114: {fileID: 1199098533}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21715,7 +21634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -21781,9 +21700,9 @@ GameObject:
   - 64: {fileID: 1200752316}
   - 23: {fileID: 1200752315}
   - 114: {fileID: 1200752314}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21812,7 +21731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -21961,7 +21880,7 @@ GameObject:
   - 111: {fileID: 1213941640}
   - 54: {fileID: 1213941639}
   - 148: {fileID: 1213941646}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -22141,9 +22060,9 @@ GameObject:
   - 64: {fileID: 1231739255}
   - 23: {fileID: 1231739254}
   - 114: {fileID: 1231739253}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22172,7 +22091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -22238,9 +22157,9 @@ GameObject:
   - 64: {fileID: 1236846050}
   - 23: {fileID: 1236846049}
   - 114: {fileID: 1236846048}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22269,7 +22188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -22335,7 +22254,7 @@ GameObject:
   - 23: {fileID: 1237198905}
   - 65: {fileID: 1237198904}
   - 54: {fileID: 1237198903}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22461,9 +22380,9 @@ GameObject:
   - 64: {fileID: 1244340863}
   - 23: {fileID: 1244340862}
   - 114: {fileID: 1244340861}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22481,7 +22400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -22641,7 +22560,7 @@ GameObject:
   - 111: {fileID: 1263805979}
   - 54: {fileID: 1263805978}
   - 148: {fileID: 1263805985}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -22816,7 +22735,7 @@ GameObject:
   - 111: {fileID: 1269614292}
   - 54: {fileID: 1269614291}
   - 148: {fileID: 1269614298}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -22948,9 +22867,9 @@ GameObject:
   - 64: {fileID: 1275310517}
   - 23: {fileID: 1275310516}
   - 114: {fileID: 1275310515}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22979,7 +22898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -23045,9 +22964,9 @@ GameObject:
   - 64: {fileID: 1282466446}
   - 23: {fileID: 1282466445}
   - 114: {fileID: 1282466444}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23076,7 +22995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -23142,9 +23061,9 @@ GameObject:
   - 64: {fileID: 1294944105}
   - 23: {fileID: 1294944104}
   - 114: {fileID: 1294944103}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23173,7 +23092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -23239,9 +23158,9 @@ GameObject:
   - 64: {fileID: 1298492142}
   - 23: {fileID: 1298492141}
   - 114: {fileID: 1298492140}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23270,7 +23189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -23384,7 +23303,7 @@ GameObject:
   - 23: {fileID: 1301786180}
   - 65: {fileID: 1301786179}
   - 54: {fileID: 1301786178}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23470,7 +23389,7 @@ GameObject:
   - 23: {fileID: 1303281871}
   - 65: {fileID: 1303281870}
   - 54: {fileID: 1303281869}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23556,7 +23475,7 @@ GameObject:
   - 23: {fileID: 1305257816}
   - 65: {fileID: 1305257815}
   - 54: {fileID: 1305257814}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23690,9 +23609,9 @@ GameObject:
   - 64: {fileID: 1312261209}
   - 23: {fileID: 1312261208}
   - 114: {fileID: 1312261207}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23721,7 +23640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -23827,9 +23746,9 @@ GameObject:
   - 64: {fileID: 1321810070}
   - 23: {fileID: 1321810069}
   - 114: {fileID: 1321810068}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23858,7 +23777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -24004,7 +23923,7 @@ GameObject:
   - 23: {fileID: 1325235927}
   - 65: {fileID: 1325235926}
   - 54: {fileID: 1325235925}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24093,7 +24012,7 @@ GameObject:
   - 111: {fileID: 1329919455}
   - 54: {fileID: 1329919454}
   - 148: {fileID: 1329919461}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -24225,9 +24144,9 @@ GameObject:
   - 64: {fileID: 1338300191}
   - 23: {fileID: 1338300190}
   - 114: {fileID: 1338300189}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24256,7 +24175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -24322,9 +24241,9 @@ GameObject:
   - 64: {fileID: 1340066306}
   - 23: {fileID: 1340066305}
   - 114: {fileID: 1340066304}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24353,7 +24272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -24419,9 +24338,9 @@ GameObject:
   - 64: {fileID: 1341087581}
   - 23: {fileID: 1341087580}
   - 114: {fileID: 1341087579}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24450,7 +24369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -24516,9 +24435,9 @@ GameObject:
   - 64: {fileID: 1341137543}
   - 23: {fileID: 1341137542}
   - 114: {fileID: 1341137541}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24547,7 +24466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -24741,9 +24660,9 @@ GameObject:
   - 64: {fileID: 1355061116}
   - 23: {fileID: 1355061115}
   - 114: {fileID: 1355061114}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24772,7 +24691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -24838,9 +24757,9 @@ GameObject:
   - 64: {fileID: 1355294752}
   - 23: {fileID: 1355294751}
   - 114: {fileID: 1355294750}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24869,7 +24788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -25018,7 +24937,7 @@ GameObject:
   - 111: {fileID: 1367312448}
   - 54: {fileID: 1367312447}
   - 148: {fileID: 1367312454}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -25150,7 +25069,7 @@ GameObject:
   - 23: {fileID: 1370087203}
   - 65: {fileID: 1370087202}
   - 54: {fileID: 1370087201}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25236,9 +25155,9 @@ GameObject:
   - 64: {fileID: 1370279767}
   - 23: {fileID: 1370279766}
   - 114: {fileID: 1370279765}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25267,7 +25186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -25373,9 +25292,9 @@ GameObject:
   - 64: {fileID: 1382580097}
   - 23: {fileID: 1382580096}
   - 114: {fileID: 1382580095}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25404,7 +25323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -25510,9 +25429,9 @@ GameObject:
   - 64: {fileID: 1385299782}
   - 23: {fileID: 1385299781}
   - 114: {fileID: 1385299780}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25541,7 +25460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -25687,9 +25606,9 @@ GameObject:
   - 64: {fileID: 1389891030}
   - 23: {fileID: 1389891029}
   - 114: {fileID: 1389891028}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25718,7 +25637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -25784,9 +25703,9 @@ GameObject:
   - 64: {fileID: 1403250532}
   - 23: {fileID: 1403250531}
   - 114: {fileID: 1403250530}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25815,7 +25734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -25921,9 +25840,9 @@ GameObject:
   - 64: {fileID: 1408049077}
   - 23: {fileID: 1408049076}
   - 114: {fileID: 1408049075}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25952,7 +25871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -26058,9 +25977,9 @@ GameObject:
   - 64: {fileID: 1416304079}
   - 23: {fileID: 1416304078}
   - 114: {fileID: 1416304077}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26089,7 +26008,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -26254,7 +26173,7 @@ GameObject:
   - 111: {fileID: 1419405601}
   - 54: {fileID: 1419405600}
   - 148: {fileID: 1419405607}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -26434,9 +26353,9 @@ GameObject:
   - 64: {fileID: 1423853568}
   - 23: {fileID: 1423853567}
   - 114: {fileID: 1423853566}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26465,7 +26384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -26579,9 +26498,9 @@ GameObject:
   - 64: {fileID: 1439293523}
   - 23: {fileID: 1439293522}
   - 114: {fileID: 1439293521}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26610,7 +26529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -26676,9 +26595,9 @@ GameObject:
   - 64: {fileID: 1440545627}
   - 23: {fileID: 1440545626}
   - 114: {fileID: 1440545625}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26707,7 +26626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -26773,9 +26692,9 @@ GameObject:
   - 64: {fileID: 1440910430}
   - 23: {fileID: 1440910429}
   - 114: {fileID: 1440910428}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26804,7 +26723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -26870,9 +26789,9 @@ GameObject:
   - 64: {fileID: 1443820025}
   - 23: {fileID: 1443820024}
   - 114: {fileID: 1443820023}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26901,7 +26820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -27095,9 +27014,9 @@ GameObject:
   - 64: {fileID: 1463867196}
   - 23: {fileID: 1463867195}
   - 114: {fileID: 1463867194}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27126,7 +27045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -27192,9 +27111,9 @@ GameObject:
   - 64: {fileID: 1471715342}
   - 23: {fileID: 1471715341}
   - 114: {fileID: 1471715340}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27223,7 +27142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -27289,9 +27208,9 @@ GameObject:
   - 64: {fileID: 1473099344}
   - 23: {fileID: 1473099343}
   - 114: {fileID: 1473099342}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27320,7 +27239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -27426,9 +27345,9 @@ GameObject:
   - 64: {fileID: 1475020007}
   - 23: {fileID: 1475020006}
   - 114: {fileID: 1475020005}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -27457,7 +27376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -27723,7 +27642,7 @@ GameObject:
   - 23: {fileID: 1497770365}
   - 65: {fileID: 1497770364}
   - 54: {fileID: 1497770363}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27809,7 +27728,7 @@ GameObject:
   - 23: {fileID: 1499062571}
   - 65: {fileID: 1499062570}
   - 54: {fileID: 1499062569}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27895,7 +27814,7 @@ GameObject:
   - 23: {fileID: 1500751060}
   - 65: {fileID: 1500751059}
   - 54: {fileID: 1500751058}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27984,7 +27903,7 @@ GameObject:
   - 111: {fileID: 1503478167}
   - 54: {fileID: 1503478166}
   - 148: {fileID: 1503478173}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -28156,7 +28075,7 @@ GameObject:
   - 23: {fileID: 1506059174}
   - 65: {fileID: 1506059173}
   - 54: {fileID: 1506059172}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28242,9 +28161,9 @@ GameObject:
   - 64: {fileID: 1506622007}
   - 23: {fileID: 1506622006}
   - 114: {fileID: 1506622005}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28273,7 +28192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -28427,7 +28346,7 @@ GameObject:
   - 23: {fileID: 1526786163}
   - 65: {fileID: 1526786162}
   - 54: {fileID: 1526786161}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28513,7 +28432,7 @@ GameObject:
   - 23: {fileID: 1535240429}
   - 65: {fileID: 1535240428}
   - 54: {fileID: 1535240427}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28642,7 +28561,7 @@ GameObject:
   - 111: {fileID: 1539601945}
   - 54: {fileID: 1539601944}
   - 148: {fileID: 1539601951}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -28774,9 +28693,9 @@ GameObject:
   - 64: {fileID: 1545537174}
   - 23: {fileID: 1545537173}
   - 114: {fileID: 1545537172}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28805,7 +28724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -28871,9 +28790,9 @@ GameObject:
   - 64: {fileID: 1556233718}
   - 23: {fileID: 1556233717}
   - 114: {fileID: 1556233716}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28902,7 +28821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -29088,9 +29007,9 @@ GameObject:
   - 64: {fileID: 1571201828}
   - 23: {fileID: 1571201827}
   - 114: {fileID: 1571201826}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29119,7 +29038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -29185,9 +29104,9 @@ GameObject:
   - 64: {fileID: 1571482900}
   - 23: {fileID: 1571482899}
   - 114: {fileID: 1571482898}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29205,7 +29124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -29285,7 +29204,7 @@ GameObject:
   - 111: {fileID: 1582675968}
   - 54: {fileID: 1582675967}
   - 148: {fileID: 1582675974}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -29417,7 +29336,7 @@ GameObject:
   - 23: {fileID: 1583368057}
   - 65: {fileID: 1583368056}
   - 54: {fileID: 1583368055}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29503,9 +29422,9 @@ GameObject:
   - 64: {fileID: 1589290180}
   - 23: {fileID: 1589290179}
   - 114: {fileID: 1589290178}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -29534,7 +29453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -29683,7 +29602,7 @@ GameObject:
   - 111: {fileID: 1609669077}
   - 54: {fileID: 1609669076}
   - 148: {fileID: 1609669083}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -29866,7 +29785,7 @@ GameObject:
   - 111: {fileID: 1615101405}
   - 54: {fileID: 1615101404}
   - 148: {fileID: 1615101411}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -30038,9 +29957,9 @@ GameObject:
   - 64: {fileID: 1621483960}
   - 23: {fileID: 1621483959}
   - 114: {fileID: 1621483958}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30069,7 +29988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -30135,7 +30054,7 @@ GameObject:
   - 23: {fileID: 1623175396}
   - 65: {fileID: 1623175395}
   - 54: {fileID: 1623175394}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30261,7 +30180,7 @@ GameObject:
   - 23: {fileID: 1627484160}
   - 65: {fileID: 1627484159}
   - 54: {fileID: 1627484158}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30398,7 +30317,7 @@ GameObject:
   - 111: {fileID: 1631401597}
   - 54: {fileID: 1631401596}
   - 148: {fileID: 1631401603}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -30570,9 +30489,9 @@ GameObject:
   - 64: {fileID: 1651213565}
   - 23: {fileID: 1651213564}
   - 114: {fileID: 1651213563}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30601,7 +30520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -30667,9 +30586,9 @@ GameObject:
   - 64: {fileID: 1653585666}
   - 23: {fileID: 1653585665}
   - 114: {fileID: 1653585664}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30698,7 +30617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -30764,9 +30683,9 @@ GameObject:
   - 64: {fileID: 1661901303}
   - 23: {fileID: 1661901302}
   - 114: {fileID: 1661901301}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30795,7 +30714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -30861,9 +30780,9 @@ GameObject:
   - 64: {fileID: 1665780987}
   - 23: {fileID: 1665780986}
   - 114: {fileID: 1665780985}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -30892,7 +30811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -31078,9 +30997,9 @@ GameObject:
   - 64: {fileID: 1669558849}
   - 23: {fileID: 1669558848}
   - 114: {fileID: 1669558847}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31109,7 +31028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -31263,7 +31182,7 @@ GameObject:
   - 23: {fileID: 1680309910}
   - 65: {fileID: 1680309909}
   - 54: {fileID: 1680309908}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31349,9 +31268,9 @@ GameObject:
   - 64: {fileID: 1681771553}
   - 23: {fileID: 1681771552}
   - 114: {fileID: 1681771551}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -31380,7 +31299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -31486,7 +31405,7 @@ GameObject:
   - 23: {fileID: 1688105209}
   - 65: {fileID: 1688105208}
   - 54: {fileID: 1688105207}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31575,7 +31494,7 @@ GameObject:
   - 111: {fileID: 1689029523}
   - 54: {fileID: 1689029522}
   - 148: {fileID: 1689029529}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -31707,7 +31626,7 @@ GameObject:
   - 23: {fileID: 1693714850}
   - 65: {fileID: 1693714849}
   - 54: {fileID: 1693714848}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31796,7 +31715,7 @@ GameObject:
   - 111: {fileID: 1697376605}
   - 54: {fileID: 1697376604}
   - 148: {fileID: 1697376611}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -32048,9 +31967,9 @@ GameObject:
   - 64: {fileID: 1704895492}
   - 23: {fileID: 1704895491}
   - 114: {fileID: 1704895490}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32079,7 +31998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -32185,9 +32104,9 @@ GameObject:
   - 64: {fileID: 1722992362}
   - 23: {fileID: 1722992361}
   - 114: {fileID: 1722992360}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32216,7 +32135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -32282,7 +32201,7 @@ GameObject:
   - 23: {fileID: 1725567266}
   - 65: {fileID: 1725567265}
   - 54: {fileID: 1725567264}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32368,9 +32287,9 @@ GameObject:
   - 64: {fileID: 1726083653}
   - 23: {fileID: 1726083652}
   - 114: {fileID: 1726083651}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32399,7 +32318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -32505,7 +32424,7 @@ GameObject:
   - 23: {fileID: 1730122487}
   - 65: {fileID: 1730122486}
   - 54: {fileID: 1730122485}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32594,7 +32513,7 @@ GameObject:
   - 111: {fileID: 1730398046}
   - 54: {fileID: 1730398045}
   - 148: {fileID: 1730398052}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -32726,9 +32645,9 @@ GameObject:
   - 64: {fileID: 1742488464}
   - 23: {fileID: 1742488463}
   - 114: {fileID: 1742488462}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32757,7 +32676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -32863,7 +32782,7 @@ GameObject:
   - 23: {fileID: 1751343956}
   - 65: {fileID: 1751343955}
   - 54: {fileID: 1751343954}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32949,9 +32868,9 @@ GameObject:
   - 64: {fileID: 1753623134}
   - 23: {fileID: 1753623133}
   - 114: {fileID: 1753623132}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -32980,7 +32899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -33088,7 +33007,7 @@ GameObject:
   - 111: {fileID: 1756716485}
   - 54: {fileID: 1756716484}
   - 148: {fileID: 1756716491}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -33206,7 +33125,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 51
+    m_ID: 50
     m_Type: 1
 --- !u!1001 &1758422412
 Prefab:
@@ -33257,6 +33176,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1760449540}
   - 114: {fileID: 1760449539}
+  - 114: {fileID: 1760449544}
+  - 114: {fileID: 1760449543}
   - 148: {fileID: 1760449542}
   - 148: {fileID: 1760449541}
   m_Layer: 0
@@ -33264,7 +33185,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1760449539
 MonoBehaviour:
@@ -33278,8 +33199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d13cbafcce4ed40802d8ed040eff88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerPrefab: {fileID: 400006, guid: 4477f611ec58a5e42a3e447d20a61aff, type: 2}
-  _champsListScript: {fileID: 0}
+  _spwnScript: {fileID: 1760449543}
+  _playerPoolMngScript: {fileID: 0}
 --- !u!4 &1760449540
 Transform:
   m_ObjectHideFlags: 0
@@ -33314,8 +33235,47 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 1
+    m_ID: 53
     m_Type: 1
+--- !u!114 &1760449543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 64fe3504fa0392543b79bbe504aeea19,
+    type: 2}
+  m_PrefabInternal: {fileID: 1480886265}
+  m_GameObject: {fileID: 1760449538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8fe245b08a2b245b74efb975e2ba51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &1760449544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 64fe3504fa0392543b79bbe504aeea19,
+    type: 2}
+  m_PrefabInternal: {fileID: 1480886265}
+  m_GameObject: {fileID: 1760449538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dc257b8117db26478408d2dc288ed84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _championList:
+  - {fileID: 400000, guid: 836daa6262945d64eb651cdf03e53678, type: 2}
+  - {fileID: 400000, guid: 64e890e9c32ec344aa4cd176af5df4cc, type: 2}
+  - {fileID: 400000, guid: 21393cf330ec93e4cb86d71a04088515, type: 2}
 --- !u!1001 &1761901296
 Prefab:
   m_ObjectHideFlags: 0
@@ -33368,9 +33328,9 @@ GameObject:
   - 64: {fileID: 1763479646}
   - 23: {fileID: 1763479645}
   - 114: {fileID: 1763479644}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33399,7 +33359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -33465,9 +33425,9 @@ GameObject:
   - 64: {fileID: 1773690773}
   - 23: {fileID: 1773690772}
   - 114: {fileID: 1773690771}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33485,7 +33445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -33562,9 +33522,9 @@ GameObject:
   - 64: {fileID: 1774186181}
   - 23: {fileID: 1774186180}
   - 114: {fileID: 1774186179}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33593,7 +33553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -33659,9 +33619,9 @@ GameObject:
   - 64: {fileID: 1774758922}
   - 23: {fileID: 1774758921}
   - 114: {fileID: 1774758920}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33690,7 +33650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -33836,9 +33796,9 @@ GameObject:
   - 64: {fileID: 1791539798}
   - 23: {fileID: 1791539797}
   - 114: {fileID: 1791539796}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33867,7 +33827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -34029,7 +33989,7 @@ GameObject:
   - 23: {fileID: 1807819807}
   - 65: {fileID: 1807819806}
   - 54: {fileID: 1807819805}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34118,7 +34078,7 @@ GameObject:
   - 111: {fileID: 1814474350}
   - 54: {fileID: 1814474349}
   - 148: {fileID: 1814474356}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -34293,7 +34253,7 @@ GameObject:
   - 111: {fileID: 1816628327}
   - 54: {fileID: 1816628326}
   - 148: {fileID: 1816628333}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -34473,7 +34433,7 @@ GameObject:
   - 23: {fileID: 1821572181}
   - 65: {fileID: 1821572180}
   - 54: {fileID: 1821572179}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34559,7 +34519,7 @@ GameObject:
   - 23: {fileID: 1832415501}
   - 65: {fileID: 1832415500}
   - 54: {fileID: 1832415499}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34645,7 +34605,7 @@ GameObject:
   - 23: {fileID: 1845527629}
   - 65: {fileID: 1845527628}
   - 54: {fileID: 1845527627}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34731,7 +34691,7 @@ GameObject:
   - 23: {fileID: 1854615328}
   - 65: {fileID: 1854615327}
   - 54: {fileID: 1854615326}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35063,9 +35023,9 @@ GameObject:
   - 64: {fileID: 1882832733}
   - 23: {fileID: 1882832732}
   - 114: {fileID: 1882832731}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35094,7 +35054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -35200,9 +35160,9 @@ GameObject:
   - 64: {fileID: 1889994365}
   - 23: {fileID: 1889994364}
   - 114: {fileID: 1889994363}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35231,7 +35191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -35297,7 +35257,7 @@ GameObject:
   - 23: {fileID: 1892360411}
   - 65: {fileID: 1892360410}
   - 54: {fileID: 1892360409}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35383,7 +35343,7 @@ GameObject:
   - 23: {fileID: 1893172959}
   - 65: {fileID: 1893172958}
   - 54: {fileID: 1893172957}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35517,9 +35477,9 @@ GameObject:
   - 64: {fileID: 1897940934}
   - 23: {fileID: 1897940933}
   - 114: {fileID: 1897940932}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35548,7 +35508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -35614,7 +35574,7 @@ GameObject:
   - 23: {fileID: 1898437919}
   - 65: {fileID: 1898437918}
   - 54: {fileID: 1898437917}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35932,9 +35892,9 @@ GameObject:
   - 64: {fileID: 1917942219}
   - 23: {fileID: 1917942218}
   - 114: {fileID: 1917942217}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -35963,7 +35923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -36032,7 +35992,7 @@ GameObject:
   - 111: {fileID: 1919310276}
   - 54: {fileID: 1919310275}
   - 148: {fileID: 1919310282}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -36204,9 +36164,9 @@ GameObject:
   - 64: {fileID: 1921153587}
   - 23: {fileID: 1921153586}
   - 114: {fileID: 1921153585}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36235,7 +36195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -36301,9 +36261,9 @@ GameObject:
   - 64: {fileID: 1921506509}
   - 23: {fileID: 1921506508}
   - 114: {fileID: 1921506507}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -36332,7 +36292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -36518,7 +36478,7 @@ GameObject:
   - 23: {fileID: 1939507515}
   - 65: {fileID: 1939507514}
   - 54: {fileID: 1939507513}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36655,7 +36615,7 @@ GameObject:
   - 111: {fileID: 1942127582}
   - 54: {fileID: 1942127581}
   - 148: {fileID: 1942127588}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -36787,7 +36747,7 @@ GameObject:
   - 23: {fileID: 1942253117}
   - 65: {fileID: 1942253116}
   - 54: {fileID: 1942253115}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36876,7 +36836,7 @@ GameObject:
   - 111: {fileID: 1944088602}
   - 54: {fileID: 1944088601}
   - 148: {fileID: 1944088608}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -37127,7 +37087,7 @@ GameObject:
   - 23: {fileID: 1970666516}
   - 65: {fileID: 1970666515}
   - 54: {fileID: 1970666514}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37216,7 +37176,7 @@ GameObject:
   - 111: {fileID: 1973172801}
   - 54: {fileID: 1973172800}
   - 148: {fileID: 1973172807}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -37516,7 +37476,7 @@ GameObject:
   - 23: {fileID: 1982109488}
   - 65: {fileID: 1982109487}
   - 54: {fileID: 1982109486}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37722,9 +37682,9 @@ GameObject:
   - 64: {fileID: 2000598738}
   - 23: {fileID: 2000598737}
   - 114: {fileID: 2000598736}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -37753,7 +37713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -37822,7 +37782,7 @@ GameObject:
   - 111: {fileID: 2000718831}
   - 54: {fileID: 2000718830}
   - 148: {fileID: 2000718837}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -37997,7 +37957,7 @@ GameObject:
   - 111: {fileID: 2006695071}
   - 54: {fileID: 2006695070}
   - 148: {fileID: 2006695077}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -38297,7 +38257,7 @@ GameObject:
   - 23: {fileID: 2024278309}
   - 65: {fileID: 2024278308}
   - 54: {fileID: 2024278307}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38465,7 +38425,7 @@ GameObject:
   - 111: {fileID: 2030645370}
   - 54: {fileID: 2030645369}
   - 148: {fileID: 2030645376}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -38597,9 +38557,9 @@ GameObject:
   - 64: {fileID: 2032101282}
   - 23: {fileID: 2032101281}
   - 114: {fileID: 2032101280}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -38628,7 +38588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -38774,9 +38734,9 @@ GameObject:
   - 64: {fileID: 2052850489}
   - 23: {fileID: 2052850488}
   - 114: {fileID: 2052850487}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -38805,7 +38765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -38911,9 +38871,9 @@ GameObject:
   - 64: {fileID: 2065442841}
   - 23: {fileID: 2065442840}
   - 114: {fileID: 2065442839}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -38942,7 +38902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -39008,7 +38968,7 @@ GameObject:
   - 23: {fileID: 2066222358}
   - 65: {fileID: 2066222357}
   - 54: {fileID: 2066222356}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39094,9 +39054,9 @@ GameObject:
   - 64: {fileID: 2072465295}
   - 23: {fileID: 2072465294}
   - 114: {fileID: 2072465293}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39125,7 +39085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -39194,7 +39154,7 @@ GameObject:
   - 111: {fileID: 2073046114}
   - 54: {fileID: 2073046113}
   - 148: {fileID: 2073046120}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BasicDestructibleBloc
   m_TagString: Destructible
   m_Icon: {fileID: 0}
@@ -39486,9 +39446,9 @@ GameObject:
   - 64: {fileID: 2115630370}
   - 23: {fileID: 2115630369}
   - 114: {fileID: 2115630368}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39517,7 +39477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -39583,7 +39543,7 @@ GameObject:
   - 23: {fileID: 2117691260}
   - 65: {fileID: 2117691259}
   - 54: {fileID: 2117691258}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39797,7 +39757,7 @@ GameObject:
   - 23: {fileID: 2123557625}
   - 65: {fileID: 2123557624}
   - 54: {fileID: 2123557623}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: IndestructibleBloc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39883,9 +39843,9 @@ GameObject:
   - 64: {fileID: 2124343334}
   - 23: {fileID: 2124343333}
   - 114: {fileID: 2124343332}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39914,7 +39874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}
@@ -39980,9 +39940,9 @@ GameObject:
   - 64: {fileID: 2132479382}
   - 23: {fileID: 2132479381}
   - 114: {fileID: 2132479380}
-  m_Layer: 8
+  m_Layer: 15
   m_Name: GroundBloc
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40011,7 +39971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnTextures:
-  - {fileID: 2800000, guid: 4be08e675952fd049a0cc6c115d31cab, type: 3}
+  - {fileID: 2800000, guid: b827b939a5ca3774bb957e89a8995dce, type: 3}
   - {fileID: 2800000, guid: b932a7be086291b46884399b7f0f534a, type: 3}
   - {fileID: 2800000, guid: f79f6ba227772d94cb316872bff098bf, type: 3}
   - {fileID: 2800000, guid: 03a75fb89076ab04ba053f7ccc5798cf, type: 3}

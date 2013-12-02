@@ -27,8 +27,6 @@ public class IsLockedScript : GUIItemScript
         set { _case = value; }
     }
 
-
-
     /// <summary>
     /// 
     /// </summary>
@@ -37,10 +35,29 @@ public class IsLockedScript : GUIItemScript
         InitializeGUI();
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
+
     public override void OnMouseUp()
+    {
+        networkView.RPC("SendSetLock", RPCMode.Server);
+    }
+
+    [RPC]
+    void SendSetLock(NetworkMessageInfo info)
+    {
+        if (GameOptionSingleton.Instance.HostPlayer == info.sender)
+        {
+            SetLock();
+            networkView.RPC("ResponseSetLock", RPCMode.Others);
+        }
+    }
+
+    [RPC]
+    void ResponseSetLock()
+    {
+        SetLock();
+    }
+
+    void SetLock()
     {
         Case.GetComponent<PlayerCaseScript>().SetLocked();
         this.gameObject.SetActive(false);

@@ -41,6 +41,23 @@ public class IsIAScript : GUIItemScript
     /// </summary>
     public override void OnMouseUp()
     {
+        networkView.RPC("SendSetIA", RPCMode.Server);
+    }
+
+    [RPC]
+    void SendSetIA(NetworkMessageInfo info)
+    {
+        if (GameOptionSingleton.Instance.HostPlayer == info.sender)
+        {
+            Case.GetComponent<PlayerCaseScript>().SetIA();
+            this.gameObject.SetActive(false);
+            networkView.RPC("ResponseSetIA", RPCMode.Others);
+        }
+    }
+
+    [RPC]
+    void ResponseSetIA()
+    {
         Case.GetComponent<PlayerCaseScript>().SetIA();
         this.gameObject.SetActive(false);
     }

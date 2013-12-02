@@ -48,11 +48,12 @@ public class InitializePlayersChampionScript : MonoBehaviour {
 
     void Start()
     {
-        SetChampion();
+
     }
 
     public void SetChampion()
     {
+        this.gameObject.SetActive(true);
         Transform champion = (Transform)Instantiate(ServerInitializePlayersManagerScript.ChampDbScript.ChampionList[ChampID], _transform.position, _transform.rotation);
         champion.parent = transform;
         champion.networkView.viewID = NwViewID;
