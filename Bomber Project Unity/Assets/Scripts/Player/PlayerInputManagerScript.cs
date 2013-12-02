@@ -172,7 +172,7 @@ public class PlayerInputManagerScript : MonoBehaviour {
     /// Same for the bomb
     /// </summary>
     [RPC]
-    void SendUseBomb()
+     public void SendUseBomb()
     {
         if (Network.isServer)
         {

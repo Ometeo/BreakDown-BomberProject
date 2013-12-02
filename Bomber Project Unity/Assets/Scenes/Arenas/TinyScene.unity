@@ -2567,7 +2567,7 @@ GameObject:
   - 65: {fileID: 337196361}
   - 114: {fileID: 337196360}
   - 54: {fileID: 337196359}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2603,8 +2603,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraSpeed: .25
-  _players: []
-  _currentPlayer: {fileID: 0}
   _centerOnPlayerKey: 32
 --- !u!65 &337196361
 BoxCollider:
@@ -2618,7 +2616,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: .5, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &337196362
 Transform:
   m_ObjectHideFlags: 0
@@ -2626,7 +2624,7 @@ Transform:
   m_PrefabInternal: {fileID: 942033346}
   m_GameObject: {fileID: 337196358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: .5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1617949854}
@@ -5750,7 +5748,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5c14c81f5a6d75d44b7edbac35172cc7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5c14c81f5a6d75d44b7edbac35172cc7, type: 2}
       propertyPath: m_LocalPosition.z
