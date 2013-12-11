@@ -1,0 +1,61 @@
+Initialize engine version: 4.2.0f4 (38efbd14869d)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.2049]
+    Renderer: Intel(R) HD Graphics 4000
+    Vendor:   Intel
+    VRAM:     848 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 DF24=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\jonat_000\Documents\GitHub\BreakDown-BomberProject\Rendu\RC\Build\BMP_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\jonat_000\Documents\GitHub\BreakDown-BomberProject\Rendu\RC\Build\BMP_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\jonat_000\Documents\GitHub\BreakDown-BomberProject\Rendu\RC\Build\BMP_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\jonat_000\Documents\GitHub\BreakDown-BomberProject\Rendu\RC\Build\BMP_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.112 seconds
+desktop: 1920x1080 59Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 1.164656 ms
+System memory in use before: 2.4 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 1.9 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 411.
+Total: 2.039263 ms (FindLiveObjects: 0.048638 ms CreateObjectMapping: 0.125390 ms MarkObjects: 0.160642 ms  DeleteObjects: 0.285139 ms)
+
+UnloadTime: 1.695667 ms
+System memory in use before: 2.3 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 2.2 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 248.
+Total: 2.115122 ms (FindLiveObjects: 0.041499 ms CreateObjectMapping: 0.033467 ms MarkObjects: 0.257473 ms  DeleteObjects: 0.307451 ms)
+
+UnloadTime: 0.984379 ms
+System memory in use before: 2.6 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 2.1 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 898.
+Total: 1.973668 ms (FindLiveObjects: 0.075412 ms CreateObjectMapping: 0.031682 ms MarkObjects: 0.211512 ms  DeleteObjects: 0.297188 ms)
+
+UnloadTime: 3.336003 ms
+System memory in use before: 2.1 MB.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 2.0 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 383.
+Total: 1.661754 ms (FindLiveObjects: 0.038375 ms CreateObjectMapping: 0.022311 ms MarkObjects: 0.144577 ms  DeleteObjects: 0.146362 ms)
+
+UnloadTime: 1.331099 ms
+System memory in use before: 4.7 MB.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 4.4 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2905.
+Total: 2.943768 ms (FindLiveObjects: 0.237393 ms CreateObjectMapping: 0.164212 ms MarkObjects: 0.576527 ms  DeleteObjects: 0.256581 ms)
+
+The server has disconnected from the client. Most likely the server has shut down.
+ 
+(Filename: C:/BuildAgent/work/cac08d8a5e25d4cb/Runtime/Network/NetworkManager.cpp Line: 741)
+
