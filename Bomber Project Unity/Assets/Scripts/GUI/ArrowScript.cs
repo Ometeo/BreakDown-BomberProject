@@ -75,11 +75,29 @@ public class ArrowScript : GUIItemScript
             else
                 _qts.Decrement();
         }
+        else if (_avTxScr != null)
+        {
+            if (Increment)
+                _avTxScr.Increment();
+            else
+                _avTxScr.Decrement();
+            networkView.RPC("SendChangeChamp", RPCMode.Server);
+        }
         else
         {
             if (networkView != null && Network.isClient)
-                networkView.RPC("SendClick", RPCMode.Server);
+                networkView.RPC("SendClick", RPCMode.Server);   
         }
+    }
+
+    [RPC]
+    void SendChangeChamp(NetworkMessageInfo info)
+    {
+        if (Increment)
+            _avTxScr.Increment();
+        else
+            _avTxScr.Decrement();
+        PlayersSingleton.Instance.SetPlayerChamp(info.sender, _avTxScr.CurrentValue);
     }
 
     [RPC]
@@ -117,15 +135,6 @@ public class ArrowScript : GUIItemScript
                 _ats.Decrement();
             if (Network.isServer)
                 GameOptionSingleton.Instance.NumScene = _ats.CurrentValue;
-        }
-        else if (_avTxScr != null)
-        {
-            if (Increment)
-                _avTxScr.Increment();
-            else
-                _avTxScr.Decrement();
-            if (Network.isServer)
-                PlayersSingleton.Instance.SetPlayerChamp(player, _avTxScr.CurrentValue);
         }
     }
 }

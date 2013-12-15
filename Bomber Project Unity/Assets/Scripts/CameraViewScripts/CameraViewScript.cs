@@ -178,7 +178,7 @@ public class CameraViewScript : MonoBehaviour
     /// Method to center the camera on the player.
     /// </summary>
     /// <param name="player"></param>
-    void CenterOnPlayer(Transform player)
+    public void CenterOnPlayer(Transform player)
     {
         this.transform.position = player.position;
     }

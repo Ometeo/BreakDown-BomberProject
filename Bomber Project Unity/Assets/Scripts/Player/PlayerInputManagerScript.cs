@@ -15,6 +15,15 @@ public class PlayerInputManagerScript : MonoBehaviour {
             cacheChampionData();
         }
     }
+
+    [SerializeField]
+    private CameraViewScript _cameraViewScript;
+    public CameraViewScript CamViewScript
+    {
+        get { return _cameraViewScript; }
+        set { _cameraViewScript = value; }
+    }
+
     private ClassicBombScript _classicBombScript;
 
     private ArrayList _skills1;
@@ -65,6 +74,8 @@ public class PlayerInputManagerScript : MonoBehaviour {
             networkView.RPC("SendUseSkillUltimate", RPCMode.Server);
         if (Input.GetMouseButtonDown(0))
             networkView.RPC("SendUseBomb", RPCMode.Server);
+        if (Input.GetKeyDown(KeyCode.Space))
+            CamViewScript.CenterOnPlayer(this.transform);
     }
 
     private void cacheChampionData()

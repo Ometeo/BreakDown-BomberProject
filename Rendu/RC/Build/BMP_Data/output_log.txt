@@ -1,6 +1,7 @@
 Initialize engine version: 4.2.0f4 (38efbd14869d)
 GfxDevice: creating device client; threaded=1
 Direct3D:
+<<<<<<< HEAD
     Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.2049]
     Renderer: Intel(R) HD Graphics 4000
     Vendor:   Intel
@@ -24,38 +25,172 @@ Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 411.
 Total: 2.039263 ms (FindLiveObjects: 0.048638 ms CreateObjectMapping: 0.125390 ms MarkObjects: 0.160642 ms  DeleteObjects: 0.285139 ms)
 
 UnloadTime: 1.695667 ms
+=======
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.1172]
+    Renderer: AMD Radeon HD 6310 Graphics
+    Vendor:   ATI
+    VRAM:     1167 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 DF24=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Thierry\Documents\GitHub\BomberProject\Rendu\RC\Build\BMP_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Thierry\Documents\GitHub\BomberProject\Rendu\RC\Build\BMP_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Thierry\Documents\GitHub\BomberProject\Rendu\RC\Build\BMP_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Thierry\Documents\GitHub\BomberProject\Rendu\RC\Build\BMP_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.235 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 1.440465 ms
+System memory in use before: 2.3 MB.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 1.7 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 207.
+Total: 3.374127 ms (FindLiveObjects: 0.100050 ms CreateObjectMapping: 0.059645 ms MarkObjects: 0.214209 ms  DeleteObjects: 0.386732 ms)
+
+Platform assembly: C:\Users\Thierry\Documents\GitHub\BomberProject\Rendu\RC\Build\BMP_Data\Managed\System.dll (this message is harmless)
+Initialize engine version: 4.2.0f4 (38efbd14869d)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [aticfx32.dll 8.17.10.1172]
+    Renderer: AMD Radeon HD 6310 Graphics
+    Vendor:   ATI
+    VRAM:     1167 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 DF24=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Thierry\Documents\GitHub\BomberProject\Rendu\RC\Build\BMP_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Thierry\Documents\GitHub\BomberProject\Rendu\RC\Build\BMP_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Thierry\Documents\GitHub\BomberProject\Rendu\RC\Build\BMP_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Thierry\Documents\GitHub\BomberProject\Rendu\RC\Build\BMP_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.312 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 1.142880 ms
+System memory in use before: 2.1 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 2.0 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 894.
+Total: 3.383747 ms (FindLiveObjects: 0.148151 ms CreateObjectMapping: 0.050025 ms MarkObjects: 0.479086 ms  DeleteObjects: 0.097484 ms)
+
+UnloadTime: 1.405191 ms
+System memory in use before: 2.4 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 1.8 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 411.
+Total: 6.609723 ms (FindLiveObjects: 0.093636 ms CreateObjectMapping: 0.056438 ms MarkObjects: 0.242429 ms  DeleteObjects: 0.364285 ms)
+
+UnloadTime: 4.398358 ms
+>>>>>>> [Upd] Mini corrections du 11/12
 System memory in use before: 2.3 MB.
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 System memory in use after: 2.2 MB.
 
+<<<<<<< HEAD
 Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 248.
 Total: 2.115122 ms (FindLiveObjects: 0.041499 ms CreateObjectMapping: 0.033467 ms MarkObjects: 0.257473 ms  DeleteObjects: 0.307451 ms)
 
 UnloadTime: 0.984379 ms
+=======
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 248.
+Total: 4.338072 ms (FindLiveObjects: 0.076320 ms CreateObjectMapping: 0.043611 ms MarkObjects: 0.414310 ms  DeleteObjects: 0.664435 ms)
+
+UnloadTime: 1.846438 ms
+System memory in use before: 2.3 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 1.8 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 210.
+Total: 6.465420 ms (FindLiveObjects: 0.123779 ms CreateObjectMapping: 0.055155 ms MarkObjects: 0.289247 ms  DeleteObjects: 0.443812 ms)
+
+UnloadTime: 2.955327 ms
+System memory in use before: 2.3 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 2.1 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 248.
+Total: 4.245076 ms (FindLiveObjects: 0.085940 ms CreateObjectMapping: 0.072472 ms MarkObjects: 0.363002 ms  DeleteObjects: 0.934442 ms)
+
+UnloadTime: 1.163403 ms
+System memory in use before: 2.2 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 2.1 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 897.
+Total: 3.304220 ms (FindLiveObjects: 0.155847 ms CreateObjectMapping: 0.050666 ms MarkObjects: 0.318108 ms  DeleteObjects: 0.099408 ms)
+
+UnloadTime: 2.267803 ms
+>>>>>>> [Upd] Mini corrections du 11/12
 System memory in use before: 2.6 MB.
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 System memory in use after: 2.1 MB.
 
 Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 898.
+<<<<<<< HEAD
 Total: 1.973668 ms (FindLiveObjects: 0.075412 ms CreateObjectMapping: 0.031682 ms MarkObjects: 0.211512 ms  DeleteObjects: 0.297188 ms)
 
 UnloadTime: 3.336003 ms
 System memory in use before: 2.1 MB.
+=======
+Total: 4.084739 ms (FindLiveObjects: 0.212285 ms CreateObjectMapping: 0.053231 ms MarkObjects: 0.290530 ms  DeleteObjects: 0.364926 ms)
+
+UnloadTime: 4.311776 ms
+UnloadTime: 4.744686 ms
+System memory in use before: 2.0 MB.
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 System memory in use after: 2.0 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 383.
+Total: 3.046398 ms (FindLiveObjects: 0.076320 ms CreateObjectMapping: 0.046818 ms MarkObjects: 0.253973 ms  DeleteObjects: 0.198817 ms)
+
+System memory in use before: 2.0 MB.
+>>>>>>> [Upd] Mini corrections du 11/12
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 2.0 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 383.
+<<<<<<< HEAD
 Total: 1.661754 ms (FindLiveObjects: 0.038375 ms CreateObjectMapping: 0.022311 ms MarkObjects: 0.144577 ms  DeleteObjects: 0.146362 ms)
 
 UnloadTime: 1.331099 ms
+=======
+Total: 3.134263 ms (FindLiveObjects: 0.075037 ms CreateObjectMapping: 0.040404 ms MarkObjects: 0.207155 ms  DeleteObjects: 0.214209 ms)
+
+UnloadTime: 1.670709 ms
 System memory in use before: 4.7 MB.
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 System memory in use after: 4.4 MB.
 
 Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2905.
+Total: 4.787015 ms (FindLiveObjects: 0.587473 ms CreateObjectMapping: 0.110953 ms MarkObjects: 1.052450 ms  DeleteObjects: 0.358513 ms)
+
+UnloadTime: 1.931096 ms
+>>>>>>> [Upd] Mini corrections du 11/12
+System memory in use before: 4.7 MB.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 4.4 MB.
+
+Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 2905.
+<<<<<<< HEAD
 Total: 2.943768 ms (FindLiveObjects: 0.237393 ms CreateObjectMapping: 0.164212 ms MarkObjects: 0.576527 ms  DeleteObjects: 0.256581 ms)
 
 The server has disconnected from the client. Most likely the server has shut down.
  
 (Filename: C:/BuildAgent/work/cac08d8a5e25d4cb/Runtime/Network/NetworkManager.cpp Line: 741)
+=======
+Total: 5.081393 ms (FindLiveObjects: 0.574647 ms CreateObjectMapping: 0.123138 ms MarkObjects: 1.279487 ms  DeleteObjects: 0.393787 ms)
+
+Die
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:LogError(Object)
+ChampionsStatsScript:CheckDeath() (at C:\Users\Thierry\Documents\GitHub\BreakDown-BomberProject\Bomber Project Unity\Assets\Scripts\Champions\ChampionsStatsScript.cs:186)
+ChampionsStatsScript:set_LifePoint(Int32) (at C:\Users\Thierry\Documents\GitHub\BreakDown-BomberProject\Bomber Project Unity\Assets\Scripts\Champions\ChampionsStatsScript.cs:26)
+BombScript:HitPlayer(Transform) (at C:\Users\Thierry\Documents\GitHub\BreakDown-BomberProject\Bomber Project Unity\Assets\Scripts\Champions\Bombs\BombScript.cs:335)
+BombScript:InstantiateBombExplosions(Vector3, Boolean&) (at C:\Users\Thierry\Documents\GitHub\BreakDown-BomberProject\Bomber Project Unity\Assets\Scripts\Champions\Bombs\BombScript.cs:301)
+<BombExplosion>c__Iterator1:MoveNext() (at C:\Users\Thierry\Documents\GitHub\BreakDown-BomberProject\Bomber Project Unity\Assets\Scripts\Champions\Bombs\BombScript.cs:225)
+ 
+(Filename: C Line: 0)
+>>>>>>> [Upd] Mini corrections du 11/12
 

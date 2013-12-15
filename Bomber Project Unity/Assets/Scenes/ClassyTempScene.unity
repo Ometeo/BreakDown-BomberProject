@@ -1239,6 +1239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraViewScript: {fileID: 1758109164}
 --- !u!114 &69567650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1371,6 +1372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraViewScript: {fileID: 1758109164}
 --- !u!114 &72899853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3651,6 +3653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraViewScript: {fileID: 1758109164}
 --- !u!114 &154986041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5029,6 +5032,46 @@ Prefab:
       propertyPath: m_ViewID.m_Type
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400076, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: _cameraViewScript
+      value: 
+      objectReference: {fileID: 1758109164}
+    - target: {fileID: 11400070, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: _cameraViewScript
+      value: 
+      objectReference: {fileID: 1758109164}
+    - target: {fileID: 11400060, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: _cameraViewScript
+      value: 
+      objectReference: {fileID: 1758109164}
+    - target: {fileID: 11400054, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: _cameraViewScript
+      value: 
+      objectReference: {fileID: 1758109164}
+    - target: {fileID: 11400044, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: _cameraViewScript
+      value: 
+      objectReference: {fileID: 1758109164}
+    - target: {fileID: 11400038, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: _cameraViewScript
+      value: 
+      objectReference: {fileID: 1758109164}
+    - target: {fileID: 11400028, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: _cameraViewScript
+      value: 
+      objectReference: {fileID: 1758109164}
+    - target: {fileID: 11400022, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: _cameraViewScript
+      value: 
+      objectReference: {fileID: 1758109164}
+    - target: {fileID: 11400010, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: _cameraViewScript
+      value: 
+      objectReference: {fileID: 1758109164}
+    - target: {fileID: 11400004, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: _cameraViewScript
+      value: 
+      objectReference: {fileID: 1758109164}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
   m_RootGameObject: {fileID: 869130450}
@@ -15997,6 +16040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraViewScript: {fileID: 1758109164}
 --- !u!114 &697139375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25059,6 +25103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraViewScript: {fileID: 1758109164}
 --- !u!114 &1112748298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34067,6 +34112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraViewScript: {fileID: 1758109164}
 --- !u!114 &1641475101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36508,6 +36554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraViewScript: {fileID: 1758109164}
 --- !u!114 &1750331089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38878,6 +38925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraViewScript: {fileID: 1758109164}
 --- !u!114 &1863453768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41783,6 +41831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraViewScript: {fileID: 1758109164}
 --- !u!114 &2041585190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43185,6 +43234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfb647e0c2ed968468680af259f35f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cameraViewScript: {fileID: 1758109164}
 --- !u!114 &2111894414
 MonoBehaviour:
   m_ObjectHideFlags: 0
