@@ -43,6 +43,8 @@ public class GameModeTextScript : MonoBehaviour
     /// </summary>
     void Start()
     {
+        DatabaseManagerScript databaseScript = (DatabaseManagerScript)Resources.Load("DatabaseManager", typeof(DatabaseManagerScript));
+        GameMode = databaseScript.GameModes;
         this.gameObject.GetComponent<TextMesh>().text = GameMode[CurrentValue];
     }
 

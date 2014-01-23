@@ -17,11 +17,11 @@ public class GameOptionSingleton
         set { _sceneMngScript = value; }
     }
 
-    private NetworkMenuManagerScript _nwMenuMngScript;
-    public NetworkMenuManagerScript NwMenuMngScript
+    private int _nbTeams;
+    public int NbTeams
     {
-        get { return _nwMenuMngScript; }
-        set { _nwMenuMngScript = value; }
+        get { return _nbTeams; }
+        set { _nbTeams = value; }
     }
 
     private bool _gameStarted;
@@ -61,26 +61,27 @@ public class GameOptionSingleton
         GameStarted = false;
         NumScene = 0;
         NumMode = 0;
-    }
-
-    public void RefreshPlayersName()
-    {
-        if (NwMenuMngScript != null)
-        {
-            foreach (var plItmScr in NwMenuMngScript.PlayersItemScr)
-            {
-                var pI = PlayersSingleton.Instance.GetPlayerInformation(plItmScr.PlayerNb);
-                if (pI == null)
-                    NwMenuMngScript.networkView.RPC("RefreshName", RPCMode.All, plItmScr.PlayerNb, plItmScr.DefaultText);
-                else
-                    NwMenuMngScript.networkView.RPC("RefreshName", RPCMode.All, plItmScr.PlayerNb, pI.PlayerName);
-            }
-        }
+        NbTeams = 0;
     }
 
     public void SetHostRights()
     {
-        if (PlayersSingleton.Instance.Players.Count > 0)
-            HostPlayer = ((PlayersSingleton.PlayerInformation)PlayersSingleton.Instance.Players[0]).NwPlayer;
+        int playerNum = 0;
+        int nbPlayers = PlayersSingleton.Instance.Players.Count;
+        if (nbPlayers > 0)
+        {
+            while (HostPlayer == Network.player && playerNum < nbPlayers)
+            {
+                HostPlayer = ((PlayersSingleton.PlayerInformation)PlayersSingleton.Instance.Players[playerNum]).NwPlayer;
+                playerNum++;
+            }
+        }
+    }
+
+    public void SyncGameOptionSingleton(int numMode, int numScene, int nbTeams)
+    {
+        NumMode = numMode;
+        NumScene = numScene;
+        NbTeams = nbTeams;
     }
 }

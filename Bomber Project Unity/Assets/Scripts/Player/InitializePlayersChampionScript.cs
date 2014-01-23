@@ -35,6 +35,12 @@ public class InitializePlayersChampionScript : MonoBehaviour {
         set { _nwViewID = value; }
     }
 
+    private Transform[] _championList;
+    public Transform[] ChampionList
+    {
+        get { return _championList; }
+        set { _championList = value; }
+    }
 
     /// <summary>
     /// Cache Transform
@@ -44,6 +50,8 @@ public class InitializePlayersChampionScript : MonoBehaviour {
     void Awake()
     {
         _transform = transform;
+        DatabaseManagerScript databaseScript = (DatabaseManagerScript)Resources.Load("DatabaseManager", typeof(DatabaseManagerScript));
+        ChampionList = databaseScript.Champions;
     }
 
     void Start()
@@ -54,7 +62,7 @@ public class InitializePlayersChampionScript : MonoBehaviour {
     public void SetChampion()
     {
         this.gameObject.SetActive(true);
-        Transform champion = (Transform)Instantiate(ServerInitializePlayersManagerScript.ChampDbScript.ChampionList[ChampID], _transform.position, _transform.rotation);
+        Transform champion = (Transform)Instantiate(ChampionList[ChampID], _transform.position, _transform.rotation);
         champion.parent = transform;
         champion.networkView.viewID = NwViewID;
         _transform.GetComponent<PlayerInputManagerScript>().Champion = champion;

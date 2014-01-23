@@ -47,6 +47,6 @@ public class PlaySelectPlayerItemScript : MonoBehaviour {
 
         pI = PlayersSingleton.Instance.GetPlayerInformation(info.sender);
         PlayersSingleton.Instance.ChangePlayerNumber(info.sender, PlayerNb);
-        GameOptionSingleton.Instance.RefreshPlayersName();
+        PlayerItemScr.NetwkMenuMngScr.RefreshPlayersName();
     }
 }

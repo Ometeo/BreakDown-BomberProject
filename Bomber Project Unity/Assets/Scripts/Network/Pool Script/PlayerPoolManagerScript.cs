@@ -11,6 +11,12 @@ public class PlayerPoolManagerScript : MonoBehaviour {
         set { _playersPrefab = value; }
     }
 
+    void Awake()
+    {
+        foreach (var playerPrefab in PlayersPrefab)
+            playerPrefab.gameObject.SetActive(false);
+    }
+
     /// <summary>
     /// Activate a new Player and place it at position
     /// </summary>
@@ -34,7 +40,9 @@ public class PlayerPoolManagerScript : MonoBehaviour {
         initScript.NwViewID = viewID;
 
         if (player == Network.player)
+        {
             newPlayer.GetComponent<PlayerInputManagerScript>().SetPlayer();
+        }
 
         initScript.SetChampion();
     }

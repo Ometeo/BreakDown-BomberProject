@@ -20,21 +20,14 @@ public class ServerInitializePlayersManagerScript : MonoBehaviour {
         set { _playerPoolMngScript = value; }
     }
 
-    private static ChampionsDatabaseScript _champDbScript;
-    public static ChampionsDatabaseScript ChampDbScript
-    {
-        get { return _champDbScript; }
-        set { _champDbScript = value; }
-    }
-
     void Awake()
     {
-        ChampDbScript = GetComponent<ChampionsDatabaseScript>();
     }
 
     void Start()
     {
-        ActivatePlayer();
+        if (Network.isServer)
+            ActivatePlayer();
     }
 
     void ActivatePlayer()

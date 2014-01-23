@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57848f104541a3a4aa5bad0c85ace085, type: 3}
+  m_Name: DatabaseManager
+  m_EditorClassIdentifier: 
+  _champions:
+  - {fileID: 400000, guid: 21393cf330ec93e4cb86d71a04088515, type: 2}
+  - {fileID: 400000, guid: 836daa6262945d64eb651cdf03e53678, type: 2}
+  _arenas:
+  - Classy
+  - Edgy
+  - Tiny
+  - Crunchy
+  _gameModes:
+  - Deathmatch
+  - Keep The Flag
+  - Protect The King

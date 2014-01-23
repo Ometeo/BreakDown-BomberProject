@@ -216,6 +216,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 129454318}
+  - 114: {fileID: 129454319}
   m_Layer: 0
   m_Name: TM3
   m_TagString: Untagged
@@ -236,6 +237,18 @@ Transform:
   - {fileID: 1830372219}
   - {fileID: 817271690}
   m_Father: {fileID: 196144654}
+--- !u!114 &129454319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 129454317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad4ea91c136d8543904cf80ec7d81fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _champTextMesh: {fileID: 817271691}
 --- !u!1 &196144653
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +827,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 584419707}
+  - 114: {fileID: 584419708}
   m_Layer: 0
   m_Name: Timer
   m_TagString: Untagged
@@ -834,6 +848,21 @@ Transform:
   - {fileID: 102191349}
   - {fileID: 991617668}
   m_Father: {fileID: 0}
+--- !u!114 &584419708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 584419706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc70830e849fc8b45b6b583ab5d8cefc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rdyScr: {fileID: 372436651}
+  _timerLeftTextMesh: {fileID: 102191350}
+  _timerRightTextMesh: {fileID: 991617666}
+  _defaultTimerValue: 60
 --- !u!1 &621047489
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +938,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 688315518}
+  - 114: {fileID: 688315519}
   m_Layer: 0
   m_Name: TM1
   m_TagString: Untagged
@@ -929,6 +959,18 @@ Transform:
   - {fileID: 1764051272}
   - {fileID: 1058659313}
   m_Father: {fileID: 196144654}
+--- !u!114 &688315519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 688315517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad4ea91c136d8543904cf80ec7d81fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _champTextMesh: {fileID: 1058659314}
 --- !u!1 &794395182
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,6 +981,7 @@ GameObject:
   - 4: {fileID: 794395185}
   - 23: {fileID: 794395184}
   - 102: {fileID: 794395183}
+  - 114: {fileID: 794395186}
   m_Layer: 0
   m_Name: GameMode
   m_TagString: Untagged
@@ -996,6 +1039,19 @@ Transform:
   m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &794395186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 794395182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17326972c020f574c9994aa55072d7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _txtMesh: {fileID: 794395183}
+  _txtType: 0
 --- !u!1 &817271689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1127,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 850268114}
+  - 114: {fileID: 850268115}
   m_Layer: 0
   m_Name: TM4
   m_TagString: Untagged
@@ -1091,6 +1148,18 @@ Transform:
   - {fileID: 75045349}
   - {fileID: 1952380235}
   m_Father: {fileID: 196144654}
+--- !u!114 &850268115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 850268113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad4ea91c136d8543904cf80ec7d81fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _champTextMesh: {fileID: 1952380233}
 --- !u!1 &953964994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,6 +1170,7 @@ GameObject:
   - 4: {fileID: 953964997}
   - 23: {fileID: 953964996}
   - 102: {fileID: 953964995}
+  - 114: {fileID: 953964998}
   m_Layer: 0
   m_Name: Arena
   m_TagString: Untagged
@@ -1158,6 +1228,19 @@ Transform:
   m_LocalScale: {x: .100000001, y: .100000001, z: .100000001}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &953964998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953964994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17326972c020f574c9994aa55072d7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _txtMesh: {fileID: 953964995}
+  _txtType: 1
 --- !u!1 &991617665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,6 +1316,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1015496087}
+  - 114: {fileID: 1015496088}
   m_Layer: 0
   m_Name: TM2
   m_TagString: Untagged
@@ -1253,6 +1337,18 @@ Transform:
   - {fileID: 453191430}
   - {fileID: 348586943}
   m_Father: {fileID: 196144654}
+--- !u!114 &1015496088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015496086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad4ea91c136d8543904cf80ec7d81fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _champTextMesh: {fileID: 348586944}
 --- !u!1 &1037632912
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,68 +2119,6 @@ MonoBehaviour:
   _championSkins:
   - Default
   _currentValue: 0
---- !u!1 &1497277082
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1497277085}
-  - 114: {fileID: 1497277084}
-  - 148: {fileID: 1497277083}
-  m_Layer: 0
-  m_Name: _NetworkMenuManagerScript
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!148 &1497277083
-NetworkView:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1497277082}
-  m_Enabled: 1
-  m_StateSynchronization: 0
-  m_Observed: {fileID: 0}
-  m_ViewID:
-    m_ID: 3
-    m_Type: 1
---- !u!114 &1497277084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1497277082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 764a5cd4e0c9fe743bae810fe8cec8b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playersItemScr:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!4 &1497277085
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1497277082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -999, y: -999, z: -999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
 --- !u!1 &1618691099
 GameObject:
   m_ObjectHideFlags: 0

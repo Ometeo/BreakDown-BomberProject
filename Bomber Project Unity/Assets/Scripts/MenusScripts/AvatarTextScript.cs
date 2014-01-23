@@ -42,6 +42,12 @@ public class AvatarTextScript : MonoBehaviour {
 	/// 
 	/// </summary>
 	void Start () {
+        DatabaseManagerScript databaseScript = (DatabaseManagerScript)Resources.Load("DatabaseManager", typeof(DatabaseManagerScript));
+
+        string[] champName = new string[databaseScript.Champions.Length];
+        for (int numChamp = 0; numChamp < databaseScript.Champions.Length; numChamp++)
+            champName[numChamp] = databaseScript.Champions[numChamp].name;
+        Champions = champName;
         this.gameObject.GetComponent<TextMesh>().text = Champions[CurrentValue];
 	}
 
@@ -51,13 +57,9 @@ public class AvatarTextScript : MonoBehaviour {
     public void Increment()
     {
         if (CurrentValue == Champions.Length - 1)
-        {
             CurrentValue = 0;
-        }
         else
-        {
             CurrentValue++;
-        }
         this.gameObject.GetComponent<TextMesh>().text = Champions[CurrentValue];
     }
 
@@ -67,13 +69,9 @@ public class AvatarTextScript : MonoBehaviour {
     public void Decrement()
     {
         if (CurrentValue == 0)
-        {
             CurrentValue = Champions.Length - 1;
-        }
         else
-        {
             CurrentValue--;
-        }
         this.gameObject.GetComponent<TextMesh>().text = Champions[CurrentValue];
     }
 }

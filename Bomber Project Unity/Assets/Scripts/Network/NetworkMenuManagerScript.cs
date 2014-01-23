@@ -17,7 +17,11 @@ public class NetworkMenuManagerScript : MonoBehaviour {
 
     void Awake()
     {
-        _playerName = PlayerPrefs.GetString("PlayerName");
+        var playerName = PlayersSingleton.Instance.MyName;
+        if (playerName != null && playerName.Length > 0)
+            _playerName = playerName;
+        else
+            _playerName = PlayerPrefs.GetString("PlayerName");
         _serverIp = PlayerPrefs.GetString("ServerIp");
         _connectionPort = int.Parse(PlayerPrefs.GetString("ServerPort"));
     }
@@ -26,14 +30,51 @@ public class NetworkMenuManagerScript : MonoBehaviour {
     {
         if (!Network.isServer)
             Network.Connect(_serverIp, _connectionPort);
-        else
-            GameOptionSingleton.Instance.NwMenuMngScript = this;
     }
+
+    #region RPC Server Side
+    /* ------------------------------------------------------------------------------------------
+     *                                       Server Side
+     * ------------------------------------------------------------------------------------------*/
 
     void OnPlayerConnected(NetworkPlayer player)
     {
         networkView.RPC("AskPlayerName", player);
     }
+
+    [RPC]
+    void ResponsePlayerInformation(string playerName, NetworkPlayer player)
+    {
+        bool isNewPlayer = false;
+        PlayersSingleton.PlayerInformation pI = PlayersSingleton.Instance.GetOrCreatePlayerInformation(playerName, player, ref isNewPlayer);
+
+        if (isNewPlayer) // First Connection
+        {
+            RefreshPlayersName();
+        }
+        else // Reconnection
+        {
+
+        }
+    }
+    #endregion
+
+    public void RefreshPlayersName()
+    {
+        foreach (var plItmScr in PlayersItemScr)
+        {
+            var pI = PlayersSingleton.Instance.GetPlayerInformation(plItmScr.PlayerNb);
+            if (pI == null)
+                networkView.RPC("RefreshName", RPCMode.All, plItmScr.PlayerNb, plItmScr.DefaultText);
+            else
+                networkView.RPC("RefreshName", RPCMode.All, plItmScr.PlayerNb, pI.PlayerName);
+        }
+    }
+
+    #region RPC Client Side
+    /* ------------------------------------------------------------------------------------------
+     *                                      RPC Client Side
+     * ------------------------------------------------------------------------------------------*/
 
     [RPC]
     void AskPlayerName()
@@ -42,24 +83,11 @@ public class NetworkMenuManagerScript : MonoBehaviour {
     }
 
     [RPC]
-    void ResponsePlayerInformation(string playerName, NetworkPlayer player)
-    {
-        bool isNewPlayer = false;
-        PlayersSingleton.PlayerInformation pI = PlayersSingleton.Instance.GetPlayerInformation(playerName, player, ref isNewPlayer);
-
-        if (isNewPlayer) // First Connection
-        {
-            GameOptionSingleton.Instance.RefreshPlayersName();
-        }
-        else // Reconnection
-        {
-
-        }
-    }
-
-    [RPC]
     void RefreshName(int numItem, string playerName)
     {
-        PlayersItemScr[numItem].NameText.text = playerName;
+        if (numItem != -1)
+            PlayersItemScr[numItem].NameText.text = playerName;
     }
+
+    #endregion
 }

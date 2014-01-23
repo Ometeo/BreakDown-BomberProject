@@ -1197,7 +1197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &69567647
 Transform:
   m_ObjectHideFlags: 0
@@ -1330,7 +1330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &72899850
 Transform:
   m_ObjectHideFlags: 0
@@ -1411,7 +1411,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 109
+    m_ID: 236
     m_Type: 1
 --- !u!54 &72899856
 Rigidbody:
@@ -2159,7 +2159,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 236
+    m_ID: 237
     m_Type: 1
 --- !u!54 &96854396
 Rigidbody:
@@ -3237,7 +3237,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 237
+    m_ID: 238
     m_Type: 1
 --- !u!54 &118994467
 Rigidbody:
@@ -3611,7 +3611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &154986038
 Transform:
   m_ObjectHideFlags: 0
@@ -3692,7 +3692,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 109
+    m_ID: 239
     m_Type: 1
 --- !u!54 &154986044
 Rigidbody:
@@ -4778,7 +4778,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 238
+    m_ID: 240
     m_Type: 1
 --- !u!54 &243972024
 Rigidbody:
@@ -5072,6 +5072,46 @@ Prefab:
       propertyPath: _cameraViewScript
       value: 
       objectReference: {fileID: 1758109164}
+    - target: {fileID: 100100, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100082, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100080, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100062, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100042, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100040, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1641cf74f24bd84ab9360d4284ba395, type: 2}
   m_RootGameObject: {fileID: 869130450}
@@ -6560,7 +6600,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 239
+    m_ID: 241
     m_Type: 1
 --- !u!54 &329623225
 Rigidbody:
@@ -6888,7 +6928,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 240
+    m_ID: 242
     m_Type: 1
 --- !u!54 &339526686
 Rigidbody:
@@ -7783,7 +7823,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 241
+    m_ID: 243
     m_Type: 1
 --- !u!54 &385997617
 Rigidbody:
@@ -8373,7 +8413,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 242
+    m_ID: 244
     m_Type: 1
 --- !u!54 &432726570
 Rigidbody:
@@ -9202,7 +9242,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 243
+    m_ID: 245
     m_Type: 1
 --- !u!54 &463013665
 Rigidbody:
@@ -11797,7 +11837,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 244
+    m_ID: 246
     m_Type: 1
 --- !u!54 &488206465
 Rigidbody:
@@ -12671,7 +12711,12 @@ Prefab:
       propertyPath: _spawnPoints.Array.data[9]
       value: 
       objectReference: {fileID: 461730315}
-    m_RemovedComponents: []
+    - target: {fileID: 100000, guid: 64fe3504fa0392543b79bbe504aeea19, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 64fe3504fa0392543b79bbe504aeea19, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 64fe3504fa0392543b79bbe504aeea19, type: 2}
   m_RootGameObject: {fileID: 1760449538}
   m_IsPrefabParent: 0
@@ -12843,7 +12888,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 245
+    m_ID: 247
     m_Type: 1
 --- !u!54 &530886592
 Rigidbody:
@@ -13074,7 +13119,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 246
+    m_ID: 248
     m_Type: 1
 --- !u!54 &544512956
 Rigidbody:
@@ -13679,7 +13724,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 247
+    m_ID: 249
     m_Type: 1
 --- !u!54 &598410098
 Rigidbody:
@@ -13976,7 +14021,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 248
+    m_ID: 250
     m_Type: 1
 --- !u!54 &611370014
 Rigidbody:
@@ -14234,7 +14279,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 249
+    m_ID: 251
     m_Type: 1
 --- !u!54 &616495029
 Rigidbody:
@@ -15129,7 +15174,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 250
+    m_ID: 252
     m_Type: 1
 --- !u!54 &643392219
 Rigidbody:
@@ -15998,7 +16043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &697139372
 Transform:
   m_ObjectHideFlags: 0
@@ -16079,7 +16124,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 109
+    m_ID: 253
     m_Type: 1
 --- !u!54 &697139378
 Rigidbody:
@@ -16239,7 +16284,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 251
+    m_ID: 254
     m_Type: 1
 --- !u!54 &701162600
 Rigidbody:
@@ -16556,7 +16601,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 252
+    m_ID: 255
     m_Type: 1
 --- !u!54 &709851000
 Rigidbody:
@@ -16901,7 +16946,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 253
+    m_ID: 256
     m_Type: 1
 --- !u!54 &722992528
 Rigidbody:
@@ -17256,7 +17301,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 254
+    m_ID: 257
     m_Type: 1
 --- !u!54 &741053606
 Rigidbody:
@@ -17390,7 +17435,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 255
+    m_ID: 258
     m_Type: 1
 --- !u!54 &748125076
 Rigidbody:
@@ -18051,7 +18096,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 256
+    m_ID: 259
     m_Type: 1
 --- !u!1 &783640759
 GameObject:
@@ -18356,7 +18401,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 257
+    m_ID: 260
     m_Type: 1
 --- !u!54 &802951688
 Rigidbody:
@@ -19024,7 +19069,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 258
+    m_ID: 261
     m_Type: 1
 --- !u!54 &807889450
 Rigidbody:
@@ -20375,7 +20420,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 259
+    m_ID: 262
     m_Type: 1
 --- !u!54 &852586128
 Rigidbody:
@@ -20732,7 +20777,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 260
+    m_ID: 263
     m_Type: 1
 --- !u!114 &869130453
 MonoBehaviour:
@@ -22318,7 +22363,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 261
+    m_ID: 264
     m_Type: 1
 --- !u!54 &960251709
 Rigidbody:
@@ -22686,7 +22731,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 262
+    m_ID: 265
     m_Type: 1
 --- !u!54 &977132340
 Rigidbody:
@@ -23472,7 +23517,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 263
+    m_ID: 266
     m_Type: 1
 --- !u!54 &1006515595
 Rigidbody:
@@ -23781,7 +23826,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 264
+    m_ID: 267
     m_Type: 1
 --- !u!1 &1019579453
 GameObject:
@@ -24421,7 +24466,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 265
+    m_ID: 268
     m_Type: 1
 --- !u!54 &1074911471
 Rigidbody:
@@ -24949,7 +24994,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 266
+    m_ID: 269
     m_Type: 1
 --- !u!54 &1101693286
 Rigidbody:
@@ -25061,7 +25106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1112748295
 Transform:
   m_ObjectHideFlags: 0
@@ -25142,7 +25187,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 109
+    m_ID: 270
     m_Type: 1
 --- !u!54 &1112748301
 Rigidbody:
@@ -27322,7 +27367,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 267
+    m_ID: 271
     m_Type: 1
 --- !u!54 &1260752927
 Rigidbody:
@@ -27989,7 +28034,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 268
+    m_ID: 272
     m_Type: 1
 --- !u!54 &1299616147
 Rigidbody:
@@ -28220,7 +28265,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 269
+    m_ID: 273
     m_Type: 1
 --- !u!54 &1313993659
 Rigidbody:
@@ -28914,7 +28959,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 270
+    m_ID: 274
     m_Type: 1
 --- !u!54 &1353111848
 Rigidbody:
@@ -30329,7 +30374,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 271
+    m_ID: 275
     m_Type: 1
 --- !u!1 &1420954767
 GameObject:
@@ -33430,7 +33475,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 272
+    m_ID: 276
     m_Type: 1
 --- !u!54 &1608007434
 Rigidbody:
@@ -33834,7 +33879,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 273
+    m_ID: 277
     m_Type: 1
 --- !u!54 &1634419142
 Rigidbody:
@@ -34070,7 +34115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1641475098
 Transform:
   m_ObjectHideFlags: 0
@@ -34151,7 +34196,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 109
+    m_ID: 278
     m_Type: 1
 --- !u!54 &1641475104
 Rigidbody:
@@ -34225,7 +34270,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 274
+    m_ID: 279
     m_Type: 1
 --- !u!54 &1642847516
 Rigidbody:
@@ -34878,7 +34923,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 275
+    m_ID: 280
     m_Type: 1
 --- !u!54 &1670387811
 Rigidbody:
@@ -36124,7 +36169,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 276
+    m_ID: 281
     m_Type: 1
 --- !u!54 &1729415488
 Rigidbody:
@@ -36512,7 +36557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1750331086
 Transform:
   m_ObjectHideFlags: 0
@@ -36593,7 +36638,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 109
+    m_ID: 282
     m_Type: 1
 --- !u!54 &1750331092
 Rigidbody:
@@ -36955,7 +37000,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1760449540}
   - 114: {fileID: 1760449539}
-  - 114: {fileID: 1760449541}
   - 114: {fileID: 1760449543}
   - 148: {fileID: 1760449542}
   m_Layer: 0
@@ -36990,21 +37034,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!114 &1760449541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 64fe3504fa0392543b79bbe504aeea19,
-    type: 2}
-  m_PrefabInternal: {fileID: 522844555}
-  m_GameObject: {fileID: 1760449538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dc257b8117db26478408d2dc288ed84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _championList:
-  - {fileID: 400000, guid: 836daa6262945d64eb651cdf03e53678, type: 2}
-  - {fileID: 400000, guid: 21393cf330ec93e4cb86d71a04088515, type: 2}
 --- !u!148 &1760449542
 NetworkView:
   m_ObjectHideFlags: 0
@@ -37016,7 +37045,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 277
+    m_ID: 283
     m_Type: 1
 --- !u!114 &1760449543
 MonoBehaviour:
@@ -37170,7 +37199,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 278
+    m_ID: 284
     m_Type: 1
 --- !u!54 &1763627233
 Rigidbody:
@@ -38467,7 +38496,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 279
+    m_ID: 285
     m_Type: 1
 --- !u!54 &1832383772
 Rigidbody:
@@ -38883,7 +38912,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1863453765
 Transform:
   m_ObjectHideFlags: 0
@@ -38964,7 +38993,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 109
+    m_ID: 286
     m_Type: 1
 --- !u!54 &1863453771
 Rigidbody:
@@ -39038,7 +39067,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 280
+    m_ID: 287
     m_Type: 1
 --- !u!54 &1864576063
 Rigidbody:
@@ -40171,7 +40200,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 281
+    m_ID: 288
     m_Type: 1
 --- !u!1 &1942319658
 GameObject:
@@ -40410,7 +40439,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 282
+    m_ID: 289
     m_Type: 1
 --- !u!54 &1943835419
 Rigidbody:
@@ -41100,7 +41129,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 283
+    m_ID: 290
     m_Type: 1
 --- !u!54 &1973611769
 Rigidbody:
@@ -41517,7 +41546,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 284
+    m_ID: 291
     m_Type: 1
 --- !u!1 &2010144166
 GameObject:
@@ -41789,7 +41818,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2041585187
 Transform:
   m_ObjectHideFlags: 0
@@ -41870,7 +41899,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 109
+    m_ID: 292
     m_Type: 1
 --- !u!54 &2041585193
 Rigidbody:
@@ -42515,7 +42544,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 285
+    m_ID: 293
     m_Type: 1
 --- !u!54 &2068198099
 Rigidbody:
@@ -42994,7 +43023,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 286
+    m_ID: 294
     m_Type: 1
 --- !u!54 &2096851217
 Rigidbody:
@@ -43192,7 +43221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2111894411
 Transform:
   m_ObjectHideFlags: 0
@@ -43273,7 +43302,7 @@ NetworkView:
   m_StateSynchronization: 0
   m_Observed: {fileID: 0}
   m_ViewID:
-    m_ID: 109
+    m_ID: 295
     m_Type: 1
 --- !u!54 &2111894417
 Rigidbody:

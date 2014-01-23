@@ -16,12 +16,22 @@ using System.Collections;
 /// </summary>
 public class ReadyScript : GUIItemScript {
 
+    private string _arenaName;
+    public string ArenaName
+    {
+        get { return _arenaName; }
+        set { _arenaName = value; }
+    }
+
 	/// <summary>
 	/// Initialize the GUI on start.
 	/// </summary>
 	void Start ()
     {
         InitializeGUI();
+
+        DatabaseManagerScript databaseScript = (DatabaseManagerScript)Resources.Load("DatabaseManager", typeof(DatabaseManagerScript));
+        ArenaName = databaseScript.Arenas[GameOptionSingleton.Instance.NumScene] + "Scene";
 	}
 
     public override void OnMouseUp()
@@ -34,36 +44,25 @@ public class ReadyScript : GUIItemScript {
     {
         if (PlayersSingleton.Instance.AllPlayerReady(info.sender))
         {
-            LoadGame(GameOptionSingleton.Instance.NumScene);
-            networkView.RPC("ResponsePlayerIsReady", RPCMode.Others, GameOptionSingleton.Instance.NumScene);
+            LoadGame();
+            networkView.RPC("ResponsePlayerIsReady", RPCMode.Others);
         }
+    }
+
+    public void StartGame()
+    {
+        LoadGame();
+        networkView.RPC("ResponsePlayerIsReady", RPCMode.Others);
     }
 
     [RPC]
-    void ResponsePlayerIsReady(int numScene)
+    void ResponsePlayerIsReady()
     {
-        LoadGame(numScene);
+        LoadGame();
     }
 
-    void LoadGame(int numScene)
+    void LoadGame()
     {
-        string arenaName;
-
-        switch (numScene)
-        {
-            case 1:
-                arenaName = "TinyScene";
-                break;
-            case 2:
-                arenaName = "EdgyScene";
-                break;
-            case 3:
-                arenaName = "CrunchyScene";
-                break;
-            default:
-                arenaName = "ClassyTempScene";
-                break;
-        }
-        GameOptionSingleton.Instance.SceneMngScript.LoadLevel(arenaName);
+        GameOptionSingleton.Instance.SceneMngScript.LoadLevel(ArenaName);
     }
 }

@@ -44,6 +44,8 @@ public class ArenaTextScript : MonoBehaviour
     /// </summary>
     void Start()
     {
+        DatabaseManagerScript databaseScript = (DatabaseManagerScript)Resources.Load("DatabaseManager", typeof(DatabaseManagerScript));
+        Arena = databaseScript.Arenas;
         this.gameObject.GetComponent<TextMesh>().text = Arena[CurrentValue];
     }
 

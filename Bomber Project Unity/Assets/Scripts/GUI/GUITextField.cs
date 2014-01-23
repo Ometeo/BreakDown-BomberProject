@@ -123,11 +123,17 @@ public class GUITextField : MonoBehaviour
         return Text.text;
     }
 
+
     void SavePlayerPrefs()
     {
+        // TODO: Uncomment these lines when deployable
+        /*
         if (PlayerPrefsField != null && PlayerPrefsField.Length > 0)
         {
             PlayerPrefs.SetString(PlayerPrefsField, Text.text);
         }
+        */
+        if ("PlayerName".Equals(PlayerPrefsField))
+            PlayersSingleton.Instance.MyName = Text.text;
     }
 }

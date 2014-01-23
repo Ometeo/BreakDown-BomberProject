@@ -44,16 +44,30 @@ public class IsIAScript : GUIItemScript
         networkView.RPC("SendSetIA", RPCMode.Server);
     }
 
+    #region RPC Server Side
+    /* ------------------------------------------------------------------------------------------
+     *                                       Server Side
+     * ------------------------------------------------------------------------------------------*/
+
     [RPC]
     void SendSetIA(NetworkMessageInfo info)
     {
         if (GameOptionSingleton.Instance.HostPlayer == info.sender)
         {
             Case.GetComponent<PlayerCaseScript>().SetIA();
+            PlayersSingleton.Instance.AddBot(_playerItemScr.PlayerNb);
+            _playerItemScr.NetwkMenuMngScr.RefreshPlayersName();
+            
             this.gameObject.SetActive(false);
             networkView.RPC("ResponseSetIA", RPCMode.Others);
         }
     }
+    #endregion
+
+    #region RPC Client Side
+    /* ------------------------------------------------------------------------------------------
+     *                                      RPC Client Side
+     * ------------------------------------------------------------------------------------------*/
 
     [RPC]
     void ResponseSetIA()
@@ -61,4 +75,5 @@ public class IsIAScript : GUIItemScript
         Case.GetComponent<PlayerCaseScript>().SetIA();
         this.gameObject.SetActive(false);
     }
+    #endregion
 }

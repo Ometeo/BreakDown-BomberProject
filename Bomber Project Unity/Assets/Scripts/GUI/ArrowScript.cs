@@ -81,7 +81,7 @@ public class ArrowScript : GUIItemScript
                 _avTxScr.Increment();
             else
                 _avTxScr.Decrement();
-            networkView.RPC("SendChangeChamp", RPCMode.Server);
+            networkView.RPC("SendChangeChamp", RPCMode.Server, _avTxScr.CurrentValue);
         }
         else
         {
@@ -91,13 +91,9 @@ public class ArrowScript : GUIItemScript
     }
 
     [RPC]
-    void SendChangeChamp(NetworkMessageInfo info)
+    void SendChangeChamp(int champNumber, NetworkMessageInfo info)
     {
-        if (Increment)
-            _avTxScr.Increment();
-        else
-            _avTxScr.Decrement();
-        PlayersSingleton.Instance.SetPlayerChamp(info.sender, _avTxScr.CurrentValue);
+        PlayersSingleton.Instance.SetPlayerChamp(info.sender, champNumber);
     }
 
     [RPC]

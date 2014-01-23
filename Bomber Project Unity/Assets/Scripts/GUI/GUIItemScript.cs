@@ -17,6 +17,13 @@ using System.Collections;
 public abstract class GUIItemScript : MonoBehaviour
 {
     protected Transform[] _item;
+    protected PlayerItemScript _playerItemScr;
+
+    void Awake()
+    {
+        if (transform.parent)
+            _playerItemScr = transform.parent.GetComponent<PlayerItemScript>();
+    }
 
     /// <summary>
     /// 
@@ -49,5 +56,4 @@ public abstract class GUIItemScript : MonoBehaviour
     /// 
     /// </summary>
     public abstract void OnMouseUp();
-
 }

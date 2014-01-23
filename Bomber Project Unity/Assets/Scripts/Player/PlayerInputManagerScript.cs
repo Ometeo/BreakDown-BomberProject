@@ -37,6 +37,7 @@ public class PlayerInputManagerScript : MonoBehaviour {
 
     void Awake()
     {
+        enabled = false;
         _skills1 = new ArrayList();
         _skills2 = new ArrayList();
         _skillsUltimate = new ArrayList();

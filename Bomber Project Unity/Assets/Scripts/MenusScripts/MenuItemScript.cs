@@ -97,12 +97,21 @@ public class MenuItemScript : GUIItemScript
     [RPC]
     void SendChangeScene(string _itemName, NetworkMessageInfo info)
     {
-        if (GameOptionSingleton.Instance.HostPlayer == info.sender)
+        var GOInstance = GameOptionSingleton.Instance;
+        if (GOInstance.HostPlayer == info.sender)
         {
-            GameOptionSingleton.Instance.GameStarted = true;
-            GameOptionSingleton.Instance.SceneMngScript.LoadLevel(_itemName);
+            
+            GOInstance.GameStarted = true;
+            GOInstance.SceneMngScript.LoadLevel(_itemName);
+            networkView.RPC("SynchronizeGameOptions", RPCMode.Others, GOInstance.NumMode, GOInstance.NumScene, GOInstance.NbTeams);
             networkView.RPC("ResponseChangeScene", RPCMode.Others, _itemName);
         }
+    }
+
+    [RPC]
+    void SynchronizeGameOptions(int numMode, int numScene, int nbTeams)
+    {
+        GameOptionSingleton.Instance.SyncGameOptionSingleton(numMode, numScene, nbTeams);
     }
 
     [RPC]

@@ -121,6 +121,8 @@ public class PlayerCaseScript : MonoBehaviour {
         if (GameOptionSingleton.Instance.HostPlayer == info.sender)
         {
             SetNothing();
+            PlayersSingleton.Instance.RemoveBot(Player.PlayerNb);
+            Player.NetwkMenuMngScr.RefreshPlayersName();
             networkView.RPC("ResponseSetNothing", RPCMode.Others);
         }
     }

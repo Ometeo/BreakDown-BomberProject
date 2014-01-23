@@ -17,6 +17,14 @@ using System.Collections;
 public class PlayerItemScript : MonoBehaviour
 {
     [SerializeField]
+    private NetworkMenuManagerScript _netwkMenuMngScr;
+    public NetworkMenuManagerScript NetwkMenuMngScr
+    {
+        get { return _netwkMenuMngScr; }
+        set { _netwkMenuMngScr = value; }
+    }
+
+    [SerializeField]
     private string defaultText;
     public string DefaultText
     {
